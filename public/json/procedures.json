@@ -1,0 +1,1522 @@
+[
+  {
+    "id": 1,
+    "title": "CUTI SANTRI",
+    "type": "SDI",
+    "number": "SOP SDI/001/REV0002",
+    "descriptions": "<p>CUTI SANTRI</p>",
+    "file": "1698909818.pdf",
+    "created_at": "2023-11-02 07:23:38",
+    "updated_at": "2023-11-02 07:23:38"
+  },
+  {
+    "id": 2,
+    "title": "IJIN SANTRI",
+    "type": "SDI",
+    "number": "SOP SDI/002/REV000",
+    "descriptions": "<p>IJIN SANTRI</p>",
+    "file": "1698909872.pdf",
+    "created_at": "2023-11-02 07:24:32",
+    "updated_at": "2023-11-02 07:24:32"
+  },
+  {
+    "id": 3,
+    "title": "TELAT",
+    "type": "SDI",
+    "number": "SOP SDI/003/REV/0003",
+    "descriptions": "<p>TELAT</p>",
+    "file": "1698909954.pdf",
+    "created_at": "2023-11-02 07:25:54",
+    "updated_at": "2023-11-02 07:25:54"
+  },
+  {
+    "id": 4,
+    "title": "AUTODEBET",
+    "type": "SDI",
+    "number": "SOP SDI/004/REV0000",
+    "descriptions": "<p>Autodebet</p>",
+    "file": "1698909996.pdf",
+    "created_at": "2023-11-02 07:26:36",
+    "updated_at": "2023-11-02 07:26:36"
+  },
+  {
+    "id": 5,
+    "title": "ROLLING",
+    "type": "SDI",
+    "number": "SOP SDI/005/REV0002",
+    "descriptions": "<p>ROLLING</p>",
+    "file": "1698910168.pdf",
+    "created_at": "2023-11-02 07:29:28",
+    "updated_at": "2023-11-02 07:29:28"
+  },
+  {
+    "id": 6,
+    "title": "KARAKTER KEHADIRAN",
+    "type": "SDI",
+    "number": "SOP SDI/007/REV0001",
+    "descriptions": "<p>KARAKTER KEHADIRAN</p>",
+    "file": "1698910218.pdf",
+    "created_at": "2023-11-02 07:30:18",
+    "updated_at": "2023-11-02 07:30:18"
+  },
+  {
+    "id": 7,
+    "title": "SANTRI RESIGN",
+    "type": "SDI",
+    "number": "SOP SDI/008/REV0001",
+    "descriptions": "<p>SANTRI RESIGN</p>",
+    "file": "1698910270.pdf",
+    "created_at": "2023-11-02 07:31:10",
+    "updated_at": "2023-11-02 07:31:10"
+  },
+  {
+    "id": 8,
+    "title": "ABSEN SELFI",
+    "type": "SDI",
+    "number": "SOP SDI/010/REV0000",
+    "descriptions": "<p>ABSEN SELFI</p>",
+    "file": "1698910324.pdf",
+    "created_at": "2023-11-02 07:32:04",
+    "updated_at": "2023-11-02 07:32:04"
+  },
+  {
+    "id": 9,
+    "title": "SP (SURAT PERINGATAN)",
+    "type": "SDI",
+    "number": "SOP SDI/011/REV0000",
+    "descriptions": "<p>SURAT PERINGATAN</p>",
+    "file": "1698910373.pdf",
+    "created_at": "2023-11-02 07:32:53",
+    "updated_at": "2023-11-02 07:32:53"
+  },
+  {
+    "id": 10,
+    "title": "RAPAT",
+    "type": "SDI",
+    "number": "SOP SDI/012/REV0001",
+    "descriptions": "<p>RAPAT</p>",
+    "file": "1698910410.pdf",
+    "created_at": "2023-11-02 07:33:30",
+    "updated_at": "2023-11-02 07:33:30"
+  },
+  {
+    "id": 11,
+    "title": "SERAGAM",
+    "type": "SDI",
+    "number": "SOP SDI/013/REV0001",
+    "descriptions": "<p>SERAGAM</p>",
+    "file": "1698910448.pdf",
+    "created_at": "2023-11-02 07:34:08",
+    "updated_at": "2023-11-02 07:34:08"
+  },
+  {
+    "id": 12,
+    "title": "PENATAAN RUANGAN",
+    "type": "SDI",
+    "number": "SOP SDI/014/REV0000",
+    "descriptions": "<p>PENATAAN RUANGAN</p>",
+    "file": "1698910546.pdf",
+    "created_at": "2023-11-02 07:35:46",
+    "updated_at": "2023-11-02 07:35:46"
+  },
+  {
+    "id": 13,
+    "title": "SIMULASI",
+    "type": "SDI",
+    "number": "SOP SDI/015/REV0000",
+    "descriptions": "<p>SIMULASI</p>",
+    "file": "1698910584.pdf",
+    "created_at": "2023-11-02 07:36:24",
+    "updated_at": "2023-11-02 07:36:24"
+  },
+  {
+    "id": 14,
+    "title": "KULMA",
+    "type": "SDI",
+    "number": "SOP SDI/016/REV0000",
+    "descriptions": "<p>KULMA</p>",
+    "file": "1698910614.pdf",
+    "created_at": "2023-11-02 07:36:54",
+    "updated_at": "2023-11-02 07:36:54"
+  },
+  {
+    "id": 15,
+    "title": "SILATURAHMI",
+    "type": "SDI",
+    "number": "SOP SDI/017/REV0000",
+    "descriptions": "<p>SILATURAHMI</p>",
+    "file": "1698910652.pdf",
+    "created_at": "2023-11-02 07:37:32",
+    "updated_at": "2023-11-02 07:37:32"
+  },
+  {
+    "id": 16,
+    "title": "PELANGGARAN KEUANGAN",
+    "type": "SDI",
+    "number": "SOP SDI/018/REV0000",
+    "descriptions": "<p>KEUANGAN</p>",
+    "file": "1698910725.pdf",
+    "created_at": "2023-11-02 07:38:46",
+    "updated_at": "2023-11-02 07:38:46"
+  },
+  {
+    "id": 17,
+    "title": "SURAT-SURAT SDI",
+    "type": "SDI",
+    "number": "SOP SDI/020/REV0000",
+    "descriptions": "<p>SURAT SURAT SDI</p>",
+    "file": "1698910778.pdf",
+    "created_at": "2023-11-02 07:39:38",
+    "updated_at": "2023-11-02 07:39:38"
+  },
+  {
+    "id": 18,
+    "title": "MOMEN MOMEN SDI DALAM 1 TAHUN",
+    "type": "SDI",
+    "number": "SOP SDI/021/REV0000",
+    "descriptions": "<p>MOMEN SDI</p>",
+    "file": "1698910820.pdf",
+    "created_at": "2023-11-02 07:40:20",
+    "updated_at": "2023-11-02 07:40:20"
+  },
+  {
+    "id": 19,
+    "title": "JAMINAN KESEHATAN SANTRI",
+    "type": "SDI",
+    "number": "SOP SDI/022/REV0000",
+    "descriptions": "<p>JAMINAN KESEHATAN SANTRI</p>",
+    "file": "1698910910.pdf",
+    "created_at": "2023-11-02 07:41:50",
+    "updated_at": "2023-11-02 07:41:50"
+  },
+  {
+    "id": 20,
+    "title": "TATA TERTIB",
+    "type": "SDI",
+    "number": "SOP SDI/025/REV0000",
+    "descriptions": "<p>TATA TERTIB</p>",
+    "file": "1698910953.pdf",
+    "created_at": "2023-11-02 07:42:33",
+    "updated_at": "2023-11-02 07:42:33"
+  },
+  {
+    "id": 21,
+    "title": "BANTUAN KECELAKAAN SANTRI",
+    "type": "SDI",
+    "number": "SOP SDI/028/REV0000",
+    "descriptions": "<p>BANTUAN KECELAKAAN SANTRI</p>",
+    "file": "1698911136.pdf",
+    "created_at": "2023-11-02 07:45:36",
+    "updated_at": "2023-11-02 07:45:36"
+  },
+  {
+    "id": 22,
+    "title": "BANTUAN OLI",
+    "type": "SDI",
+    "number": "SOP SDI/029/REV0002",
+    "descriptions": "<p>BANTUAN OLI</p>",
+    "file": "1698911193.pdf",
+    "created_at": "2023-11-02 07:46:33",
+    "updated_at": "2023-11-02 07:46:33"
+  },
+  {
+    "id": 23,
+    "title": "SURAT KETERANGAN PERIKSA",
+    "type": "SDI",
+    "number": "SOP SDI/031/REV0000",
+    "descriptions": "<p>SURAT KETERANGAN PERIKSA</p>",
+    "file": "1698911326.pdf",
+    "created_at": "2023-11-02 07:48:46",
+    "updated_at": "2023-11-02 07:48:46"
+  },
+  {
+    "id": 24,
+    "title": "LEMBUR SANTRI",
+    "type": "SDI",
+    "number": "SOP SDI/033/REV0000",
+    "descriptions": "<p>LEMBUR SANTRI</p>",
+    "file": "1698911378.pdf",
+    "created_at": "2023-11-02 07:49:38",
+    "updated_at": "2023-11-02 07:49:38"
+  },
+  {
+    "id": 25,
+    "title": "HUBUNGAN SANTRI",
+    "type": "SDI",
+    "number": "SOP SDI/034/REV0000",
+    "descriptions": "<p>HUBUNGAN SANTRI</p>",
+    "file": "1698911412.pdf",
+    "created_at": "2023-11-02 07:50:12",
+    "updated_at": "2023-11-02 07:50:12"
+  },
+  {
+    "id": 26,
+    "title": "PENAMPILAN SANTRI & PENGADAAN PENAMPILAN",
+    "type": "SDI",
+    "number": "SOP SDI/036/REV0001",
+    "descriptions": "<p>PENAMPILAN SANTRI &amp; PENGADAAN PENAMPILAN</p>",
+    "file": "1698911494.pdf",
+    "created_at": "2023-11-02 07:51:34",
+    "updated_at": "2023-11-02 07:51:34"
+  },
+  {
+    "id": 27,
+    "title": "JENJANG JABATAN & GRADE",
+    "type": "SDI",
+    "number": "SOP SDI/038/REV0000",
+    "descriptions": "<p>JENJANG JABATAN &amp; GRADE</p>",
+    "file": "1698911565.pdf",
+    "created_at": "2023-11-02 07:52:45",
+    "updated_at": "2023-11-02 07:52:45"
+  },
+  {
+    "id": 28,
+    "title": "FORM PENAMBAHAN SANTRI BARU",
+    "type": "SDI",
+    "number": "SOP SDI/039/REV0000",
+    "descriptions": "<p>FORM PENAMBAHAN SANTRI BARU</p>",
+    "file": "1698911603.pdf",
+    "created_at": "2023-11-02 07:53:23",
+    "updated_at": "2023-11-02 07:53:23"
+  },
+  {
+    "id": 29,
+    "title": "LAPORAN STOK KOTAK DAN PERSEBARANNYA",
+    "type": "BAITUL MAAL",
+    "number": "SOP BAITUL MAAL/001/REV000",
+    "descriptions": "<p>LAPORAN STOK KOTAK DAN PERSEBARANNYA</p>",
+    "file": "1699669416.pdf",
+    "created_at": "2023-11-11 02:23:36",
+    "updated_at": "2023-11-11 02:23:36"
+  },
+  {
+    "id": 30,
+    "title": "PROSEDUR PERALIHAN TARIKAN KOTAK MARKETING",
+    "type": "BAITUL MAAL",
+    "number": "SOP BAITUL MAAL/002/REV000",
+    "descriptions": "<p>PROSEDUR PERALIHAN TARIKAN KOTAK MARKETING</p>",
+    "file": "1699669573.pdf",
+    "created_at": "2023-11-11 02:26:13",
+    "updated_at": "2023-11-11 02:26:13"
+  },
+  {
+    "id": 32,
+    "title": "PENGEMBALIAN KOTAK PINJAM & PERAWATAN KOTAK",
+    "type": "BAITUL MAAL",
+    "number": "SOP BAITUL MAAL/004/REV000",
+    "descriptions": "<p>PENGEMBALIAN KOTAK PINJAM &amp; PERAWATAN KOTAK</p>",
+    "file": "1699669718.pdf",
+    "created_at": "2023-11-11 02:28:38",
+    "updated_at": "2023-11-11 02:28:38"
+  },
+  {
+    "id": 33,
+    "title": "INPUT WAKAF PEMBIAYAAN",
+    "type": "BAITUL MAAL",
+    "number": "SOP BAITUL MAAL/005/REV000",
+    "descriptions": "<p>INPUT WAKAF PEMBIAYAAN</p>",
+    "file": "1699669765.pdf",
+    "created_at": "2023-11-11 02:29:25",
+    "updated_at": "2023-11-11 02:29:25"
+  },
+  {
+    "id": 36,
+    "title": "PENGAJUAN SERTIFIKAT WAKAF 1 JUTA",
+    "type": "BAITUL MAAL",
+    "number": "SOP BAITUL MAAL/007/REV000",
+    "descriptions": "<p>PENGAJUAN SERTIFIKAT WAKAF 1 JUTA</p>",
+    "file": "1699670536.pdf",
+    "created_at": "2023-11-11 02:42:16",
+    "updated_at": "2023-11-11 02:42:16"
+  },
+  {
+    "id": 37,
+    "title": "PENTASARUPAN ZAKAT",
+    "type": "BAITUL MAAL",
+    "number": "SOP BAITUL MAAL/009/REV000",
+    "descriptions": "<p>PENTASARUPAN ZAKAT</p>",
+    "file": "1699670590.pdf",
+    "created_at": "2023-11-11 02:43:10",
+    "updated_at": "2023-11-11 02:43:10"
+  },
+  {
+    "id": 38,
+    "title": "PENTASARUPAN YATIM",
+    "type": "BAITUL MAAL",
+    "number": "SOP BAITUL MAAL/010/REV000",
+    "descriptions": "<p>PENTASARUPAN YATIM</p>",
+    "file": "1699670641.pdf",
+    "created_at": "2023-11-11 02:44:01",
+    "updated_at": "2023-11-11 02:44:01"
+  },
+  {
+    "id": 39,
+    "title": "PENTASARUPAN GHARIM",
+    "type": "BAITUL MAAL",
+    "number": "SOP BAITUL MAAL/011/REV000",
+    "descriptions": "<p>PENTASARUPAN GHARIM</p>",
+    "file": "1699670691.pdf",
+    "created_at": "2023-11-11 02:44:51",
+    "updated_at": "2023-11-11 02:44:51"
+  },
+  {
+    "id": 40,
+    "title": "PENGEMBALIAN UANG LAZISNU",
+    "type": "BAITUL MAAL",
+    "number": "SOP BAITUL MAAL/012/REV000",
+    "descriptions": "<p>PENGEMBALIAN UANG LAZISNU</p>",
+    "file": "1699670736.pdf",
+    "created_at": "2023-11-11 02:45:36",
+    "updated_at": "2023-11-11 02:45:36"
+  },
+  {
+    "id": 41,
+    "title": "PROGRAM KAMBING BERGULIR",
+    "type": "BAITUL MAAL",
+    "number": "SOP BAITUL MAAL/013/REV000",
+    "descriptions": "<p>PROGRAM KAMBING BERGULIR</p>",
+    "file": "1699670776.pdf",
+    "created_at": "2023-11-11 02:46:16",
+    "updated_at": "2023-11-11 02:46:16"
+  },
+  {
+    "id": 42,
+    "title": "PROGRAM GEROBAQU",
+    "type": "BAITUL MAAL",
+    "number": "SOP BAITUL MAAL/014/REV000",
+    "descriptions": "<p>PROGRAM GEROBAQU</p>",
+    "file": "1699670815.pdf",
+    "created_at": "2023-11-11 02:46:55",
+    "updated_at": "2023-11-11 02:46:55"
+  },
+  {
+    "id": 43,
+    "title": "DALAM LINGKUP UPZIS LAZISNU",
+    "type": "BAITUL MAAL",
+    "number": "SOP BAITUL MAAL/015/REV000",
+    "descriptions": "<p>DALAM LINGKUP UPZIS LAZISNU</p>",
+    "file": "1699671000.pdf",
+    "created_at": "2023-11-11 02:50:00",
+    "updated_at": "2023-11-11 02:50:00"
+  },
+  {
+    "id": 44,
+    "title": "ZAKAT TABUNGAN",
+    "type": "BAITUL MAAL",
+    "number": "SOP BAITUL MAAL/016/REV000",
+    "descriptions": "<p>ZAKAT TABUNGAN</p>",
+    "file": "1699671027.pdf",
+    "created_at": "2023-11-11 02:50:27",
+    "updated_at": "2023-11-11 02:50:27"
+  },
+  {
+    "id": 45,
+    "title": "PEMBACAAN SOP",
+    "type": "AUDIT DAN CO",
+    "number": "SOP AUDIT/001/REV001",
+    "descriptions": "<p>PEMBACAAN SOP</p>",
+    "file": "1699672922.pdf",
+    "created_at": "2023-11-11 03:22:02",
+    "updated_at": "2023-11-11 03:22:02"
+  },
+  {
+    "id": 46,
+    "title": "PEMERIKSAAN NERACA",
+    "type": "AUDIT DAN CO",
+    "number": "SOP AUDIT/002/REV002",
+    "descriptions": "<p>PEMERIKSAAN NERACA</p>",
+    "file": "1699672977.pdf",
+    "created_at": "2023-11-11 03:22:57",
+    "updated_at": "2023-11-11 03:22:57"
+  },
+  {
+    "id": 47,
+    "title": "PEMERIKSAAN KINERJA TELLER",
+    "type": "AUDIT DAN CO",
+    "number": "SOP AUDIT/003/REV003",
+    "descriptions": "<p>PEMERIKSAAN KINERJA TELLER</p>",
+    "file": "1699673030.pdf",
+    "created_at": "2023-11-11 03:23:50",
+    "updated_at": "2023-11-11 03:23:50"
+  },
+  {
+    "id": 48,
+    "title": "PEMERIKSAAN KINERJA MARKETING",
+    "type": "AUDIT DAN CO",
+    "number": "SOP AUDIT/004/REV001",
+    "descriptions": "<p>PEMERIKSAAN KINERJA MARKETING</p>",
+    "file": "1699673084.pdf",
+    "created_at": "2023-11-11 03:24:44",
+    "updated_at": "2023-11-11 03:24:44"
+  },
+  {
+    "id": 49,
+    "title": "MENJAGA RAHASIA KANTOR",
+    "type": "AUDIT DAN CO",
+    "number": "SOP AUDIT/005/REV000",
+    "descriptions": "<p>MENJAGA RAHASIA KANTOR</p>",
+    "file": "1699673134.pdf",
+    "created_at": "2023-11-11 03:25:34",
+    "updated_at": "2023-11-11 03:25:34"
+  },
+  {
+    "id": 50,
+    "title": "PEMERIKSAAN KINERJA BM",
+    "type": "AUDIT DAN CO",
+    "number": "SOP AUDIT/006/REV000",
+    "descriptions": "<p>PEMERIKSAAN KINERJA BM</p>",
+    "file": "1699673189.pdf",
+    "created_at": "2023-11-11 03:26:29",
+    "updated_at": "2023-11-11 03:26:29"
+  },
+  {
+    "id": 51,
+    "title": "TUGAS DAN TANGGUNG JAWAB SANTRI",
+    "type": "AUDIT DAN CO",
+    "number": "SOP AUDIT/007/REV001",
+    "descriptions": "<p>TUGAS DAN TANGGUNG JAWAB SANTRI</p>",
+    "file": "1699673318.pdf",
+    "created_at": "2023-11-11 03:28:38",
+    "updated_at": "2023-11-11 03:28:38"
+  },
+  {
+    "id": 52,
+    "title": "PEMBUATAN REKENING SELISIH",
+    "type": "AUDIT DAN CO",
+    "number": "SOP AUDIT/008/REV000",
+    "descriptions": "<p>PEMBUATAN REKENING SELISIH</p>",
+    "file": "1699673382.pdf",
+    "created_at": "2023-11-11 03:29:42",
+    "updated_at": "2023-11-11 03:29:42"
+  },
+  {
+    "id": 53,
+    "title": "PENDAMPINGAN SANTRI",
+    "type": "AUDIT DAN CO",
+    "number": "SOP AUDIT/009/REV000",
+    "descriptions": "<p>PENDAMPINGAN SANTRI</p>",
+    "file": "1699673447.pdf",
+    "created_at": "2023-11-11 03:30:47",
+    "updated_at": "2023-11-11 03:30:47"
+  },
+  {
+    "id": 54,
+    "title": "BERANGKAS",
+    "type": "KITA",
+    "number": "SOP KITA/001/REV003",
+    "descriptions": "<p>BERANGKAS</p>",
+    "file": "1699690236.pdf",
+    "created_at": "2023-11-11 08:10:36",
+    "updated_at": "2023-11-11 08:10:36"
+  },
+  {
+    "id": 56,
+    "title": "PENGAJUAN TAMBAHAN MODAL CABANG",
+    "type": "KITA",
+    "number": "SOP KITA/002/REV003",
+    "descriptions": "<p>PENGAJUAN TAMBAHAN MODAL CABANG</p>",
+    "file": "1699749010.pdf",
+    "created_at": "2023-11-12 00:30:11",
+    "updated_at": "2023-11-12 00:30:11"
+  },
+  {
+    "id": 59,
+    "title": "TRANSAKSI LAYANAN JASA",
+    "type": "KITA",
+    "number": "SOP KITA/005/REV002",
+    "descriptions": "<p>TRANSAKSI LAYANAN JASA</p>",
+    "file": "1699749307.pdf",
+    "created_at": "2023-11-12 00:35:07",
+    "updated_at": "2023-11-12 00:35:07"
+  },
+  {
+    "id": 60,
+    "title": "PROSEDUR PEMESANAN LOGISTIK",
+    "type": "KITA",
+    "number": "SOP KITA/006/REV001",
+    "descriptions": "<p>PROSEDUR PEMESANAN LOGISTIK</p>",
+    "file": "1699749368.pdf",
+    "created_at": "2023-11-12 00:36:08",
+    "updated_at": "2023-11-12 00:36:08"
+  },
+  {
+    "id": 61,
+    "title": "PROSEDUR PENGGUNAAN DANA TABARRU TABUNGAN",
+    "type": "KITA",
+    "number": "SOP KITA/007/REV002",
+    "descriptions": "<p>PROSEDUR PENGGUNAAN DANA TABARRU TABUNGAN</p>",
+    "file": "1699749422.pdf",
+    "created_at": "2023-11-12 00:37:02",
+    "updated_at": "2023-11-12 00:37:02"
+  },
+  {
+    "id": 62,
+    "title": "FASILITAS ANGGOTA",
+    "type": "KITA",
+    "number": "SOP KITA/008/REV000",
+    "descriptions": "<p>FASILITAS ANGGOTA</p>",
+    "file": "1699749505.pdf",
+    "created_at": "2023-11-12 00:38:25",
+    "updated_at": "2023-11-12 00:38:25"
+  },
+  {
+    "id": 63,
+    "title": "PELAYANAN PENCAIRAN SERTIFIKAT SAHAM ANGGOTA (SINESTA)",
+    "type": "KITA",
+    "number": "SOP KITA/009/REV002",
+    "descriptions": "<p>PELAYANAN PENCAIRAN SERTIFIKAT SAHAM ANGGOTA (SINESTA)</p>",
+    "file": "1699749560.pdf",
+    "created_at": "2023-11-12 00:39:20",
+    "updated_at": "2023-11-12 00:39:20"
+  },
+  {
+    "id": 64,
+    "title": "PAGU KAS CABANG",
+    "type": "KITA",
+    "number": "SOP KITA/010/REV000",
+    "descriptions": "<p>PAGU KAS CABANG</p>",
+    "file": "1699749613.pdf",
+    "created_at": "2023-11-12 00:40:13",
+    "updated_at": "2023-11-12 00:40:13"
+  },
+  {
+    "id": 65,
+    "title": "PROSEDUR SERAH TERIMA BARANG",
+    "type": "KITA",
+    "number": "SOP KITA/011/REV001",
+    "descriptions": "<p>PROSEDUR SERAH TERIMA BARANG</p>",
+    "file": "1699749661.pdf",
+    "created_at": "2023-11-12 00:41:01",
+    "updated_at": "2023-11-12 00:41:01"
+  },
+  {
+    "id": 66,
+    "title": "PROSEDUR PENGGUNAAN DANA PENDIDIKAN",
+    "type": "KITA",
+    "number": "SOP KITA/012/REV002",
+    "descriptions": "<p>PROSEDUR PENGGUNAAN DANA PENDIDIKAN</p>",
+    "file": "1699749707.pdf",
+    "created_at": "2023-11-12 00:41:47",
+    "updated_at": "2023-11-12 00:41:47"
+  },
+  {
+    "id": 67,
+    "title": "TRANSAKSI KAS TELLER",
+    "type": "KITA",
+    "number": "SOP KITA/013/REV000",
+    "descriptions": "<p>TRANSAKSI KAS TELLER</p>",
+    "file": "1699749975.pdf",
+    "created_at": "2023-11-12 00:46:15",
+    "updated_at": "2023-11-12 00:46:15"
+  },
+  {
+    "id": 68,
+    "title": "AKTIVASI APLIKASI BMT NU NGASEM MOBILE",
+    "type": "KITA",
+    "number": "SOP KITA/014/REV000",
+    "descriptions": "<p>AKTIVASI APLIKASI BMT NU NGASEM MOBILE</p>",
+    "file": "1699750062.pdf",
+    "created_at": "2023-11-12 00:47:42",
+    "updated_at": "2023-11-12 00:47:42"
+  },
+  {
+    "id": 69,
+    "title": "PENGGUNAAN BARANG INVENTARIS",
+    "type": "KITA",
+    "number": "SOP KITA/015/REV000",
+    "descriptions": "<p>PENGGUNAAN BARANG INVENTARIS</p>",
+    "file": "1699750106.pdf",
+    "created_at": "2023-11-12 00:48:26",
+    "updated_at": "2023-11-12 00:48:26"
+  },
+  {
+    "id": 70,
+    "title": "PENGELUARAN BIAYA KAS KANTOR",
+    "type": "KITA",
+    "number": "SOP KITA/016/REV000",
+    "descriptions": "<p>PENGELUARAN BIAYA KAS KANTOR</p>",
+    "file": "1699750160.pdf",
+    "created_at": "2023-11-12 00:49:20",
+    "updated_at": "2023-11-12 00:49:20"
+  },
+  {
+    "id": 71,
+    "title": "TRANSAKSI SETORAN, ANGSURAN DAN PENARIKAN",
+    "type": "KITA",
+    "number": "SOP KITA/018/REV000",
+    "descriptions": "<p>TRANSAKSI SETORAN, ANGSURAN DAN PENARIKAN</p>",
+    "file": "1699750213.pdf",
+    "created_at": "2023-11-12 00:50:13",
+    "updated_at": "2023-11-12 00:50:13"
+  },
+  {
+    "id": 72,
+    "title": "PENYSIHAN SAHAM SANTRI",
+    "type": "KITA",
+    "number": "SOP KITA/019/REV001",
+    "descriptions": "<p>PENYISIHAN SAHAM SANTRI</p>",
+    "file": "1699750252.pdf",
+    "created_at": "2023-11-12 00:50:52",
+    "updated_at": "2023-11-12 00:50:52"
+  },
+  {
+    "id": 73,
+    "title": "PENGGUNAAN USER ID SISTEM",
+    "type": "KITA",
+    "number": "SOP KITA/020/REV001",
+    "descriptions": "<p>PENGGUNAAN USER ID SISTEM</p>",
+    "file": "1699750320.pdf",
+    "created_at": "2023-11-12 00:52:00",
+    "updated_at": "2023-11-12 00:52:00"
+  },
+  {
+    "id": 74,
+    "title": "LAPORAN HARIAN TELLER",
+    "type": "KITA",
+    "number": "SOP KITA/021/REV000",
+    "descriptions": "<p>LAPORAN HARIAN TELLER</p>",
+    "file": "1699750406.pdf",
+    "created_at": "2023-11-12 00:53:26",
+    "updated_at": "2023-11-12 00:53:26"
+  },
+  {
+    "id": 75,
+    "title": "PROSEDUR PENCAIRAN SIMPANAN MASA DEPAN SANTRI (SMD)",
+    "type": "KITA",
+    "number": "SOP KITA/023/REV001",
+    "descriptions": "<p>PROSEDUR PENCAIRAN SIMPANAN MASA DEPAN SANTRI (SMD)</p>",
+    "file": "1699750481.pdf",
+    "created_at": "2023-11-12 00:54:41",
+    "updated_at": "2023-11-12 00:54:41"
+  },
+  {
+    "id": 76,
+    "title": "PENGARSIPAN SLIP KAS KANTOR",
+    "type": "KITA",
+    "number": "SOP KITA/024/REV001",
+    "descriptions": "<p>PENGARSIPAN SLIP KAS KANTOR</p>",
+    "file": "1699750656.pdf",
+    "created_at": "2023-11-12 00:57:36",
+    "updated_at": "2023-11-12 00:57:36"
+  },
+  {
+    "id": 77,
+    "title": "TRANSAKSI PPOB DI KANTOR CABANG",
+    "type": "KITA",
+    "number": "SOP KITA/025/REV000",
+    "descriptions": "<p>TRANSAKSI PPOB DI KANTOR CABANG</p>",
+    "file": "1699750821.pdf",
+    "created_at": "2023-11-12 01:00:21",
+    "updated_at": "2023-11-12 01:00:21"
+  },
+  {
+    "id": 78,
+    "title": "PENARIKAN DANA BASIL MWC NU",
+    "type": "KITA",
+    "number": "SOP KITA/026/REV001",
+    "descriptions": "<p>PENARIKAN DANA BASIL MWC NU</p>",
+    "file": "1699750882.pdf",
+    "created_at": "2023-11-12 01:01:22",
+    "updated_at": "2023-11-12 01:01:22"
+  },
+  {
+    "id": 79,
+    "title": "PELAKSANAAN BUKU SIMPANAN, PEMBUKAAN DAN PENUTUPAN SIMPANAN",
+    "type": "KITA",
+    "number": "SOP KITA/027/REV000",
+    "descriptions": "<p>PELAKSANAAN BUKU SIMPANAN, PEMBUKAAN DAN PENUTUPAN SIMPANAN&nbsp;</p>",
+    "file": "1699750953.pdf",
+    "created_at": "2023-11-12 01:02:33",
+    "updated_at": "2023-11-12 01:02:33"
+  },
+  {
+    "id": 80,
+    "title": "AGEN BMT LINK",
+    "type": "KITA",
+    "number": "SOP KITA/028/REV000",
+    "descriptions": "<p>AGEN BMT LINK</p>",
+    "file": "1699750995.pdf",
+    "created_at": "2023-11-12 01:03:15",
+    "updated_at": "2023-11-12 01:03:15"
+  },
+  {
+    "id": 81,
+    "title": "KHUSUS MEDSOS",
+    "type": "KITA",
+    "number": "SOP KITA/029/REV000",
+    "descriptions": "<p>KHUSUS MEDSOS</p>",
+    "file": "1699751039.pdf",
+    "created_at": "2023-11-12 01:03:59",
+    "updated_at": "2023-11-12 01:03:59"
+  },
+  {
+    "id": 82,
+    "title": "FASILITAS ATM BMT NU NGASEM",
+    "type": "KITA",
+    "number": "SOP KITA/030/REV000",
+    "descriptions": "<p>FASILITAS ATM BMT NU NGASEM</p>",
+    "file": "1699751079.pdf",
+    "created_at": "2023-11-12 01:04:39",
+    "updated_at": "2023-11-12 01:04:39"
+  },
+  {
+    "id": 83,
+    "title": "PEMBELIAN ASSET",
+    "type": "KITA",
+    "number": "SOP KITA/031/REV000",
+    "descriptions": "<p>PEMBELIAN ASSET</p>",
+    "file": "1699751112.pdf",
+    "created_at": "2023-11-12 01:05:12",
+    "updated_at": "2023-11-12 01:05:12"
+  },
+  {
+    "id": 87,
+    "title": "PROSEDUR PENERIMAAN ANGGOTA",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/001/SIM/REV001",
+    "descriptions": "<p>PROSEDUR PENERIMAAN ANGGOTA&nbsp;</p>",
+    "file": "1699758658.pdf",
+    "created_at": "2023-11-12 03:10:58",
+    "updated_at": "2023-11-12 03:10:58"
+  },
+  {
+    "id": 88,
+    "title": "LAPORAN ANGSURAN",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/002/REV001",
+    "descriptions": "<p>LAPORAN ANGSURAN</p>",
+    "file": "1699758704.pdf",
+    "created_at": "2023-11-12 03:11:44",
+    "updated_at": "2023-11-12 03:11:44"
+  },
+  {
+    "id": 89,
+    "title": "PROSEDUR PERMOHONAN PEMBIAYAAN",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/PMBY/003/REV001",
+    "descriptions": "<p>PROSEDUR PERMOHONAN PEMBIAYAAN</p>",
+    "file": "1699758771.pdf",
+    "created_at": "2023-11-12 03:12:51",
+    "updated_at": "2023-11-12 03:12:51"
+  },
+  {
+    "id": 90,
+    "title": "PENANGANAN ANGSURAN PEMBIAYAAN",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/ANGS/004/REV002",
+    "descriptions": "<p>PENANGANAN ANGSURAN PEMBIAYAAN</p>",
+    "file": "1699758821.pdf",
+    "created_at": "2023-11-12 03:13:41",
+    "updated_at": "2023-11-12 03:13:41"
+  },
+  {
+    "id": 91,
+    "title": "WILAYAH TARIKAN MARKETING",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/WILAYAH 005/REV001",
+    "descriptions": "<p>WILAYAH TARIKAN MARKETING</p>",
+    "file": "1699758920.pdf",
+    "created_at": "2023-11-12 03:15:20",
+    "updated_at": "2023-11-12 03:15:20"
+  },
+  {
+    "id": 92,
+    "title": "JENIS AKAD DAN UJROH PEMBIAYAAN YANG DIGUNAKAN DI KOPSYAH BMT NU NGASEM JAWA TIMUR",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/PMBY/006/REV003",
+    "descriptions": "<p>JENIS AKAD DAN UJROH PEMBIAYAAN YANG DIGUNAKAN DI KOPSYAH BMT NU NGASEM JAWA TIMUR</p>",
+    "file": "1699758983.pdf",
+    "created_at": "2023-11-12 03:16:23",
+    "updated_at": "2023-11-12 03:16:23"
+  },
+  {
+    "id": 93,
+    "title": "BATASAN NOMINAL PENCAIRAN PEMBIAYAAN",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/PMBY/007/REV001",
+    "descriptions": "<p>BATASAN NOMINAL PENCAIRAN PEMBIAYAAN</p>",
+    "file": "1699759131.pdf",
+    "created_at": "2023-11-12 03:18:51",
+    "updated_at": "2023-11-12 03:18:51"
+  },
+  {
+    "id": 94,
+    "title": "SANTRI RESIGN BEBAS PEMBIAYAAN",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/008/REV001",
+    "descriptions": "<p>SANTRI RESIGN BEBAS PEMBIAYAAN</p>",
+    "file": "1699759180.pdf",
+    "created_at": "2023-11-12 03:19:40",
+    "updated_at": "2023-11-12 03:19:40"
+  },
+  {
+    "id": 95,
+    "title": "LAPORAN RENCANA PENCAIRAN CABANG",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/LAP/009/REV003",
+    "descriptions": "<p>LAPORAN RENCANA PENCAIRAN CABANG</p>",
+    "file": "1699759233.pdf",
+    "created_at": "2023-11-12 03:20:33",
+    "updated_at": "2023-11-12 03:20:33"
+  },
+  {
+    "id": 96,
+    "title": "REGISTER SIMPANAN PERJALANAN ZIAROH DAN WISATA",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/SIM/009/REV001",
+    "descriptions": "<p>REGISTER SIMPANAN PERJALANAN ZIAROH DAN WISATA</p>",
+    "file": "1699759321.pdf",
+    "created_at": "2023-11-12 03:22:01",
+    "updated_at": "2023-11-12 03:22:01"
+  },
+  {
+    "id": 97,
+    "title": "PENGANTARAN TALANGAN HAJI",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/KAFALAH/011/REV001",
+    "descriptions": "<p>PENGANTARAN TALANGAN HAJI</p>",
+    "file": "1699759874.pdf",
+    "created_at": "2023-11-12 03:31:14",
+    "updated_at": "2023-11-12 03:31:14"
+  },
+  {
+    "id": 98,
+    "title": "PEMBIAYAAN SANTRI DAN PENGURUS",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/ LAP/012/REV003",
+    "descriptions": "<p>PEMBIAYAAN SANTRI DAN PENGURUS</p>",
+    "file": "1699759925.pdf",
+    "created_at": "2023-11-12 03:32:05",
+    "updated_at": "2023-11-12 03:32:05"
+  },
+  {
+    "id": 99,
+    "title": "SIMPANAN INVESTASI ANGGOTA (SINESTA)",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/SIM/013/REV003",
+    "descriptions": "<p>SIMPANAN INVESTASI ANGGOTA (SINESTA)</p>",
+    "file": "1699760009.pdf",
+    "created_at": "2023-11-12 03:33:29",
+    "updated_at": "2023-11-12 03:33:29"
+  },
+  {
+    "id": 100,
+    "title": "PENATAAN DATA FILE ARSIP PEMBIAYAAN",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/LAP/014/REV002",
+    "descriptions": "<p>PENATAAN DATA FILE ARSIP PEMBIAYAAN</p>",
+    "file": "1699760095.pdf",
+    "created_at": "2023-11-12 03:34:55",
+    "updated_at": "2023-11-12 03:34:55"
+  },
+  {
+    "id": 101,
+    "title": "JAMINAN PEMBIAYAAN",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/PMBY/015/REV004",
+    "descriptions": "<p>JAMINAN PEMBIAYAAN</p>",
+    "file": "1699760163.pdf",
+    "created_at": "2023-11-12 03:36:03",
+    "updated_at": "2023-11-12 03:36:03"
+  },
+  {
+    "id": 102,
+    "title": "PERSYARATAN RESCHEDULING",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/016/REV001",
+    "descriptions": "<p>PERSYARATAN RESCHEDULING</p>",
+    "file": "1699760257.pdf",
+    "created_at": "2023-11-12 03:37:37",
+    "updated_at": "2023-11-12 03:37:37"
+  },
+  {
+    "id": 103,
+    "title": "PERSYARATAN RECONDITIONING (PERSYARATAN ULANG)",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/017/REV001",
+    "descriptions": "<p>PERSYARATAN RECONDITIONING (PERSYARATAN ULANG)</p>",
+    "file": "1699760369.pdf",
+    "created_at": "2023-11-12 03:39:29",
+    "updated_at": "2023-11-12 03:39:29"
+  },
+  {
+    "id": 104,
+    "title": "RESTRUKTURING PEMBIAYAAN",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/018/REV001",
+    "descriptions": "<p>RESTRUKTURING PEMBIAYAAN</p>",
+    "file": "1699760440.pdf",
+    "created_at": "2023-11-12 03:40:40",
+    "updated_at": "2023-11-12 03:40:40"
+  },
+  {
+    "id": 105,
+    "title": "PENGGUNAAN DANA PENYISIHAN PENGHAPUSAN AKTIVA PRODUKTIF (PPAP)",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/BT/019/REV001",
+    "descriptions": "<p>PENGGUNAAN DANA PENYISIHAN PENGHAPUSAN AKTIVA PRODUKTIF (PPAP)</p>",
+    "file": "1699760667.pdf",
+    "created_at": "2023-11-12 03:44:27",
+    "updated_at": "2023-11-12 03:44:27"
+  },
+  {
+    "id": 106,
+    "title": "PEMBIAYAAN KHUSUS LEMBAGA NU (MWC NU)",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/LAP/020/REV003",
+    "descriptions": "<p>PEMBIAYAAN KHUSUS LEMBAGA NU (MWC NU)</p>",
+    "file": "1699760731.pdf",
+    "created_at": "2023-11-12 03:45:31",
+    "updated_at": "2023-11-12 03:45:31"
+  },
+  {
+    "id": 107,
+    "title": "PENGGUNAAN DANA TABARRU PEMBIAYAAN",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/BT/021/REV001",
+    "descriptions": "<p>PENGGUNAAN DANA TABARRU PEMBIAYAAN</p>",
+    "file": "1699760773.pdf",
+    "created_at": "2023-11-12 03:46:13",
+    "updated_at": "2023-11-12 03:46:13"
+  },
+  {
+    "id": 108,
+    "title": "QORDHUL HASAN",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/BT/022/REV001",
+    "descriptions": "<p>QORDHUL HASAN</p>",
+    "file": "1699760815.pdf",
+    "created_at": "2023-11-12 03:46:55",
+    "updated_at": "2023-11-12 03:46:55"
+  },
+  {
+    "id": 109,
+    "title": "PEMBIAYAAN DENGAN AKAD MUDHARABAH",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/BT/023/REV000",
+    "descriptions": "<p>PEMBIAYAAN DENGAN AKAD MUDHARABAH</p>",
+    "file": "1699760938.pdf",
+    "created_at": "2023-11-12 03:48:58",
+    "updated_at": "2023-11-12 03:48:58"
+  },
+  {
+    "id": 110,
+    "title": "TALANGAN UMROH",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/KAFALAH/024/REV003",
+    "descriptions": "<p>TALANGAN UMROH</p>",
+    "file": "1699760991.pdf",
+    "created_at": "2023-11-12 03:49:51",
+    "updated_at": "2023-11-12 03:49:51"
+  },
+  {
+    "id": 111,
+    "title": "BMT CHEKING",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/025/REV001",
+    "descriptions": "<p>BMT CHEKING</p>",
+    "file": "1699761037.pdf",
+    "created_at": "2023-11-12 03:50:37",
+    "updated_at": "2023-11-12 03:50:37"
+  },
+  {
+    "id": 112,
+    "title": "SIMJAKASYA HADIAH DI AWAL",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/SIMJAKASYA/027/001",
+    "descriptions": "<p>SIMJAKASYA HADIAH DI AWAL</p>",
+    "file": "1699761101.pdf",
+    "created_at": "2023-11-12 03:51:41",
+    "updated_at": "2023-11-12 03:51:41"
+  },
+  {
+    "id": 113,
+    "title": "PENGAJUAN PEMBIAYAAN",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/PMBY/028/REV002",
+    "descriptions": "<p>PENGAJUAN PEMBIAYAAN</p>",
+    "file": "1699761143.pdf",
+    "created_at": "2023-11-12 03:52:23",
+    "updated_at": "2023-11-12 03:52:23"
+  },
+  {
+    "id": 114,
+    "title": "SIMPANAN BERJANGKA SYARIAH (SIMJAKASYA)",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/SIMJAKASYA/029/REV001",
+    "descriptions": "<p>SIMPANAN BERJANGKA SYARIAH (SIMJAKASYA)</p>",
+    "file": "1699761939.pdf",
+    "created_at": "2023-11-12 04:05:39",
+    "updated_at": "2023-11-12 04:05:39"
+  },
+  {
+    "id": 115,
+    "title": "AKAD PEMBIAYAAN YANG DIGUNAKAN DI KOPSYAH BMT NU NGASEM JAWA TIMUR",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/PMBY/030/REV001",
+    "descriptions": "<p>AKAD PEMBIAYAAN YANG DIGUNAKAN DI KOPSYAH BMT NU NGASEM JAWA TIMUR</p>",
+    "file": "1699762019.pdf",
+    "created_at": "2023-11-12 04:06:59",
+    "updated_at": "2023-11-12 04:06:59"
+  },
+  {
+    "id": 116,
+    "title": "SIMPANAN AQIQOH",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/SIM/031/REV001",
+    "descriptions": "<p>&nbsp;SIMPANAN AQIQOH</p>",
+    "file": "1699762094.pdf",
+    "created_at": "2023-11-12 04:08:14",
+    "updated_at": "2023-11-12 04:08:14"
+  },
+  {
+    "id": 117,
+    "title": "SIMPANAN HAJI",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/SIM/032/REV001",
+    "descriptions": "<p>SIMPANAN HAJI</p>",
+    "file": "1699762153.pdf",
+    "created_at": "2023-11-12 04:09:13",
+    "updated_at": "2023-11-12 04:09:13"
+  },
+  {
+    "id": 118,
+    "title": "SIMPANAN HARI RAYA IDUL FITRI",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/SIM/033/REV001",
+    "descriptions": "<p>SIMPANAN HARI RAYA IDUL FITRI</p>",
+    "file": "1699762206.pdf",
+    "created_at": "2023-11-12 04:10:06",
+    "updated_at": "2023-11-12 04:10:06"
+  },
+  {
+    "id": 119,
+    "title": "SIMPANAN LEMBAGA",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/SIM/034/REV000",
+    "descriptions": "<p>SIMPANAN LEMBAGA</p>",
+    "file": "1699762256.pdf",
+    "created_at": "2023-11-12 04:10:56",
+    "updated_at": "2023-11-12 04:10:56"
+  },
+  {
+    "id": 120,
+    "title": "SIMPANAN QURBAN",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/SIM/035/REV001",
+    "descriptions": "<p>SIMPANAN QURBAN</p>",
+    "file": "1699762307.pdf",
+    "created_at": "2023-11-12 04:11:47",
+    "updated_at": "2023-11-12 04:11:47"
+  },
+  {
+    "id": 121,
+    "title": "SIMPANAN UMROH",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/SIM/036/REV001",
+    "descriptions": "<p>SIMPANAN UMROH</p>",
+    "file": "1699762343.pdf",
+    "created_at": "2023-11-12 04:12:23",
+    "updated_at": "2023-11-12 04:12:23"
+  },
+  {
+    "id": 122,
+    "title": "SIMPANAN WALIMAH",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/SIM/037/REV001",
+    "descriptions": "<p>SIMPANAN WALIMAH</p>",
+    "file": "1699762394.pdf",
+    "created_at": "2023-11-12 04:13:14",
+    "updated_at": "2023-11-12 04:13:14"
+  },
+  {
+    "id": 123,
+    "title": "SIMPANAN ZIAROH",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/SIM/038/REV001",
+    "descriptions": "<p>SIMPANAN ZIAROH</p>",
+    "file": "1699762446.pdf",
+    "created_at": "2023-11-12 04:14:06",
+    "updated_at": "2023-11-12 04:14:06"
+  },
+  {
+    "id": 124,
+    "title": "JANGKA WAKTU PEMBIAYAAN",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/039/REV001",
+    "descriptions": "<p>JANGKA WAKTU PEMBIAYAAN</p>",
+    "file": "1699762541.pdf",
+    "created_at": "2023-11-12 04:15:41",
+    "updated_at": "2023-11-12 04:15:41"
+  },
+  {
+    "id": 125,
+    "title": "SIMPANAN SYARIAH",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/SIM/040/REV001",
+    "descriptions": "<p>SIMPANAN SYARIAH</p>",
+    "file": "1699762600.pdf",
+    "created_at": "2023-11-12 04:16:40",
+    "updated_at": "2023-11-12 04:16:40"
+  },
+  {
+    "id": 126,
+    "title": "PEMBIAYAAN MURABAHAH",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/BT/041/REV003",
+    "descriptions": "<p>PEMBIAYAAN MURABAHAH</p>",
+    "file": "1699762663.pdf",
+    "created_at": "2023-11-12 04:17:43",
+    "updated_at": "2023-11-12 04:17:43"
+  },
+  {
+    "id": 127,
+    "title": "PRODUKTIFITAS MARKETING DAN BM",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/FO/042/REV001",
+    "descriptions": "<p>PRODUKTIFITAS MARKETING DAN BM&nbsp;</p>",
+    "file": "1699762742.pdf",
+    "created_at": "2023-11-12 04:19:02",
+    "updated_at": "2023-11-12 04:19:02"
+  },
+  {
+    "id": 128,
+    "title": "ANALISA HASIL SURVEY PEMBIAYAAN",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/PMBY/043/REV001",
+    "descriptions": "<p>ANALISA HASIL SURVEY PEMBIAYAAN</p>",
+    "file": "1699762812.pdf",
+    "created_at": "2023-11-12 04:20:12",
+    "updated_at": "2023-11-12 04:20:12"
+  },
+  {
+    "id": 129,
+    "title": "DOKUMEN & DATA PEMBIAYAAN",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/PMBY/044/REV002",
+    "descriptions": "<p>DOKUMEN &amp; DATA PEMBIAYAAN</p>",
+    "file": "1699762904.pdf",
+    "created_at": "2023-11-12 04:21:44",
+    "updated_at": "2023-11-12 04:21:44"
+  },
+  {
+    "id": 130,
+    "title": "PEMBATALAN HAJI DI KOPSYAH BMT NU NGASEM JATIM",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/PMBY/045/REV000",
+    "descriptions": "<p>PEMBATALAN HAJI DI KOPSYAH BMT NU NGASEM JATIM</p>",
+    "file": "1699762965.pdf",
+    "created_at": "2023-11-12 04:22:45",
+    "updated_at": "2023-11-12 04:22:45"
+  },
+  {
+    "id": 131,
+    "title": "PENCAIRAN PEMBIAYAAN",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/PMBY/046/REV002",
+    "descriptions": "<p>PENCAIRAN PEMBIAYAAN</p>",
+    "file": "1699763007.pdf",
+    "created_at": "2023-11-12 04:23:27",
+    "updated_at": "2023-11-12 04:23:27"
+  },
+  {
+    "id": 132,
+    "title": "PENGAMBILAN JAMINAN",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/PMBY/048/REV001",
+    "descriptions": "<p>PENGAMBILAN JAMINAN</p>",
+    "file": "1699763175.pdf",
+    "created_at": "2023-11-12 04:26:15",
+    "updated_at": "2023-11-12 04:26:15"
+  },
+  {
+    "id": 133,
+    "title": "SIMPANAN WAJIB",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/SIM/049/REV000",
+    "descriptions": "<p>SIMPANAN WAJIB</p>",
+    "file": "1699763268.pdf",
+    "created_at": "2023-11-12 04:27:48",
+    "updated_at": "2023-11-12 04:27:48"
+  },
+  {
+    "id": 134,
+    "title": "SURVEY PENGAJUAN PEMBIAYAAN",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/PMBY/050/REV001",
+    "descriptions": "<p>SURVEY PENGAJUAN PEMBIAYAAN</p>",
+    "file": "1699763545.pdf",
+    "created_at": "2023-11-12 04:32:25",
+    "updated_at": "2023-11-12 04:32:25"
+  },
+  {
+    "id": 135,
+    "title": "KOLEKTABILITAS",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/053/REV002",
+    "descriptions": "<p>KOLEKTABILITAS</p>",
+    "file": "1699763601.pdf",
+    "created_at": "2023-11-12 04:33:21",
+    "updated_at": "2023-11-12 04:33:21"
+  },
+  {
+    "id": 136,
+    "title": "PEMBIAYAAN KHUSUS PEDAGANG PASAR DAN TOKO KOPSYAH BMT NU NGASEM JAWA TIMUR",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/054/REV001",
+    "descriptions": "<p>PEMBIAYAAN KHUSUS PEDAGANG PASAR DAN TOKO KOPSYAH BMT NU NGASEM JAWA TIMUR</p>",
+    "file": "1699763773.pdf",
+    "created_at": "2023-11-12 04:36:13",
+    "updated_at": "2023-11-12 04:36:13"
+  },
+  {
+    "id": 137,
+    "title": "PEMBIAYAAN KHUSUS ANGGOTA LANCAR",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/055/REV001",
+    "descriptions": "<p>PEMBIAYAAN KHUSUS ANGGOTA LANCAR&nbsp;</p>",
+    "file": "1699763849.pdf",
+    "created_at": "2023-11-12 04:37:29",
+    "updated_at": "2023-11-12 04:37:29"
+  },
+  {
+    "id": 138,
+    "title": "PENCAIRAN SILANG KHUSUS HAJI ANTAR CABANG",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/PMBY/056/REV001",
+    "descriptions": "<p>PENCAIRAN SILANG KHUSUS HAJI ANTAR CABANG</p>",
+    "file": "1699763909.pdf",
+    "created_at": "2023-11-12 04:38:29",
+    "updated_at": "2023-11-12 04:38:29"
+  },
+  {
+    "id": 139,
+    "title": "SYARAT PENGAJUAN PPAP",
+    "type": "BAITUL TAMWIL",
+    "number": "SOP BAITUL TAMWIL/BT/019/REV001",
+    "descriptions": "<p>SYARAT PENGAJUAN PPAP</p>",
+    "file": "1699763963.pdf",
+    "created_at": "2023-11-12 04:39:23",
+    "updated_at": "2023-11-12 04:39:23"
+  },
+  {
+    "id": 140,
+    "title": "SETORAN DAN PENGAMBILAN UANG DEPOSIT CABANG",
+    "type": "KITA",
+    "number": "SOP KITA/003/REV003",
+    "descriptions": "<p>SETORAN DAN PENGAMBILAN UANG DEPOSIT CABANG</p>",
+    "file": "1699764125.pdf",
+    "created_at": "2023-11-12 04:42:05",
+    "updated_at": "2023-11-12 04:42:05"
+  },
+  {
+    "id": 141,
+    "title": "WAKAF BISYAROH SANTRI",
+    "type": "BAITUL MAAL",
+    "number": "SOP BAITUL MAAL/006/REV000",
+    "descriptions": "<p>WAKAF BISYAROH SANTRI</p>",
+    "file": "1699764269.pdf",
+    "created_at": "2023-11-12 04:44:29",
+    "updated_at": "2023-11-12 04:44:29"
+  },
+  {
+    "id": 142,
+    "title": "WAKAF INSIDENTIL",
+    "type": "BAITUL MAAL",
+    "number": "SOP BAITUL MAAL/007/REV000",
+    "descriptions": "<p>WAKAF INSIDENTIL</p>",
+    "file": "1699764306.pdf",
+    "created_at": "2023-11-12 04:45:06",
+    "updated_at": "2023-11-12 04:45:06"
+  },
+  {
+    "id": 143,
+    "title": "KULIAH SANTRI",
+    "type": "SDI",
+    "number": "SOP INSTITUTE/001/REV000",
+    "descriptions": "<p>KULIAH SANTRI</p>",
+    "file": "1700270970.pdf",
+    "created_at": "2023-11-18 01:29:31",
+    "updated_at": "2023-11-18 01:29:31"
+  },
+  {
+    "id": 144,
+    "title": "PELAJAR MAHASISWA PKL",
+    "type": "SDI",
+    "number": "SOP INSTITUTE/002/REV000",
+    "descriptions": "<p>PELAJAR MAHASISWA PKL</p>",
+    "file": "1700271022.pdf",
+    "created_at": "2023-11-18 01:30:22",
+    "updated_at": "2023-11-18 01:30:22"
+  },
+  {
+    "id": 145,
+    "title": "PELAJAR SISWA PKL",
+    "type": "SDI",
+    "number": "SOP INSTITUTE/003/REV000",
+    "descriptions": "<p>PELAJAR SISWA PKL</p>",
+    "file": "1700271094.pdf",
+    "created_at": "2023-11-18 01:31:34",
+    "updated_at": "2023-11-18 01:31:34"
+  },
+  {
+    "id": 146,
+    "title": "PROSEDUR PENCEGAHAN TRANSAKSI FIKTIF",
+    "type": "AUDIT DAN CO",
+    "number": "SOP AUDIT/010/REV000",
+    "descriptions": "<p>PROSEDUR PENCEGAHAN TRANSAKSI FIKTIF</p>",
+    "file": "1701650757.pdf",
+    "created_at": "2023-12-04 00:45:58",
+    "updated_at": "2023-12-04 00:45:58"
+  },
+  {
+    "id": 147,
+    "title": "BANTUAN OLI REV 03",
+    "type": "SDI",
+    "number": "SOP SDI /0029/REV003",
+    "descriptions": "<p>BANTUAN OLI REV 03</p>",
+    "file": "1707102036.pdf",
+    "created_at": "2024-02-05 10:00:36",
+    "updated_at": "2024-02-05 10:00:36"
+  },
+  {
+    "id": 148,
+    "title": "LEMBUR KARYAWAN REV 01",
+    "type": "SDI",
+    "number": "SOP SDI /0033/REV01",
+    "descriptions": "<p>LEMBUR KARYAWAN REV 01</p>",
+    "file": "1707102156.pdf",
+    "created_at": "2024-02-05 10:02:36",
+    "updated_at": "2024-02-05 10:02:36"
+  },
+  {
+    "id": 149,
+    "title": "CUTI SANTRI REV 03",
+    "type": "SDI",
+    "number": "SOP SDI /001/REV003",
+    "descriptions": "<p>CUTI SANTRI REV 03</p>",
+    "file": "1707102258.pdf",
+    "created_at": "2024-02-05 10:04:18",
+    "updated_at": "2024-02-05 10:04:18"
+  },
+  {
+    "id": 150,
+    "title": "LAYANAN JASA",
+    "type": "KITA",
+    "number": "KITA/SOP/004/REV03",
+    "descriptions": "<p>LAYANAN JASA KITA/SOP/004/REV03</p>",
+    "file": "1708223870.pdf",
+    "created_at": "2024-02-18 09:37:50",
+    "updated_at": "2024-02-18 09:37:50"
+  },
+  {
+    "id": 151,
+    "title": "SERAGAM SANTRI REV 02",
+    "type": "SDI",
+    "number": "SOP SDI/0013/REV002",
+    "descriptions": "<p>B</p>",
+    "file": "1715996409.pdf",
+    "created_at": "2024-05-18 08:40:09",
+    "updated_at": "2024-05-18 08:40:09"
+  },
+  {
+    "id": 152,
+    "title": "STANDART PENAMPILAN SANTRI & PENGADAAN",
+    "type": "SDI",
+    "number": "SOP SDI/0036/REV002",
+    "descriptions": "<p>B</p>",
+    "file": "1715996470.pdf",
+    "created_at": "2024-05-18 08:41:10",
+    "updated_at": "2024-05-18 08:41:10"
+  },
+  {
+    "id": 153,
+    "title": "KARANTINA DIKLAT DAN PELATIHAN SANTRI",
+    "type": "SDI",
+    "number": "SOP SDI / 040/REV000",
+    "descriptions": "<p>B</p>",
+    "file": "1715996533.pdf",
+    "created_at": "2024-05-18 08:42:13",
+    "updated_at": "2024-05-18 08:42:13"
+  },
+  {
+    "id": 154,
+    "title": "BANTUAN SANTRI (KEJADIAN SAAT JAM KERJA)",
+    "type": "SDI",
+    "number": "SOP SDI/0028/REV002",
+    "descriptions": "<p>B</p>",
+    "file": "1715996600.pdf",
+    "created_at": "2024-05-18 08:43:20",
+    "updated_at": "2024-05-18 08:43:20"
+  },
+  {
+    "id": 155,
+    "title": "MOMEN-MOMEN SDI DALAM 1 TAHUN",
+    "type": "SDI",
+    "number": "SOP SDI /0021/REV001",
+    "descriptions": "<p>V</p>",
+    "file": "1726099903.pdf",
+    "created_at": "2024-09-12 07:11:43",
+    "updated_at": "2024-09-12 07:11:43"
+  },
+  {
+    "id": 157,
+    "title": "Kompensasi Fasilitaro Internal",
+    "type": "SDI",
+    "number": "SOP SDI / 041/REV000",
+    "descriptions": "<p>B</p>",
+    "file": "1728089002.pdf",
+    "created_at": "2024-10-05 07:43:22",
+    "updated_at": "2024-10-05 07:43:22"
+  },
+  {
+    "id": 158,
+    "title": "HUBUNGAN SANTRI REV 01",
+    "type": "SDI",
+    "number": "SOP SDI /0034/REV0001",
+    "descriptions": "<p>N</p>",
+    "file": "1728090034.pdf",
+    "created_at": "2024-10-05 08:00:34",
+    "updated_at": "2024-10-05 08:00:34"
+  },
+  {
+    "id": 159,
+    "title": "BERAKHIRNYA HUBUNGAN KERJA DENGAN SANTRI",
+    "type": "SDI",
+    "number": "SOP SDI/0008/REV001",
+    "descriptions": "<p>N</p>",
+    "file": "1732068324.pdf",
+    "created_at": "2024-11-20 09:05:24",
+    "updated_at": "2024-11-20 09:05:24"
+  },
+  {
+    "id": 160,
+    "title": "BERAKHIRNYA HUBUNGAN KERJA SANTRI",
+    "type": "SDI",
+    "number": "SOP SDI/008/REV001",
+    "descriptions": "<p>N</p>",
+    "file": "1732068688.pdf",
+    "created_at": "2024-11-20 09:11:28",
+    "updated_at": "2024-11-20 09:11:28"
+  },
+  {
+    "id": 161,
+    "title": "KETENTUAN PELANGGARAN SANTRI",
+    "type": "SDI",
+    "number": "SOP SDI /0004/REV0001",
+    "descriptions": "<p>N</p>",
+    "file": "1732068948.pdf",
+    "created_at": "2024-11-20 09:15:48",
+    "updated_at": "2024-11-20 09:15:48"
+  },
+  {
+    "id": 162,
+    "title": "KOMPENSASI FASILITATOR INTERNAL",
+    "type": "SDI",
+    "number": "SOP SDI /0041/REV000",
+    "descriptions": "<p>M</p>",
+    "file": "1732069698.pdf",
+    "created_at": "2024-11-20 09:28:18",
+    "updated_at": "2024-11-20 09:28:18"
+  }
+]

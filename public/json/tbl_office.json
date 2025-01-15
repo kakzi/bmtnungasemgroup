@@ -1,0 +1,299 @@
+[
+    {
+      "id": 1,
+      "name": "Kantor Pusat",
+      "village": "Bareng",
+      "lat": "-7.2444142",
+      "long": "111.7631604",
+      "telp": "(0353)5212215",
+      "address": "Jln. Raya Kalitidu-Ngasem KM.09 Bareng Ngasem Bojonegoro"
+    },
+    {
+      "id": 2,
+      "name": "Kantor Cabang Bareng",
+      "village": "Bareng",
+      "lat": "-7.2033246",
+      "long": "111.7614451",
+      "telp": "085216320154",
+      "address": "Jln. Raya Kalitidu-Ngasem KM.09 Bareng Ngasem Bojonegoro"
+    },
+    {
+      "id": 3,
+      "name": "Kantor Cabang Jampet",
+      "village": "Jampet",
+      "lat": "-7.1700677",
+      "long": "111.7588488",
+      "telp": "085645827272",
+      "address": "Jln. Raya Kalitidu-Ngasem KM.09 Pasar Jampet"
+    },
+    {
+      "id": 4,
+      "name": "Kantor Cabang Ngambon",
+      "village": "Ngambon",
+      "lat": "-7.2829293",
+      "long": "111.7244295",
+      "telp": "085645827273",
+      "address": "Jln. Raya Purwosari-Ngambon Depan Kantor Kecamatan "
+    },
+    {
+      "id": 5,
+      "name": "Kantor Cabang Pungpungan",
+      "village": "Pungpungan",
+      "lat": "-7.1344653",
+      "long": "111.8054358",
+      "telp": "085732221784",
+      "address": "Jln. Raya Bojonegoro-Cepu Ds. Pungpungan Barat Pasar Pungpungan"
+    },
+    {
+      "id": 6,
+      "name": "Kantor Cabang Dander",
+      "village": "Dander",
+      "lat": "-7.24768",
+      "long": "111.8483931",
+      "telp": "085732221785",
+      "address": "Jln. Raya Bojonegoro-Dander Utara Polsek Dander"
+    },
+    {
+      "id": 7,
+      "name": "Kantor Cabang Bubulan",
+      "village": "Bubulan",
+      "lat": "-7.326012",
+      "long": "111.807561",
+      "telp": "081237701398",
+      "address": "Jln. Raya Bubulan Depan Polsek Bubulan"
+    },
+    {
+      "id": 8,
+      "name": "Kantor Cabang Trucuk",
+      "village": "Trucuk",
+      "lat": "-7.1207224",
+      "long": "111.8491059",
+      "telp": "085368790937",
+      "address": "Jln. Raya Sumberrejo-Trucuk Timur Polsek"
+    },
+    {
+      "id": 9,
+      "name": "Kantor Cabang Malo",
+      "village": "Malo",
+      "lat": "-7.1093502",
+      "long": "111.7336621",
+      "telp": "085230859879",
+      "address": "Jln. Raya Malo, Desa Malo Utara Jembatan Malo"
+    },
+    {
+      "id": 10,
+      "name": "Kantor Cabang Gayam",
+      "village": "Gayam",
+      "lat": "-7.172333",
+      "long": "111.715737",
+      "telp": "085895902117",
+      "address": "Jln. Rajekwesi Desa Gayam Samping Pasar Gayam"
+    },
+    {
+      "id": 11,
+      "name": "Kantor Cabang Ngraho",
+      "village": "Ngraho",
+      "lat": "-7.2543609",
+      "long": "111.5286554",
+      "telp": "085816416630",
+      "address": "Jln. Raya Padangan-Ngawi Desa Blimbing Gede Selatan Polsek Ngraho"
+    },
+    {
+      "id": 12,
+      "name": "Kantor Cabang Kepohbaru",
+      "village": "Kepohbaru",
+      "lat": "-7.1793945",
+      "long": "112.0986063",
+      "telp": "085377072941",
+      "address": "Jln. Raya Kepohbaru Desa Nglumber Utara Pasar Nglumber"
+    },
+    {
+      "id": 13,
+      "name": "Kantor Cabang Purwosari",
+      "village": "Purwosari",
+      "lat": "-7.1756336",
+      "long": "111.6630929",
+      "telp": "082234510921",
+      "address": "Jln. Raya Purwosari – Ngambon Purwosari – Bojonegoro"
+    },
+    {
+      "id": 14,
+      "name": "Kantor Cabang Banjarjo",
+      "village": "Banjarjo",
+      "lat": "-7.1430876",
+      "long": "111.8977681",
+      "telp": "082357137224",
+      "address": "Jln. Raya Banjarjo – Bojonegoro Timur Pasar Buah Bojonegoro"
+    },
+    {
+      "id": 15,
+      "name": "Kantor Cabang Tambakrejo",
+      "village": "Tambakrejo",
+      "lat": "-7.2652181",
+      "long": "111.5985036",
+      "telp": "085791737200",
+      "address": "Jln. Raya Tinggang - Taji Ds. Sukorejo Tambakrejo - Bojonegoro"
+    },
+    {
+      "id": 16,
+      "name": "Kantor Cabang Sroyo",
+      "village": "Sroyo",
+      "lat": "-7.1621909",
+      "long": "112.0469355",
+      "telp": "085648324016",
+      "address": "Jln. Raya Sumberejo – Barat Pasar Sroyo Bojonegoro"
+    },
+    {
+      "id": 17,
+      "name": "Kantor Cabang Soko",
+      "village": "Soko",
+      "lat": "-7.1113749",
+      "long": "111.9492218",
+      "telp": "08386858754",
+      "address": "Jln. Raya Soko – Utara Pasar Soko  Kecamatan Soko Tuban"
+    },
+    {
+      "id": 18,
+      "name": "Kantor Cabang Parengan",
+      "village": "Parengan",
+      "lat": "7.0687943",
+      "long": "111.8412778",
+      "telp": "08883433233",
+      "address": "Jln. Raya Parengan – Samping Pasar Parengan Tuban"
+    },
+    {
+      "id": 19,
+      "name": "Kantor Cabang Kedewan",
+      "village": "Kedewan",
+      "lat": "-7.0359417",
+      "long": "111.6388242",
+      "telp": "081252295979",
+      "address": "Jln. Raya Kedewan -Ds. Kedewan 004/001 Kedewan - Bojonegoro"
+    },
+    {
+      "id": 21,
+      "name": "Kantor Cabang Senori",
+      "village": "Senori",
+      "lat": "-7.0157847",
+      "long": "111.7233483",
+      "telp": "082332757601",
+      "address": "Jl. Ahmad Yani, RT.14/RW.05, Jatisari, Senori, Kabupaten Tuban, Jawa Timur 62365"
+    },
+    {
+      "id": 22,
+      "name": "Kantor Cabang Sugihwaras",
+      "village": "Sugihwaras",
+      "lat": "-7.303671",
+      "long": "111.9546864",
+      "telp": "085806029077",
+      "address": "Jl. Raya Sugihwaras Dusun Krajan RT/RW 01/01 Desa Sugihwaras Kec. Sugihwaras Kab. Bojonegoro"
+    },
+    {
+      "id": 23,
+      "name": "Kantor Cabang Kanor",
+      "village": "Kanor",
+      "lat": "-7.106580",
+      "long": "112.021206",
+      "telp": "085727244754",
+      "address": "Jln. Raya Kanor, Tambahrejo RT.02/RW.01 Kanor, Kabupaten Bojonegoro, Jawa Timur 62193, Indonesia"
+    },
+    {
+      "id": 24,
+      "name": "Kantor Cabang Sekar",
+      "village": "Sekar",
+      "lat": "-7.4078165",
+      "long": "111.7417184",
+      "telp": "082110947736",
+      "address": "Jl. Raya Sekar, Kecamatan Sekar, Kabupaten Bojonegoro"
+    },
+    {
+      "id": 25,
+      "name": "Kantor Cabang Kapas",
+      "village": "Kapas",
+      "lat": "-7.198085",
+      "long": "111.9312627",
+      "telp": "082136712429",
+      "address": "Jl. Raya Kapas no. 70 Kapas Bojonegoro"
+    },
+    {
+      "id": 26,
+      "name": "Kantor Cabang Margomulyo",
+      "village": "Margomulyo",
+      "lat": "-7.3563311",
+      "long": "111.5030993",
+      "telp": "082338798785",
+      "address": "Jln. Cepu Ngawi Dsn Mojosari Ds Sumberjo Kecamatan Margomulyo"
+    },
+    {
+      "id": 27,
+      "name": "Kantor Cabang Tinggang",
+      "village": "Tinggang",
+      "lat": "-7.2155757",
+      "long": "111.5701673",
+      "telp": "085850507504",
+      "address": "Jl. Tinggang-Ngawi Bancer, Ngraho, Kabupaten Bojonegoro, Jawa Timur 62165"
+    },
+    {
+      "id": 28,
+      "name": "Kantor Cabang Ngasem",
+      "village": "Ngasem",
+      "lat": "-7.2465649",
+      "long": "111.7676427",
+      "telp": "085216320154",
+      "address": "Jl. Demang Kusumoyudo Pasar Ngasem, Ngasem, Kabupaten Bojonegoro, Jawa Timur 62154"
+    },
+    {
+      "id": 29,
+      "name": "Kantor Cabang Sukorame",
+      "village": "Sukorame",
+      "lat": "-7.3440953",
+      "long": "112.1102722",
+      "telp": "08512422222222",
+      "address": "Jln Raya Sukorame Depan Pasar Sukorame Kec. Sukorame Kabupaten Lamongan Jawa Timur "
+    },
+    {
+      "id": 30,
+      "name": "Kantor Cabang Modo",
+      "village": "Modo",
+      "lat": "-7.2395509",
+      "long": "112.1513705",
+      "telp": "085717352147",
+      "address": "Jl. Raya Modo Dradah Desa Mojorejo RW 01 RW 01  Kec. Modo\r\nKabupaten Lamongan"
+    },
+    {
+      "id": 31,
+      "name": "Kantor Cabang Paron",
+      "village": "Paron",
+      "lat": "-7.4390409",
+      "long": "111.3908106",
+      "telp": "081271909025",
+      "address": "Dusun Paron RT. 04 RW. 01 Desa Gelung Kecamatan Paron Kabupaten Ngawi"
+    },
+    {
+      "id": 32,
+      "name": "Kantor Cabang Kenduruan",
+      "village": "Kenduruan",
+      "lat": "-6.9073174",
+      "long": "111.6386116",
+      "telp": "085733566705",
+      "address": "Dusun Tanjung Rejo RT 02/RW 03  Desa Sidohasri Kecamatan Kenduruan Kabupaten Tuban"
+    },
+    {
+      "id": 33,
+      "name": "Kantor Cabang Kepoh",
+      "village": "Nglumber",
+      "lat": "-7.2250643",
+      "long": "112.0903966",
+      "telp": "0852111111111",
+      "address": "JL Raya Kepohbaru Ds Kepoh RT 06 RW 03 Kec Kepohbaru kab Bojonegoro"
+    },
+    {
+      "id": 34,
+      "name": "Kantor Cabang Ponco",
+      "village": "Suciharjo",
+      "lat": "-7.1055546",
+      "long": "111.8604229",
+      "telp": "08812833457",
+      "address": "Jl. Raya Ponco - Bojonegoro No 19 Desa. Suciharjo Kecamatan Parengan Kabupaten Tuban"
+    }
+  ]
