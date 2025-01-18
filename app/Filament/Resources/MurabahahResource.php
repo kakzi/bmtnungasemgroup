@@ -93,6 +93,7 @@ class MurabahahResource extends Resource
                                 $set('akad', $permohonan->pembiayaan->slug);
                                 
                                 $set('permohonan_id', $permohonan->id);
+                                $set('approvement_id', $state);
                                 // dd($permohonan->pembiayaan->name);
                                 // dd($permohonan->pembiayaan->name);
                                 // Get the nominal_acc based on the selected permohonan_id
@@ -152,6 +153,14 @@ class MurabahahResource extends Resource
                                 '2xl' => 4,
                             ]),
                         Hidden::make('permohonan_id')
+                            ->label('Permohonan ID')
+                            ->required()
+                            ->columnSpan([
+                                'sm' => 2,
+                                'xl' => 4,
+                                '2xl' => 4,
+                            ]),
+                        Hidden::make('approvement_id')
                             ->label('Permohonan ID')
                             ->required()
                             ->columnSpan([

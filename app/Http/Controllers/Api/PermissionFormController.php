@@ -40,7 +40,7 @@ class PermissionFormController extends Controller
                 'data' => $cuti
             ],201);
         } else {
-            $path = public_path('public/permission/');
+            $path = storage_path('app/public/permission/');
             !is_dir($path) &&
                 mkdir($path, 0777, true);
 
@@ -80,7 +80,7 @@ class PermissionFormController extends Controller
             return response()->json($validator->errors(), 400);
         }
 
-        $path = public_path('public/permission/');
+        $path = storage_path('app/public/permission/');
         !is_dir($path) &&
             mkdir($path, 0777, true);
 

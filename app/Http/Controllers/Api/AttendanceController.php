@@ -30,7 +30,7 @@ class AttendanceController extends Controller
         }
          //upload image
         // $image = $request->file('photo');
-        $path = public_path('public/absensi/');
+        $path = storage_path('app/public/absensi/');
         !is_dir($path) &&
             mkdir($path, 0777, true);
 
