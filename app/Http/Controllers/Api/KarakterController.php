@@ -117,36 +117,29 @@ class KarakterController extends Controller
         if($type == "tilawah"){
             $current_date = Carbon::now("Asia/Jakarta");
             $date = $current_date->format('Y-m-d');
-            $time = $current_date->format('H:i');
+            $time = $current_date->format('H:i:s');
             $user_id = auth()->user()->id;
             // dd($user_id);
             $tilawah = Karakter::where('user_id', $user_id)
             ->where('type', 'tilawah')
             ->whereDate('date', '=', $date)
             ->first();
-            $tilawah = Karakter::create([
+            
+            if($tilawah == null){
+                $tilawah = Karakter::create([
                     'type' => $request->type,
                     'laporan' => $request->laporan,
                     'user_id' => auth()->user()->id,
                     'poin' => 1,
                     'date' => $date,
                     'time' => $time,
-            ]);
-            // if($tilawah == null){
-            //     $tilawah = Karakter::create([
-            //         'type' => $request->type,
-            //         'laporan' => $request->laporan,
-            //         'user_id' => auth()->user()->id,
-            //         'poin' => 1,
-            //         'date' => $date,
-            //         'time' => $time,
-            //     ]);
-            // } else {
-            //     return response()->json([
-            //         'success' => false,
-            //         'message' => "Maaf hari ini kamu sudah laporan!",
-            //     ], 403);
-            // }
+                ]);
+            } else {
+                return response()->json([
+                    'success' => false,
+                    'message' => "Maaf hari ini kamu sudah laporan!",
+                ], 403);
+            }
     
             $tilawah->save();
             $this->response['id'] = $tilawah->id;
@@ -156,23 +149,24 @@ class KarakterController extends Controller
                 'message' => 'Tilawah berhasil di kirim!',
                 'data' => $this->response
             ],201);
-         
-
         } else {
 
             $current_date = Carbon::now("Asia/Jakarta");
             $date = $current_date->format('Y-m-d');
-            $time = $current_date->format('H:i');
-            $start = '00:00';
-            $end = '04:21';
-            
+            $time = $current_date->format('H:i:s');
+            $start = '00:00:00';
+            $end = '04:21:00';
             
             $user_id = auth()->user()->id;
+            if($time > $start && $time < $end){
+                $user_id = auth()->user()->id;
                 $tilawah = Karakter::where('user_id', $user_id)
                 ->where('type', 'tahajud')
                 ->whereDate('date', '=', $date)
                 ->first();
-                 $tilawah = Karakter::create([
+
+                if($tilawah == null){
+                    $tilawah = Karakter::create([
                         'type' => $request->type,
                         'laporan' => $request->laporan,
                         'user_id' => auth()->user()->id,
@@ -180,23 +174,13 @@ class KarakterController extends Controller
                         'date' => $date,
                         'time' => $time,
                     ]);
-
-                // if($tilawah == null){
-                //     $tilawah = Karakter::create([
-                //         'type' => $request->type,
-                //         'laporan' => $request->laporan,
-                //         'user_id' => auth()->user()->id,
-                //         'poin' => 1,
-                //         'date' => $date,
-                //         'time' => $time,
-                //     ]);
                     
-                // } else {
-                //     return response()->json([
-                //         'success' => false,
-                //         'message' => "Maaf hari ini kamu sudah laporan!",
-                //     ], 403);
-                // }
+                } else {
+                    return response()->json([
+                        'success' => false,
+                        'message' => "Maaf hari ini kamu sudah laporan!",
+                    ], 403);
+                }
                 $tilawah->save();
                 $this->response['id'] = $tilawah->id;
                 return response()->json([
@@ -204,51 +188,14 @@ class KarakterController extends Controller
                         'message' => 'Tahajud berhasil di kirim!',
                         'data' => $this->response
                 ],201);
-          
-
-            // if($time > $start && $time < $end){
-            //     $user_id = auth()->user()->id;
-            //     $tilawah = Karakter::where('user_id', $user_id)
-            //     ->where('type', 'tahajud')
-            //     ->whereDate('date', '=', $date)
-            //     ->first();
-
-            //     if($tilawah == null){
-            //         $tilawah = Karakter::create([
-            //             'type' => $request->type,
-            //             'laporan' => $request->laporan,
-            //             'user_id' => auth()->user()->id,
-            //             'poin' => 1,
-            //             'date' => $date,
-            //             'time' => $time,
-            //         ]);
-                    
-            //     } else {
-            //         return response()->json([
-            //             'success' => false,
-            //             'message' => "Maaf hari ini kamu sudah laporan!",
-            //         ], 403);
-            //     }
-            //     $tilawah->save();
-            //     $this->response['id'] = $tilawah->id;
-            //     return response()->json([
-            //             'success' => true,
-            //             'message' => 'Tahajud berhasil di kirim!',
-            //             'data' => $this->response
-            //     ],201);
                 
-              
-                
-            // } else {
-            //     return response()->json([
-            //         'success' => false,
-            //         'message' => "Maaf sesuai SOP, Batas pengiriman Laporan tahajud mulai 00:00 sampai dengan 04:20!",
-            //     ], 403);
-            // }
+            } else {
+                return response()->json([
+                    'success' => false,
+                    'message' => "Maaf sesuai SOP, Batas pengiriman Laporan tahajud mulai 00:00 sampai dengan 04:20!",
+                ], 403);
+            }
         }
-        
-        
-        
-
+    
     }
 }
