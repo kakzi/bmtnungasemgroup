@@ -44,7 +44,7 @@ class AttendanceController extends Controller
         $attendanceType = $request->type;
         $userAttendanceToday = $request->user()
             ->attendances()
-            ->whereDate('created_at', Carbon::today())
+            ->whereDate('date_absensi', Carbon::today())
             ->first();
 
         if ($attendanceType == 'in') {
@@ -52,7 +52,7 @@ class AttendanceController extends Controller
                 $office_id = auth()->user()->office_id[0];
                 $current_date = Carbon::now("Asia/Jakarta");
                 $date = $current_date->format('Y-m-d');
-                $time = $current_date->format('H:i');
+                $time = $current_date->format('H:i:s');
                 $attendance = $request
                     ->user()
                     ->attendances()
@@ -67,15 +67,15 @@ class AttendanceController extends Controller
                 // $current_date = Carbon::now("Asia/Jakarta");
                 // $date = $current_date->format('Y-m-d');
                 // $time = $current_date->format('H:i');
-                $start = '06:02';
-                $pulawal = '13:00';
-                $end = '15:00';
+                $start = '06:02:00';
+                $pulawal = '13:00:00';
+                $end = '15:00:00';
 
                 $office_id = auth()->user()->office_id[0];
                 $office = Office::where('id', $office_id)->first();
                 // dd($office->name);
                 if ($office->name == "Kantor Pusat"){
-                    $end = '15:30';
+                    $end = '15:30:00';
                 }
 
                 if($time > $start){
@@ -93,26 +93,6 @@ class AttendanceController extends Controller
                             'address' => $request->address
                         ]
                     );
-
-                    $token = "AGf3RDCCMB5RipQgjaY14AsTCyAFtrAUzLnGRCGqiMQfKyiePo";
-                    $phone= "085155105056"; //untuk group pakai groupid contoh: 62812xxxxxx-xxxxx
-                    $message = "Testing by API ruangwa";
-
-                    $curl = curl_init();
-                    curl_setopt_array($curl, array(
-                    CURLOPT_URL => 'https://app.ruangwa.id/api/send_message',
-                    CURLOPT_RETURNTRANSFER => true,
-                    CURLOPT_ENCODING => '',
-                    CURLOPT_MAXREDIRS => 10,
-                    CURLOPT_TIMEOUT => 0,
-                    CURLOPT_FOLLOWLOCATION => true,
-                    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                    CURLOPT_CUSTOMREQUEST => 'POST',
-                    CURLOPT_POSTFIELDS => 'token='.$token.'&number='.$phone.'&message='.$message,
-                    ));
-                    $response = curl_exec($curl);
-                    curl_close($curl);
-                    echo $response;
 
                     return response()->json(
                         [
@@ -136,27 +116,6 @@ class AttendanceController extends Controller
                             'address' => $request->address
                         ]
                     );
-
-
-                    $token = "AGf3RDCCMB5RipQgjaY14AsTCyAFtrAUzLnGRCGqiMQfKyiePo";
-                    $phone= "085155105056"; //untuk group pakai groupid contoh: 62812xxxxxx-xxxxx
-                    $message = "Testing by API ruangwa";
-
-                    $curl = curl_init();
-                    curl_setopt_array($curl, array(
-                    CURLOPT_URL => 'https://app.ruangwa.id/api/send_message',
-                    CURLOPT_RETURNTRANSFER => true,
-                    CURLOPT_ENCODING => '',
-                    CURLOPT_MAXREDIRS => 10,
-                    CURLOPT_TIMEOUT => 0,
-                    CURLOPT_FOLLOWLOCATION => true,
-                    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                    CURLOPT_CUSTOMREQUEST => 'POST',
-                    CURLOPT_POSTFIELDS => 'token='.$token.'&number='.$phone.'&message='.$message,
-                    ));
-                    $response = curl_exec($curl);
-                    curl_close($curl);
-                    echo $response;
                     return response()->json(
                         [
                             'message' => 'Absensi Check in berhasil di kirim!',
@@ -195,15 +154,15 @@ class AttendanceController extends Controller
 
                 $current_date = Carbon::now("Asia/Jakarta");
                 $date = $current_date->format('Y-m-d');
-                $time = $current_date->format('H:i');
-                $start = '13:02';
-                $pulawal = '13:00';
-                $end = '15:00';
+                $time = $current_date->format('H:i:s');
+                $start = '13:02:00';
+                $pulawal = '13:00:00';
+                $end = '15:00:00';
 
                 $office_id = auth()->user()->office_id[0];
                 $office = Office::where('id', $office_id)->first();
                 if ($office->name == "Kantor Pusat"){
-                    $end = '15:30';
+                    $end = '15:30:00';
                 }
 
                 if($time > $pulawal && $time < $end){
@@ -221,25 +180,7 @@ class AttendanceController extends Controller
                             'address' => $request->address
                         ]
                     );
-                    $token = "AGf3RDCCMB5RipQgjaY14AsTCyAFtrAUzLnGRCGqiMQfKyiePo";
-                    $phone= "085155105056"; //untuk group pakai groupid contoh: 62812xxxxxx-xxxxx
-                    $message = "Testing by API ruangwa";
 
-                    $curl = curl_init();
-                    curl_setopt_array($curl, array(
-                    CURLOPT_URL => 'https://app.ruangwa.id/api/send_message',
-                    CURLOPT_RETURNTRANSFER => true,
-                    CURLOPT_ENCODING => '',
-                    CURLOPT_MAXREDIRS => 10,
-                    CURLOPT_TIMEOUT => 0,
-                    CURLOPT_FOLLOWLOCATION => true,
-                    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                    CURLOPT_CUSTOMREQUEST => 'POST',
-                    CURLOPT_POSTFIELDS => 'token='.$token.'&number='.$phone.'&message='.$message,
-                    ));
-                    $response = curl_exec($curl);
-                    curl_close($curl);
-                    echo $response;
                     return response()->json(
                         [
                             'message' => 'Absensi Check out berhasil di kirim!',
@@ -262,25 +203,7 @@ class AttendanceController extends Controller
                             'address' => $request->address
                         ]
                     );
-                    $token = "AGf3RDCCMB5RipQgjaY14AsTCyAFtrAUzLnGRCGqiMQfKyiePo";
-                    $phone= "085155105056"; //untuk group pakai groupid contoh: 62812xxxxxx-xxxxx
-                    $message = "Testing by API ruangwa";
 
-                    $curl = curl_init();
-                    curl_setopt_array($curl, array(
-                    CURLOPT_URL => 'https://app.ruangwa.id/api/send_message',
-                    CURLOPT_RETURNTRANSFER => true,
-                    CURLOPT_ENCODING => '',
-                    CURLOPT_MAXREDIRS => 10,
-                    CURLOPT_TIMEOUT => 0,
-                    CURLOPT_FOLLOWLOCATION => true,
-                    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                    CURLOPT_CUSTOMREQUEST => 'POST',
-                    CURLOPT_POSTFIELDS => 'token='.$token.'&number='.$phone.'&message='.$message,
-                    ));
-                    $response = curl_exec($curl);
-                    curl_close($curl);
-                    echo $response;
                     return response()->json(
                         [
                             'message' => 'Absensi Check out berhasil di kirim!',
@@ -303,25 +226,7 @@ class AttendanceController extends Controller
                             'address' => $request->address
                         ]
                     );
-                    $token = "AGf3RDCCMB5RipQgjaY14AsTCyAFtrAUzLnGRCGqiMQfKyiePo";
-                    $phone= "085155105056"; //untuk group pakai groupid contoh: 62812xxxxxx-xxxxx
-                    $message = "Testing by API ruangwa";
 
-                    $curl = curl_init();
-                    curl_setopt_array($curl, array(
-                    CURLOPT_URL => 'https://app.ruangwa.id/api/send_message',
-                    CURLOPT_RETURNTRANSFER => true,
-                    CURLOPT_ENCODING => '',
-                    CURLOPT_MAXREDIRS => 10,
-                    CURLOPT_TIMEOUT => 0,
-                    CURLOPT_FOLLOWLOCATION => true,
-                    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                    CURLOPT_CUSTOMREQUEST => 'POST',
-                    CURLOPT_POSTFIELDS => 'token='.$token.'&number='.$phone.'&message='.$message,
-                    ));
-                    $response = curl_exec($curl);
-                    curl_close($curl);
-                    echo $response;
                     return response()->json(
                         [
                             'message' => 'Absensi Check out berhasil di kirim!',
@@ -352,7 +257,7 @@ class AttendanceController extends Controller
 
         $history = $request->user()->attendances()->with('detail')
             ->whereBetween(
-                DB::raw('DATE(created_at)'),
+                DB::raw('DATE(date_absensi)'),
                 [
                     $request->from, $request->to
                 ]
@@ -361,7 +266,7 @@ class AttendanceController extends Controller
 
         // $history = Attendance::with('user','detail')
         //     ->whereBetween(
-        //         DB::raw('DATE(created_at)'),
+        //         DB::raw('DATE(date_absensi)'),
         //         [
         //             $request->from, $request->to
         //         ]
@@ -383,7 +288,7 @@ class AttendanceController extends Controller
 
         $history = $request->user()->attendances()->with('detail')
         ->whereBetween(
-            DB::raw('DATE(created_at)'),
+            DB::raw('DATE(date_absensi)'),
                 [
                     $date->date_start, $date->date_end
                 ]
