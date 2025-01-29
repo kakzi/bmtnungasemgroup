@@ -355,7 +355,7 @@ class AttendanceController extends Controller
 
         $response = Http::asForm()->post('https://app.ruangwa.id/api/send_message', [
             'token' => $token,
-            'number' => '085155105056',
+            'number' => '085731581567-1501489476',
             'message' => $message,
         ]);
 
