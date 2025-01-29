@@ -4,11 +4,12 @@ namespace App\Http\Controllers\Api;
 
 use Carbon\Carbon;
 use App\Models\Office;
+use App\Models\SyncDate;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
-use App\Models\SyncDate;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Validator;
 use Intervention\Image\Facades\Image as ResizeImage;
 
@@ -93,6 +94,9 @@ class AttendanceController extends Controller
                             'address' => $request->address
                         ]
                     );
+                    // Send WhatsApp Notification
+                    $keterangan = ($time > $start) ? "Telat" : "Datang";
+                    $this->sendWhatsAppMessage( "Absensi Check-in berhasil: $keterangan pada $time.");
 
                     return response()->json(
                         [
@@ -116,6 +120,11 @@ class AttendanceController extends Controller
                             'address' => $request->address
                         ]
                     );
+
+                    // Send WhatsApp Notification
+                    $keterangan = ($time > $start) ? "Telat" : "Datang";
+                    $this->sendWhatsAppMessage( "Absensi Check-in berhasil: $keterangan pada $time.");
+
                     return response()->json(
                         [
                             'message' => 'Absensi Check in berhasil di kirim!',
@@ -180,7 +189,9 @@ class AttendanceController extends Controller
                             'address' => $request->address
                         ]
                     );
-
+                    $keterangan = ($time > $pulawal && $time < $end) ? "Pulang Awal" : "Pulang";
+                    // Send WhatsApp Notification
+                    $this->sendWhatsAppMessage( "Absensi Check-out berhasil: $keterangan pada $time.");
                     return response()->json(
                         [
                             'message' => 'Absensi Check out berhasil di kirim!',
@@ -203,7 +214,9 @@ class AttendanceController extends Controller
                             'address' => $request->address
                         ]
                     );
-
+                    $keterangan = ($time > $pulawal && $time < $end) ? "Pulang Awal" : "Pulang";
+                    // Send WhatsApp Notification
+                    $this->sendWhatsAppMessage( "Absensi Check-out berhasil: $keterangan pada $time.");
                     return response()->json(
                         [
                             'message' => 'Absensi Check out berhasil di kirim!',
@@ -226,7 +239,9 @@ class AttendanceController extends Controller
                             'address' => $request->address
                         ]
                     );
-
+                    $keterangan = ($time > $pulawal && $time < $end) ? "Pulang Awal" : "Pulang";
+                    // Send WhatsApp Notification
+                    $this->sendWhatsAppMessage( "Absensi Check-out berhasil: $keterangan pada $time.");
                     return response()->json(
                         [
                             'message' => 'Absensi Check out berhasil di kirim!',
@@ -330,5 +345,18 @@ class AttendanceController extends Controller
             ],
             Response::HTTP_OK
         );
+    }
+
+    private function sendWhatsAppMessage($message)
+    {
+        $token = "AGf3RDCCMB5RipQgjaY14AsTCyAFtrAUzLnGRCGqiMQfKyiePo";
+
+        $response = Http::asForm()->post('https://app.ruangwa.id/api/send_message', [
+            'token' => $token,
+            'number' => '085155105056',
+            'message' => $message,
+        ]);
+
+        return $response->json();
     }
 }
