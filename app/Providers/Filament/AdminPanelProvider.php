@@ -45,8 +45,8 @@ class AdminPanelProvider extends PanelProvider
             ->colors([
                 'primary' => Color::Amber,
             ])
-            ->viteTheme('resources/css/filament/admin/theme.css')
-            ->defaultThemeMode(ThemeMode::Dark)
+            // ->viteTheme('resources/css/filament/admin/theme.css')
+            // ->defaultThemeMode(ThemeMode::Dark)
             ->brandLogo(asset('images/logo.png'))
             ->darkModeBrandLogo(asset('images/logo-dark.png'))
             ->brandLogoHeight('3rem')

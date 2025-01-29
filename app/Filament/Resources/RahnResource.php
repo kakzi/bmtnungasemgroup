@@ -559,7 +559,7 @@ class RahnResource extends Resource
             ->columns([
                 TextColumn::make('permohonan.anggota.name')->searchable()->sortable(),
                 TextColumn::make('nominal_qard')->badge()->color('primary')->label('Pembiayaan')->money('IDR', locale: 'id'),
-                TextColumn::make('permohonan.angsuran.periode')->badge()->color('primary')->label('Jangka Waktu')->money('IDR', locale: 'id'),
+                TextColumn::make('permohonan.angsuran.periode')->badge()->color('primary')->label('Periode')->money('IDR', locale: 'id'),
                 IconColumn::make('check_bm')
                     ->label('BM')
                     ->boolean()
