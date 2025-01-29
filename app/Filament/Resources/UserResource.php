@@ -66,6 +66,10 @@ class UserResource extends Resource
                 ->email()
                 ->required()
                 ->label(trans('filament-users::user.resource.email')),
+            TextInput::make('username')
+                ->email()
+                ->required()
+                ->label('Username'),
             TextInput::make('password')
                 ->label(trans('filament-users::user.resource.password'))
                 ->password()
