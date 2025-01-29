@@ -6,12 +6,14 @@ namespace App\Models;
 use Laravel\Sanctum\HasApiTokens;
 use Spatie\Permission\Traits\HasRoles;
 use Illuminate\Notifications\Notifiable;
+use Filament\Models\Contracts\FilamentUser;
+use Filament\Panel;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 
-class User extends Authenticatable
+class User extends Authenticatable implements FilamentUser
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use 
@@ -88,9 +90,8 @@ class User extends Authenticatable
         return $this->hasMany(Karakter::class, 'user_id');
     }
 
-    public function canAccessPanel()
+    public function canAccessPanel(Panel $panel): bool
     {
-        // Check if the user is authenticated and has the correct role or permission
         return true;
     }
 }
