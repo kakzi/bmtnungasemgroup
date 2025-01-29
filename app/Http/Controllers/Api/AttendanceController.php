@@ -96,8 +96,8 @@ class AttendanceController extends Controller
                     );
                     // Send WhatsApp Notification
                     $keterangan = ($time > $start) ? "Telat" : "Datang";
-                    $this->sendWhatsAppMessage( "Absensi Check-in berhasil: $keterangan pada $time.");
-
+                    // Send WhatsApp Notification
+                    $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-in berhasil: $keterangan pada $time. Santri atas Nama : ".auth()->user()->name. ", Kantor penempatan : ".auth()->user()->office->name).", Selamat berjuang, kamu pasti bisa. semangat terus ya!";
                     return response()->json(
                         [
                             'message' => 'Absensi Check in berhasil di kirim!',
@@ -123,7 +123,8 @@ class AttendanceController extends Controller
 
                     // Send WhatsApp Notification
                     $keterangan = ($time > $start) ? "Telat" : "Datang";
-                    $this->sendWhatsAppMessage( "Absensi Check-in berhasil: $keterangan pada $time.");
+                    // Send WhatsApp Notification
+                    $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-in berhasil: $keterangan pada $time. Santri atas Nama : ".auth()->user()->name. ", Kantor penempatan : ".auth()->user()->office->name).", Selamat berjuang, kamu pasti bisa. semangat terus ya!";
 
                     return response()->json(
                         [
@@ -191,7 +192,7 @@ class AttendanceController extends Controller
                     );
                     $keterangan = ($time > $pulawal && $time < $end) ? "Pulang Awal" : "Pulang";
                     // Send WhatsApp Notification
-                    $this->sendWhatsAppMessage( "Absensi Check-out berhasil: $keterangan pada $time.");
+                    $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-out berhasil: $keterangan pada $time. Santri atas Nama : ".auth()->user()->name. ", Kantor penempatan : ".auth()->user()->office->name).", Hati Hati di jalan ya!";
                     return response()->json(
                         [
                             'message' => 'Absensi Check out berhasil di kirim!',
@@ -216,7 +217,7 @@ class AttendanceController extends Controller
                     );
                     $keterangan = ($time > $pulawal && $time < $end) ? "Pulang Awal" : "Pulang";
                     // Send WhatsApp Notification
-                    $this->sendWhatsAppMessage( "Absensi Check-out berhasil: $keterangan pada $time.");
+                    $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-out berhasil: $keterangan pada $time. Santri atas Nama : ".auth()->user()->name. ", Kantor penempatan : ".auth()->user()->office->name).", Hati Hati di jalan ya!";
                     return response()->json(
                         [
                             'message' => 'Absensi Check out berhasil di kirim!',
@@ -241,7 +242,7 @@ class AttendanceController extends Controller
                     );
                     $keterangan = ($time > $pulawal && $time < $end) ? "Pulang Awal" : "Pulang";
                     // Send WhatsApp Notification
-                    $this->sendWhatsAppMessage( "Absensi Check-out berhasil: $keterangan pada $time.");
+                    $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-out berhasil: $keterangan pada $time. Santri atas Nama : ".auth()->user()->name. ", Kantor penempatan : ".auth()->user()->office->name).", Hati Hati di jalan ya!";
                     return response()->json(
                         [
                             'message' => 'Absensi Check out berhasil di kirim!',
