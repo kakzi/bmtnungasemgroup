@@ -93,10 +93,35 @@ class PermohonanResource extends Resource
                             else {
                                 $set('permohonan_ke', sprintf("%03s", $no));
                             }
+
+                            $AWAL = 'PP';
+                            $bulanRomawi = array("", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII");
+                            // Get the last agreement number
+                            $noUrutAkhir = Permohonan::where('register_anggota_id', $state)
+                                ->max('nomor_permohonan');
+
+                            $kodeKantor = Office::whereIn('id', (array) auth()->user()->office_id)->first();
+                            $kode = $kodeKantor->kode_kantor;
+                    
+                            $no = 1;
+                            if ($noUrutAkhir) {
+                                $set('nomor_permohonan', sprintf("%03s", abs($noUrutAkhir + 1)) . '/' . $AWAL . '/BMTNU-' . $kode . '/' . $bulanRomawi[date('n')] . '/' . date('Y'));
+                                
+                            } else {
+                                $set('nomor_permohonan', sprintf("%03s", $no) . '/' . $AWAL . '/BMTNU-' . $kode . '/' . $bulanRomawi[date('n')] . '/' . date('Y'));
+                            }
                             
                         })
                         ->options(RegisterAnggota::whereIn('office_id', (array) auth()->user()->office_id)->where('status', 'waiting')->pluck('name', 'id'))
                         ->searchable(),
+                    TextInput::make('nomor_permohonan')
+                        ->label('Nomor Permohonan')
+                        ->required()
+                        ->columnSpan([
+                            'sm' => 2,
+                            'xl' => 4,
+                            '2xl' => 4,
+                        ]),
                     TextInput::make('jumlah_permohonan')
                         ->label('Nominal Permohonan')
                         ->required()
@@ -167,8 +192,8 @@ class PermohonanResource extends Resource
                         ->required()
                         ->columnSpan([
                             'sm' => 2,
-                            'xl' => 4,
-                            '2xl' => 4,
+                            'xl' => 12,
+                            '2xl' => 12,
                         ]),
                 ]),
                 Section::make('Data Ahli Waris')
@@ -187,8 +212,32 @@ class PermohonanResource extends Resource
                                 'xl' => 4,
                                 '2xl' => 4,
                             ]),
+
+                        Select::make('jenis_kelamin_ahli_waris')
+                            ->required()
+                            ->options([
+                                'Laki-Laki' => 'Laki-Laki',
+                                'Perempuan' => 'Perempuan'
+                            ])
+                            ->searchable()
+                            ->columnSpan([
+                                'sm' => 2,
+                                'xl' => 2,
+                                '2xl' => 2,
+                            ])
+                            ->native(false),
+                        
                         TextInput::make('nik_ahli_waris')
                             ->label('NIK')
+                            ->required()
+                            ->columnSpan([
+                                'sm' => 2,
+                                'xl' => 4,
+                                '2xl' => 4,
+                            ]),
+
+                        TextInput::make('tempat_ahli_waris')
+                            ->label('Tempat Lahir Ahli Waris')
                             ->required()
                             ->columnSpan([
                                 'sm' => 2,
@@ -250,8 +299,8 @@ class PermohonanResource extends Resource
                             ->required()
                             ->columnSpan([
                                 'sm' => 2,
-                                'xl' => 12,
-                                '2xl' => 12,
+                                'xl' => 8,
+                                '2xl' => 8,
                             ]),
                         ]),
                 Section::make('Informasi Lainya')
@@ -473,24 +522,24 @@ class PermohonanResource extends Resource
                                 '2xl' => 6,
                             ])
                             ->options([
-                                'lembar_permohonan' => 'Lembar Permohonan',
-                                'fc_ktp' => 'Fotocopy KTP Pemohon',
-                                'fc_ktp_saksi' => 'Fotocopy KTP Suami/Istri Pemohon',
-                                'fc_kk' => 'Fotocopy KK Pemohon',
-                                'fc_bpkb' => 'Fotocopy BPKB Pemohon',
-                                'fc_stnk' => 'Fotocopy STNK Pemohon',
-                                'fc_cek_fisik' => 'Fotocopy Cek Fisik Kendaraan dari SAMSAT',
-                                'fc_shm' => 'Fotocopy Sertifikat',
-                                'fc_pbb' => 'Fotocopy SPPT/PBB Terakhir',
-                                'fc_ktp_shm' => 'Fotocopy KTP Pemilik Agunan(SHM)',
-                                'fc_ktp_pemilik_shm' => 'Fotocopy KTP Suami/Istri Pemilik Agunan(SHM)',
-                                'fc_kk_pemilik_shm' => 'Fotocopy KK Pemilik Agunan(SHM)',
-                                'surat_keterangan' => 'Surat Keterangan Kematian Dari Pemilik Agunan(SHM)',
-                                'akta_cerai' => 'Fotocopy Akta Cerai',
-                                'blokir_simpanan' => 'Blokir Simpanan',
-                                'potong_gaji' => 'Surat Kuasa Potong Gaji',
-                                'proses_balik_nama' => 'Proses Balik Nama',
-                                'other' => 'Lainya',
+                                'Lembar Permohonan' => 'Lembar Permohonan',
+                                'Fotocopy KTP Pemohon' => 'Fotocopy KTP Pemohon',
+                                'Fotocopy KTP Suami/Istri Pemohon' => 'Fotocopy KTP Suami/Istri Pemohon',
+                                'Fotocopy KK Pemohon' => 'Fotocopy KK Pemohon',
+                                'Fotocopy BPKB Pemohon' => 'Fotocopy BPKB Pemohon',
+                                'Fotocopy STNK Pemohon' => 'Fotocopy STNK Pemohon',
+                                'Fotocopy Cek Fisik Kendaraan dari SAMSAT' => 'Fotocopy Cek Fisik Kendaraan dari SAMSAT',
+                                'Fotocopy Sertifikat' => 'Fotocopy Sertifikat',
+                                'Fotocopy SPPT/PBB Terakhir' => 'Fotocopy SPPT/PBB Terakhir',
+                                'Fotocopy KTP Pemilik Agunan(SHM)' => 'Fotocopy KTP Pemilik Agunan(SHM)',
+                                'Fotocopy KTP Suami/Istri Pemilik Agunan(SHM)' => 'Fotocopy KTP Suami/Istri Pemilik Agunan(SHM)',
+                                'Fotocopy KK Pemilik Agunan(SHM)' => 'Fotocopy KK Pemilik Agunan(SHM)',
+                                'Surat Keterangan Kematian Dari Pemilik Agunan(SHM)' => 'Surat Keterangan Kematian Dari Pemilik Agunan(SHM)',
+                                'Fotocopy Akta Cerai' => 'Fotocopy Akta Cerai',
+                                'Blokir Simpanan' => 'Blokir Simpanan',
+                                'Surat Kuasa Potong Gaji' => 'Surat Kuasa Potong Gaji',
+                                'Proses Balik Nama' => 'Proses Balik Nama',
+                                'Lainya' => 'Lainya',
                             ])
                             ->columns(2),
                         FileUpload::make('file_permohonan')

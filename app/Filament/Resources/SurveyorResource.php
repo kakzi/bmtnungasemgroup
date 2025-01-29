@@ -80,7 +80,8 @@ class SurveyorResource extends Resource
                             ])
                             ->options(
                                 Permohonan::whereIn('office_id',(array)auth()->user()->office_id)
-                                    ->with('anggota') // Eager load the anggota relationship
+                                    ->with('anggota')
+                                    ->where('status_permohonan', 'under_review') // Eager load the anggota relationship
                                     ->get()
                                     ->pluck('anggota.name', 'id') // Get the name and id for the select options
                             )

@@ -30,6 +30,6 @@ class Attendance extends Model
     }
     public function office()
     {
-        return $this->belongsTo(Office::class);
+        return $this->belongsTo(Office::class, 'office_id');
     }
 }

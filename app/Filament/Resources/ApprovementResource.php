@@ -72,26 +72,42 @@ class ApprovementResource extends Resource
             ->modifyQueryUsing(function (Builder $query) { 
                 $id = auth()->user()->id;
                 $check = User::with('roles')->where('id', $id)->first();
-                if($check->roles[0]->name == 'Staff') {
+
+                if ($check->roles[0]->name == 'Staff') {
                     return $query->where('kep_asesor', 'waiting');
-                } else if($check->roles[0]->name == 'Branch Manager') {
-                    return $query->whereIn('office_id', (array) auth()->user()->office_id)->where('kep_asesor', 'waiting');
-                } else if($check->roles[0]->name == 'Regional Manager') {
-                    return $query->whereIn('office_id', (array) auth()->user()->office_id)->where('kep_asesor', 'waiting');
-                } else if($check->roles[0]->name == 'Manager') {
+                } else if ($check->roles[0]->name == 'Branch Manager') {
+                    return $query->whereIn('permohonans.office_id', (array) auth()->user()->office_id)
+                        ->where('kep_asesor', 'waiting')
+                        ->join('permohonans', 'permohonans.id', '=', 'approvements.permohonan_id') // Join permohonan table
+                        ->whereBetween('permohonans.jumlah_permohonan', [2000000, 10000000]);
+                } else if ($check->roles[0]->name == 'Regional Manager') {
+                    return $query->whereIn('permohonans.office_id', (array) auth()->user()->office_id)
+                        ->where('kep_asesor', 'waiting')
+                        ->join('permohonans', 'permohonans.id', '=', 'approvements.permohonan_id') // Join permohonan table
+                        ->whereBetween('permohonans.jumlah_permohonan', [10000000, 25000000]);
+                } else if ($check->roles[0]->name == 'Manager') {
                     return $query->where('kep_asesor', 'waiting');
-                } else if($check->roles[0]->name == 'Asisten Direktur Utama') {
-                    return $query->where('kep_asesor', 'waiting');
-                } else if($check->roles[0]->name == 'Direktur Utama') {
-                    return $query->where('kep_asesor', 'waiting');
-                } else if($check->roles[0]->name == 'Teller') {
-                    return $query->whereIn('office_id', (array) auth()->user()->office_id)->where('kep_asesor', 'waiting');
-                } else if($check->roles[0]->name == 'Marketing') {
-                    return $query->whereIn('office_id', (array) auth()->user()->office_id)->where('kep_asesor', 'waiting');
+                } else if ($check->roles[0]->name == 'Asisten Direktur Utama') {
+                    return $query->whereIn('permohonans.office_id', (array) auth()->user()->office_id)
+                        ->where('kep_asesor', 'waiting')
+                        ->join('permohonans', 'permohonans.id', '=', 'approvements.permohonan_id') // Join permohonan table
+                        ->whereBetween('permohonans.jumlah_permohonan', [25000000, 30000000]);
+                } else if ($check->roles[0]->name == 'Direktur Utama') {
+                    return $query->whereIn('permohonans.office_id', (array) auth()->user()->office_id)
+                    ->where('kep_asesor', 'waiting')
+                    ->join('permohonans', 'permohonans.id', '=', 'approvements.permohonan_id') // Join permohonan table
+                    ->whereBetween('permohonans.jumlah_permohonan', [30000000, 75000000]);
+                } else if ($check->roles[0]->name == 'Teller') {
+                    return $query->whereIn('permohonans.office_id', (array) auth()->user()->office_id)
+                        ->where('kep_asesor', 'waiting');
+                } else if ($check->roles[0]->name == 'Marketing') {
+                    return $query->whereIn('permohonans.office_id', (array) auth()->user()->office_id)
+                        ->where('kep_asesor', 'waiting')
+                        ->join('permohonans', 'permohonans.id', '=', 'approvements.permohonan_id') // Join permohonan table
+                        ->whereBetween('permohonans.jumlah_permohonan', [0, 2000000]);
                 } else {
                     return $query->where('kep_asesor', 'waiting');
                 }
-                
             })
             ->filters([
                 //

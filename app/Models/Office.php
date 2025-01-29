@@ -38,4 +38,8 @@ class Office extends Model
     {
         return $this->hasMany(User::class);
     }
+    public function attendance(): HasMany
+    {
+        return $this->hasMany(Attendance::class);
+    }
 }

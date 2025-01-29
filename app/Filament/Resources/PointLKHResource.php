@@ -2,30 +2,32 @@
 
 namespace App\Filament\Resources;
 
+use App\Exports\PointLKHSantriExport;
 use Filament\Forms;
 use Filament\Tables;
-use App\Models\Karakter;
+use App\Models\PointLKH;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
-use Filament\Tables\Actions\Action;
-use App\Exports\KarakterExport;
+use App\Models\PointLkhSantri;
 use Filament\Resources\Resource;
+use Filament\Tables\Actions\Action;
 use Maatwebsite\Excel\Facades\Excel;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Builder;
-use App\Filament\Resources\KarakterResource\Pages;
+use App\Filament\Resources\PointLKHResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Resources\KarakterResource\RelationManagers;
+use App\Filament\Resources\PointLKHResource\RelationManagers;
 
-class KarakterResource extends Resource
+class PointLKHResource extends Resource
 {
-    protected static ?string $model = Karakter::class;
+    protected static ?string $model = PointLkhSantri::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    protected static ?string $navigationLabel = 'Karakter';
+    protected static ?string $navigationLabel = 'LKH Santri';
 
     protected static ?string $navigationGroup = 'HR';
+
 
     public static function form(Form $form): Form
     {
@@ -39,27 +41,24 @@ class KarakterResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('user.name')->label('Nama')->searchable(),
-                TextColumn::make('laporan')->label('Laporan'),
-                TextColumn::make('type')->label('Karakter')->badge()->color('primary'),
-                TextColumn::make('poin')->label('Poin')->badge()->color('primary'),
+                TextColumn::make('user.name')->label('Nama Santri')->searchable(),
+                TextColumn::make('user.roles.name')->label('Jabatan'),
+                TextColumn::make('point_lkh')->label('Point')->badge()->color('primary'),
             ])
             ->filters([
                 //
             ])
             ->headerActions([
-                Action::make('karakter')
+                Action::make('lkh')
                 ->label('Export Point')
                 ->icon('heroicon-o-arrow-down-tray')
                 ->action(function () {
-                    return Excel::download(new KarakterExport, 'poin-karakter.xlsx');
+                    return Excel::download(new PointLKHSantriExport, 'poin-lkh.xlsx');
                 }),
                 
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
-                Tables\Actions\ViewAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
@@ -78,9 +77,9 @@ class KarakterResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListKarakters::route('/'),
-            'create' => Pages\CreateKarakter::route('/create'),
-            'edit' => Pages\EditKarakter::route('/{record}/edit'),
+            'index' => Pages\ListPointLKHS::route('/'),
+            'create' => Pages\CreatePointLKH::route('/create'),
+            'edit' => Pages\EditPointLKH::route('/{record}/edit'),
         ];
     }
 }

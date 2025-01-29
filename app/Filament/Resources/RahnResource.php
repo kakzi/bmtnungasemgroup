@@ -77,6 +77,7 @@ class RahnResource extends Resource
 
                     Select::make('approvement_id')
                         ->label('Nama Anggota')
+                        // ->relationship('permohonans', 'anggota.name')
                         ->columnSpan([
                             'sm' => 2,
                             'xl' => 8,
@@ -190,8 +191,8 @@ class RahnResource extends Resource
                         ->readonly()
                         ->required()
                         ->label('Nominal Pembiayaan')
-                        ->mask(RawJs::make('$money($input)'))
-                        ->stripCharacters(',')
+                        // ->mask(RawJs::make('$money($input)'))
+                        // ->stripCharacters(',')
                         ->numeric(),
                     TextInput::make('jangka_waktu')
                         ->columnSpan([
@@ -267,7 +268,51 @@ class RahnResource extends Resource
                         ->afterStateUpdated(function (Get $get, Set $set, $state) {
                             // Get the selected AngsuranMurabahah record
                             $angsuran = PeriodeAngsuran::where('id', $state)->first();
+                    
                             if ($angsuran) {
+                                $set('ujroh', $angsuran->percentage); // Set up_ujroh based on the selected angsuran
+            
+                                // $upUjroh = $angsuran->ujroh; // Get ujroh value
+                                // $bulan = (int)$angsuran->bulan;
+                                // dd($bulan);
+                                
+                                // Get the selected month value
+                                $currentDate = Carbon::now();
+                                // Get date +1 month
+                                $datePlusOneMonth = $currentDate->copy()->addMonth();
+                                // Get date +$bulan months
+                                $datePlusBulan = $currentDate->copy()->addMonths((int)$get('jangka_waktu'));
+
+                                // You can set these dates to fields if needed
+                                $set('tempo_awal', $datePlusOneMonth->toDateString()); // Set start date to +1 month
+                                $set('tempo_akhir', $datePlusBulan->toDateString()); 
+                                // Calculate Rahn
+                                // dd((int)$get('nominal_qard')  , (int)$get('ujroh') , (int)$get('jangka_waktu'));
+                                $totalUjrohBulan = ((int)$get('nominal_qard')  * $get('ujroh') / 100);
+                                $ujrohBulanRounded = round($totalUjrohBulan / 1000) * 1000;
+
+                                $totalPokokBulan = ((int)$get('nominal_qard')  / (int)$get('jangka_waktu'));
+                                $angsuranPokokBulanRounded = round($totalPokokBulan / 1000) * 1000;
+
+                                $angsuranPerBulan = ((int)$ujrohBulanRounded + (int)$angsuranPokokBulanRounded);
+                                $totalUjroh = (int)$ujrohBulanRounded * (int)$get('jangka_waktu');
+                                $totalPokok = (int)$angsuranPokokBulanRounded * (int)$get('jangka_waktu');
+                                $totalPembiayaan = (int)$totalUjroh + (int)$totalPokok;
+                                // Set the calculated total_mrbh
+                                $set('qard_pokok', $angsuranPokokBulanRounded);
+                                $set('qard_ujroh', $ujrohBulanRounded);
+                                $set('angsuran_qard', $angsuranPerBulan);
+                                $set('total_pokok', $totalPokok);
+                                $set('total_ujroh', $totalUjroh);
+                                $set('total_angsuran', $totalPembiayaan);
+                            } else {
+                                // $set('up_ujroh', null);
+                                // $set('qard_pokok', null);
+                                // $set('qard_ujroh', null);
+                                // $set('angsuran_qard', null);
+                                // $set('total_pokok', null);
+                                // $set('total_ujroh', null);
+                                // $set('total_angsuran', null);
                                 $set('ujroh', $angsuran->percentage); // Set up_ujroh based on the selected angsuran
             
                                 // $upUjroh = $angsuran->ujroh; // Get ujroh value
@@ -302,14 +347,6 @@ class RahnResource extends Resource
                                 $set('total_pokok', $totalPokok);
                                 $set('total_ujroh', $totalUjroh);
                                 $set('total_angsuran', $totalPembiayaan);
-                            } else {
-                                $set('up_ujroh', null);
-                                $set('qard_pokok', null);
-                                $set('qard_ujroh', null);
-                                $set('angsuran_qard', null);
-                                $set('total_pokok', null);
-                                $set('total_ujroh', null);
-                                $set('total_angsuran', null);
                             }
                         }),
                     
@@ -522,6 +559,7 @@ class RahnResource extends Resource
             ->columns([
                 TextColumn::make('permohonan.anggota.name')->searchable()->sortable(),
                 TextColumn::make('nominal_qard')->badge()->color('primary')->label('Pembiayaan')->money('IDR', locale: 'id'),
+                TextColumn::make('permohonan.angsuran.periode')->badge()->color('primary')->label('Jangka Waktu')->money('IDR', locale: 'id'),
                 IconColumn::make('check_bm')
                     ->label('BM')
                     ->boolean()
@@ -637,23 +675,28 @@ class RahnResource extends Resource
                     ->extraAttributes([
                         'class' => 'bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-full',
                     ]),
+                    
                 Tables\Actions\ActionGroup::make([
-                        Tables\Actions\Action::make('customAction')
-                            ->label('Agreement')
+                        Tables\Actions\Action::make('akad_rahn')
+                            ->label('Akad Rahn')
                             ->icon('heroicon-o-document')
-                            ->action(function (Agreement $record) {
-                                // Redirect to WhatsApp link (or open it in a new tab)
-                                // return redirect()->away($whatsappUrl); 
-                            })
+                            // ->action(function (Agreement $record) {
+                            //     // Redirect to WhatsApp link (or open it in a new tab)
+                            //     //  dd($record);
+                            //     return redirect()->route('akad_rahn', ['id' => $record->id]);
+                            // })
+                            ->url(fn (Agreement $record): string => route('akad_rahn', $record->id))
+                            ->openUrlInNewTab()
                             ->requiresConfirmation() // Add confirmation dialog if needed
-                            ->color('info'),
+                            ->color('primary'),
                         Tables\Actions\Action::make('customAction')
-                            ->label('Card Agreement')
+                            ->label('Kartu Angsuran')
                             ->icon('heroicon-o-document-text')
                             ->action(function (Agreement $record) {
                                 // Redirect to WhatsApp link (or open it in a new tab)
                                 // return redirect()->away($whatsappUrl); 
                             })
+
                             ->requiresConfirmation() // Add confirmation dialog if needed
                             ->color('info'),
                         ])

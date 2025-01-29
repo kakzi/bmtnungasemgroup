@@ -11,6 +11,7 @@ class Permohonan extends Model
     use HasFactory;
 
     protected $fillable = [
+        'nomor_permohonan',
         'office_id',
         'register_anggota_id',
         'periode_angsuran_id',
@@ -25,6 +26,8 @@ class Permohonan extends Model
         'status_ahli_waris',
         'pekerjaan_ahli_waris',
         'nik_ahli_waris',
+        'tempat_ahli_waris',
+        'jenis_kelamin_ahli_waris',
         'tanggal_ahli_waris',
         'umur_ahli_waris',
         'alamat_ahli_waris',
@@ -50,6 +53,9 @@ class Permohonan extends Model
     }
     public function pembiayaan() {
         return $this->belongsTo(JenisPembiayaan::class, 'jenis_pembiayaan_id');
+    }
+    public function angsuran() {
+        return $this->belongsTo(PeriodeAngsuran::class, 'periode_angsuran_id');
     }
     public function office(): BelongsTo
     {

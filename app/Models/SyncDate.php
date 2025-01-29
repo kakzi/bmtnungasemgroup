@@ -12,5 +12,7 @@ class SyncDate extends Model
     protected $fillable = [
         'date_start',
         'date_end',
+        'total_day',
+        'active_day',
     ];
 }
