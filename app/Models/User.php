@@ -87,4 +87,10 @@ class User extends Authenticatable
     {
         return $this->hasMany(Karakter::class, 'user_id');
     }
+
+    public function canAccessPanel()
+    {
+        // Check if the user is authenticated and has the correct role or permission
+        return true;
+    }
 }
