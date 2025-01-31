@@ -15,7 +15,8 @@ class CreateReportBranchManager extends CreateRecord
 
         PointLkhSantri::create([
             'user_id' => auth()->user()->id,
-            'point_lkh' => 1
+            'point_lkh' => 1,
+            'point_kehadiran' => 1
         ]);
     }
 }
