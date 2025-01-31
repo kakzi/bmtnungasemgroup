@@ -20,8 +20,8 @@ class MarketingOverview extends BaseWidget
     {
 
         $filters = $this->filters;
-        $marketingId = $filters['marketing'] ?? null;
-        // Fetch last 7 days funding data
+        $marketingId = $filters['marketing'] ?? 1;
+        
         $fundingStats = ReportMarketing::where('user_id', $marketingId)->whereDate('created_at', '>=', now()->subDays(7))
             ->selectRaw('DATE(created_at) as date, SUM(funding) as total_funding')
             ->groupBy('date')

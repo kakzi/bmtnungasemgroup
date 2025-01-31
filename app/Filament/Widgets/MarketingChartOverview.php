@@ -19,7 +19,7 @@ class MarketingChartOverview extends ChartWidget
 
     protected function getData(): array
     {
-        $marketingId = $this->filters['marketing'] ?? null; // Get filter value if available
+        $marketingId = $this->filters['marketing'] ?? auth()->user()->id; // Get filter value if available
 
         // Fetch funding data for the last 7 days
         $reports = ReportMarketing::where('user_id', $marketingId)
