@@ -2,9 +2,7 @@
 
 namespace App\Filament\Pages;
 
-use App\Filament\Widgets\FundingMarketingChart;
-use App\Filament\Widgets\FundingMarketingOverview;
-use App\Filament\Widgets\MarketingOverview;
+use App\Models\User;
 use Filament\Forms\Get;
 use Filament\Forms\Form;
 use Filament\Actions\Action;
@@ -13,11 +11,17 @@ use Filament\Forms\Components\Select;
 use Filament\Support\Enums\Alignment;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Fieldset;
+use App\Filament\Widgets\LandingOverview;
 use Filament\Forms\Components\DatePicker;
+use App\Filament\Widgets\MarketingOverview;
+use App\Filament\Widgets\FundingMarketingChart;
+use App\Filament\Widgets\MarketingChartOverview;
+use App\Filament\Widgets\FundingMarketingOverview;
+use App\Filament\Widgets\LandingMarketingOverview;
 use BezhanSalleh\FilamentShield\Traits\HasPageShield;
 use Filament\Pages\Dashboard\Concerns\HasFiltersForm;
+use App\Filament\Widgets\MarketingLandingChartOverview;
 use App\Models\Kantor; // Pastikan untuk mengimport model Kantor
-use App\Models\User;
 
 class Dashboard extends \Filament\Pages\Dashboard
 {
@@ -40,8 +44,9 @@ class Dashboard extends \Filament\Pages\Dashboard
     public function getWidgets(): array
     {
         return [
-            MarketingOverview::class,           // Widget bawah
-            FundingMarketingChart::class,           // Widget bawah
+            MarketingOverview::class,    
+            MarketingChartOverview::class,          // Widget bawah
+            MarketingLandingChartOverview::class,          // Widget bawah
         ];
     }
     public function filtersForm(Form $form): Form
