@@ -95,22 +95,22 @@ class AttendanceController extends Controller
                         ]
                     );
                     // Send WhatsApp Notification
-                    $afirmasi = [
-                        "Selamat pagi! Kamu luar biasa, dan hari ini adalah kesempatan baru untuk bersinar!✨",
-                        "Aku yakin kamu bisa menghadapi hari ini dengan penuh semangat dan percaya diri! 💪🔥",
-                        "Setiap langkah kecil yang kamu ambil hari ini membawa kamu lebih dekat ke impianmu! 🚀💡",
-                        "Jangan ragu, kamu punya kemampuan hebat untuk mengatasi setiap tantangan! 🌟👏",
-                        "Hari ini adalah milikmu! Hadapi dengan senyuman dan keyakinan! 😊🌈",
-                        "Ingat, kerja kerasmu tidak sia-sia. Kamu semakin berkembang setiap hari! 🌟👏",
-                        "Apapun yang terjadi hari ini, kamu tetap berharga dan luar biasa! ✨🤗",
-                        "Kamu tidak sendirian! Aku mendukungmu dan percaya kamu bisa melakukannya! 🤝",
-                        "Hari ini penuh peluang baru! Jangan takut untuk mencoba dan belajar! 🚀📚",
-                        "Tetap semangat! Satu langkah maju hari ini adalah kemenangan besar untuk masa depanmu! 🎉🏆"
-                    ];
-                    // Send WhatsApp Notification
-                    $keterangan = ($time > $start) ? "Telat" : "Datang";
-                    // Send WhatsApp Notification
-                    $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-in berhasil $keterangan pada $time. \n\nSantri atas Nama : ".auth()->user()->name. ", \nKantor penempatan : ".auth()->user()->office->name."\n\n".$afirmasi[array_rand($afirmasi)]."\nSelamat Berjuang ya!");
+                    // $afirmasi = [
+                    //     "Selamat pagi! Kamu luar biasa, dan hari ini adalah kesempatan baru untuk bersinar!✨",
+                    //     "Aku yakin kamu bisa menghadapi hari ini dengan penuh semangat dan percaya diri! 💪🔥",
+                    //     "Setiap langkah kecil yang kamu ambil hari ini membawa kamu lebih dekat ke impianmu! 🚀💡",
+                    //     "Jangan ragu, kamu punya kemampuan hebat untuk mengatasi setiap tantangan! 🌟👏",
+                    //     "Hari ini adalah milikmu! Hadapi dengan senyuman dan keyakinan! 😊🌈",
+                    //     "Ingat, kerja kerasmu tidak sia-sia. Kamu semakin berkembang setiap hari! 🌟👏",
+                    //     "Apapun yang terjadi hari ini, kamu tetap berharga dan luar biasa! ✨🤗",
+                    //     "Kamu tidak sendirian! Aku mendukungmu dan percaya kamu bisa melakukannya! 🤝",
+                    //     "Hari ini penuh peluang baru! Jangan takut untuk mencoba dan belajar! 🚀📚",
+                    //     "Tetap semangat! Satu langkah maju hari ini adalah kemenangan besar untuk masa depanmu! 🎉🏆"
+                    // ];
+                    // // Send WhatsApp Notification
+                    // $keterangan = ($time > $start) ? "Telat" : "Datang";
+                    // // Send WhatsApp Notification
+                    // $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-in berhasil $keterangan pada $time. \n\nSantri atas Nama : ".auth()->user()->name. ", \nKantor penempatan : ".auth()->user()->office->name."\n\n".$afirmasi[array_rand($afirmasi)]."\nSelamat Berjuang ya!");
 
                     return response()->json(
                         [
@@ -136,22 +136,22 @@ class AttendanceController extends Controller
                     );
 
                     // Send WhatsApp Notification
-                    $afirmasi = [
-                        "Selamat pagi! Kamu luar biasa, dan hari ini adalah kesempatan baru untuk bersinar!✨",
-                        "Aku yakin kamu bisa menghadapi hari ini dengan penuh semangat dan percaya diri! 💪🔥",
-                        "Setiap langkah kecil yang kamu ambil hari ini membawa kamu lebih dekat ke impianmu! 🚀💡",
-                        "Jangan ragu, kamu punya kemampuan hebat untuk mengatasi setiap tantangan! 🌟👏",
-                        "Hari ini adalah milikmu! Hadapi dengan senyuman dan keyakinan! 😊🌈",
-                        "Ingat, kerja kerasmu tidak sia-sia. Kamu semakin berkembang setiap hari! 🌟👏",
-                        "Apapun yang terjadi hari ini, kamu tetap berharga dan luar biasa! ✨🤗",
-                        "Kamu tidak sendirian! Aku mendukungmu dan percaya kamu bisa melakukannya! 🤝",
-                        "Hari ini penuh peluang baru! Jangan takut untuk mencoba dan belajar! 🚀📚",
-                        "Tetap semangat! Satu langkah maju hari ini adalah kemenangan besar untuk masa depanmu! 🎉🏆"
-                    ];
-                    // Send WhatsApp Notification
-                    $keterangan = ($time > $start) ? "Telat" : "Datang";
-                    // Send WhatsApp Notification
-                    $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-in berhasil $keterangan pada $time. \n\nSantri atas Nama : ".auth()->user()->name. ", \nKantor penempatan : ".auth()->user()->office->name."\n\n".$afirmasi[array_rand($afirmasi)]."\nSelamat Berjuang ya!");
+                    // $afirmasi = [
+                    //     "Selamat pagi! Kamu luar biasa, dan hari ini adalah kesempatan baru untuk bersinar!✨",
+                    //     "Aku yakin kamu bisa menghadapi hari ini dengan penuh semangat dan percaya diri! 💪🔥",
+                    //     "Setiap langkah kecil yang kamu ambil hari ini membawa kamu lebih dekat ke impianmu! 🚀💡",
+                    //     "Jangan ragu, kamu punya kemampuan hebat untuk mengatasi setiap tantangan! 🌟👏",
+                    //     "Hari ini adalah milikmu! Hadapi dengan senyuman dan keyakinan! 😊🌈",
+                    //     "Ingat, kerja kerasmu tidak sia-sia. Kamu semakin berkembang setiap hari! 🌟👏",
+                    //     "Apapun yang terjadi hari ini, kamu tetap berharga dan luar biasa! ✨🤗",
+                    //     "Kamu tidak sendirian! Aku mendukungmu dan percaya kamu bisa melakukannya! 🤝",
+                    //     "Hari ini penuh peluang baru! Jangan takut untuk mencoba dan belajar! 🚀📚",
+                    //     "Tetap semangat! Satu langkah maju hari ini adalah kemenangan besar untuk masa depanmu! 🎉🏆"
+                    // ];
+                    // // Send WhatsApp Notification
+                    // $keterangan = ($time > $start) ? "Telat" : "Datang";
+                    // // Send WhatsApp Notification
+                    // $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-in berhasil $keterangan pada $time. \n\nSantri atas Nama : ".auth()->user()->name. ", \nKantor penempatan : ".auth()->user()->office->name."\n\n".$afirmasi[array_rand($afirmasi)]."\nSelamat Berjuang ya!");
 
                     return response()->json(
                         [
@@ -218,27 +218,27 @@ class AttendanceController extends Controller
                         ]
                     );
 
-                    $semangat_besok = [
-                        "Besok adalah kesempatan baru untuk menciptakan keajaiban. Semangat terus!",
-                        "Jangan biarkan kelelahan menghalangimu, besok lebih banyak peluang menantimu!",
-                        "Hari ini sudah luar biasa, besok akan lebih baik lagi. Tetap semangat!",
-                        "Apa yang kamu lakukan hari ini akan mempermudah langkahmu besok. Teruskan usaha hebatmu!",
-                        "Semangatmu hari ini adalah bekal untuk kesuksesan besok. Teruskan langkahmu!",
-                        "Besok adalah hari baru untuk meraih lebih banyak impian. Kamu pasti bisa!",
-                        "Apa pun yang terjadi hari ini, besok adalah kesempatan untuk mulai lagi. Semangat!",
-                        "Hari ini mungkin penuh tantangan, tapi besok kamu akan siap menghadapi semuanya!",
-                        "Setiap langkah yang kamu ambil hari ini, mendekatkanmu pada kesuksesan besok. Terus semangat!",
-                        "Besok akan menjadi hari yang luar biasa, tetap percaya pada dirimu!",
-                        "Besok adalah hari baru yang penuh dengan peluang, jangan berhenti berjuang!",
-                        "Semangatmu hari ini akan membuahkan hasil yang luar biasa besok. Teruskan usaha terbaikmu!",
-                        "Jangan pernah ragu, besok adalah kesempatan emas untuk meraih yang terbaik!",
-                        "Setiap hari baru adalah peluang untuk menjadi lebih baik. Besok akan lebih gemilang!",
-                        "Besok adalah babak baru yang lebih menarik. Terus beri yang terbaik!",
-                        "Kalau perjalanan yang hati-hati ya!"
-                    ];
-                    $keterangan = ($time > $pulawal && $time < $end) ? "Pulang Awal" : "Pulang";
-                    // Send WhatsApp Notification
-                    $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-out berhasil: $keterangan pada $time. \n\nSantri atas Nama : ".auth()->user()->name. ", \nKantor penempatan : ".auth()->user()->office->name.", \n\n". $semangat_besok[array_rand($semangat_besok)] ."\nHati Hati di jalan ya!");
+                    // $semangat_besok = [
+                    //     "Besok adalah kesempatan baru untuk menciptakan keajaiban. Semangat terus!",
+                    //     "Jangan biarkan kelelahan menghalangimu, besok lebih banyak peluang menantimu!",
+                    //     "Hari ini sudah luar biasa, besok akan lebih baik lagi. Tetap semangat!",
+                    //     "Apa yang kamu lakukan hari ini akan mempermudah langkahmu besok. Teruskan usaha hebatmu!",
+                    //     "Semangatmu hari ini adalah bekal untuk kesuksesan besok. Teruskan langkahmu!",
+                    //     "Besok adalah hari baru untuk meraih lebih banyak impian. Kamu pasti bisa!",
+                    //     "Apa pun yang terjadi hari ini, besok adalah kesempatan untuk mulai lagi. Semangat!",
+                    //     "Hari ini mungkin penuh tantangan, tapi besok kamu akan siap menghadapi semuanya!",
+                    //     "Setiap langkah yang kamu ambil hari ini, mendekatkanmu pada kesuksesan besok. Terus semangat!",
+                    //     "Besok akan menjadi hari yang luar biasa, tetap percaya pada dirimu!",
+                    //     "Besok adalah hari baru yang penuh dengan peluang, jangan berhenti berjuang!",
+                    //     "Semangatmu hari ini akan membuahkan hasil yang luar biasa besok. Teruskan usaha terbaikmu!",
+                    //     "Jangan pernah ragu, besok adalah kesempatan emas untuk meraih yang terbaik!",
+                    //     "Setiap hari baru adalah peluang untuk menjadi lebih baik. Besok akan lebih gemilang!",
+                    //     "Besok adalah babak baru yang lebih menarik. Terus beri yang terbaik!",
+                    //     "Kalau perjalanan yang hati-hati ya!"
+                    // ];
+                    // $keterangan = ($time > $pulawal && $time < $end) ? "Pulang Awal" : "Pulang";
+                    // // Send WhatsApp Notification
+                    // $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-out berhasil: $keterangan pada $time. \n\nSantri atas Nama : ".auth()->user()->name. ", \nKantor penempatan : ".auth()->user()->office->name.", \n\n". $semangat_besok[array_rand($semangat_besok)] ."\nHati Hati di jalan ya!");
                     
                     return response()->json(
                         [
@@ -262,27 +262,27 @@ class AttendanceController extends Controller
                             'address' => $request->address
                         ]
                     );
-                    $semangat_besok = [
-                        "Besok adalah kesempatan baru untuk menciptakan keajaiban. Semangat terus!",
-                        "Jangan biarkan kelelahan menghalangimu, besok lebih banyak peluang menantimu!",
-                        "Hari ini sudah luar biasa, besok akan lebih baik lagi. Tetap semangat!",
-                        "Apa yang kamu lakukan hari ini akan mempermudah langkahmu besok. Teruskan usaha hebatmu!",
-                        "Semangatmu hari ini adalah bekal untuk kesuksesan besok. Teruskan langkahmu!",
-                        "Besok adalah hari baru untuk meraih lebih banyak impian. Kamu pasti bisa!",
-                        "Apa pun yang terjadi hari ini, besok adalah kesempatan untuk mulai lagi. Semangat!",
-                        "Hari ini mungkin penuh tantangan, tapi besok kamu akan siap menghadapi semuanya!",
-                        "Setiap langkah yang kamu ambil hari ini, mendekatkanmu pada kesuksesan besok. Terus semangat!",
-                        "Besok akan menjadi hari yang luar biasa, tetap percaya pada dirimu!",
-                        "Besok adalah hari baru yang penuh dengan peluang, jangan berhenti berjuang!",
-                        "Semangatmu hari ini akan membuahkan hasil yang luar biasa besok. Teruskan usaha terbaikmu!",
-                        "Jangan pernah ragu, besok adalah kesempatan emas untuk meraih yang terbaik!",
-                        "Setiap hari baru adalah peluang untuk menjadi lebih baik. Besok akan lebih gemilang!",
-                        "Besok adalah babak baru yang lebih menarik. Terus beri yang terbaik!",
-                        "Kalau perjalanan yang hati-hati ya!"
-                    ];
-                    $keterangan = ($time > $pulawal && $time < $end) ? "Pulang Awal" : "Pulang";
-                    // Send WhatsApp Notification
-                    $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-out berhasil: $keterangan pada $time. \n\nSantri atas Nama : ".auth()->user()->name. ", \nKantor penempatan : ".auth()->user()->office->name.", \n\n". $semangat_besok[array_rand($semangat_besok)] ."\nHati Hati di jalan ya!");
+                    // $semangat_besok = [
+                    //     "Besok adalah kesempatan baru untuk menciptakan keajaiban. Semangat terus!",
+                    //     "Jangan biarkan kelelahan menghalangimu, besok lebih banyak peluang menantimu!",
+                    //     "Hari ini sudah luar biasa, besok akan lebih baik lagi. Tetap semangat!",
+                    //     "Apa yang kamu lakukan hari ini akan mempermudah langkahmu besok. Teruskan usaha hebatmu!",
+                    //     "Semangatmu hari ini adalah bekal untuk kesuksesan besok. Teruskan langkahmu!",
+                    //     "Besok adalah hari baru untuk meraih lebih banyak impian. Kamu pasti bisa!",
+                    //     "Apa pun yang terjadi hari ini, besok adalah kesempatan untuk mulai lagi. Semangat!",
+                    //     "Hari ini mungkin penuh tantangan, tapi besok kamu akan siap menghadapi semuanya!",
+                    //     "Setiap langkah yang kamu ambil hari ini, mendekatkanmu pada kesuksesan besok. Terus semangat!",
+                    //     "Besok akan menjadi hari yang luar biasa, tetap percaya pada dirimu!",
+                    //     "Besok adalah hari baru yang penuh dengan peluang, jangan berhenti berjuang!",
+                    //     "Semangatmu hari ini akan membuahkan hasil yang luar biasa besok. Teruskan usaha terbaikmu!",
+                    //     "Jangan pernah ragu, besok adalah kesempatan emas untuk meraih yang terbaik!",
+                    //     "Setiap hari baru adalah peluang untuk menjadi lebih baik. Besok akan lebih gemilang!",
+                    //     "Besok adalah babak baru yang lebih menarik. Terus beri yang terbaik!",
+                    //     "Kalau perjalanan yang hati-hati ya!"
+                    // ];
+                    // $keterangan = ($time > $pulawal && $time < $end) ? "Pulang Awal" : "Pulang";
+                    // // Send WhatsApp Notification
+                    // $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-out berhasil: $keterangan pada $time. \n\nSantri atas Nama : ".auth()->user()->name. ", \nKantor penempatan : ".auth()->user()->office->name.", \n\n". $semangat_besok[array_rand($semangat_besok)] ."\nHati Hati di jalan ya!");
                     
                     return response()->json(
                         [
@@ -306,27 +306,27 @@ class AttendanceController extends Controller
                             'address' => $request->address
                         ]
                     );
-                    $semangat_besok = [
-                        "Besok adalah kesempatan baru untuk menciptakan keajaiban. Semangat terus!",
-                        "Jangan biarkan kelelahan menghalangimu, besok lebih banyak peluang menantimu!",
-                        "Hari ini sudah luar biasa, besok akan lebih baik lagi. Tetap semangat!",
-                        "Apa yang kamu lakukan hari ini akan mempermudah langkahmu besok. Teruskan usaha hebatmu!",
-                        "Semangatmu hari ini adalah bekal untuk kesuksesan besok. Teruskan langkahmu!",
-                        "Besok adalah hari baru untuk meraih lebih banyak impian. Kamu pasti bisa!",
-                        "Apa pun yang terjadi hari ini, besok adalah kesempatan untuk mulai lagi. Semangat!",
-                        "Hari ini mungkin penuh tantangan, tapi besok kamu akan siap menghadapi semuanya!",
-                        "Setiap langkah yang kamu ambil hari ini, mendekatkanmu pada kesuksesan besok. Terus semangat!",
-                        "Besok akan menjadi hari yang luar biasa, tetap percaya pada dirimu!",
-                        "Besok adalah hari baru yang penuh dengan peluang, jangan berhenti berjuang!",
-                        "Semangatmu hari ini akan membuahkan hasil yang luar biasa besok. Teruskan usaha terbaikmu!",
-                        "Jangan pernah ragu, besok adalah kesempatan emas untuk meraih yang terbaik!",
-                        "Setiap hari baru adalah peluang untuk menjadi lebih baik. Besok akan lebih gemilang!",
-                        "Besok adalah babak baru yang lebih menarik. Terus beri yang terbaik!",
-                        "Kalau perjalanan yang hati-hati ya!"
-                    ];
-                    $keterangan = ($time > $pulawal && $time < $end) ? "Pulang Awal" : "Pulang";
-                    // Send WhatsApp Notification
-                    $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-out berhasil: $keterangan pada $time. \n\nSantri atas Nama : ".auth()->user()->name. ", \nKantor penempatan : ".auth()->user()->office->name.", \n\n". $semangat_besok[array_rand($semangat_besok)] ."\nHati Hati di jalan ya!");
+                    // $semangat_besok = [
+                    //     "Besok adalah kesempatan baru untuk menciptakan keajaiban. Semangat terus!",
+                    //     "Jangan biarkan kelelahan menghalangimu, besok lebih banyak peluang menantimu!",
+                    //     "Hari ini sudah luar biasa, besok akan lebih baik lagi. Tetap semangat!",
+                    //     "Apa yang kamu lakukan hari ini akan mempermudah langkahmu besok. Teruskan usaha hebatmu!",
+                    //     "Semangatmu hari ini adalah bekal untuk kesuksesan besok. Teruskan langkahmu!",
+                    //     "Besok adalah hari baru untuk meraih lebih banyak impian. Kamu pasti bisa!",
+                    //     "Apa pun yang terjadi hari ini, besok adalah kesempatan untuk mulai lagi. Semangat!",
+                    //     "Hari ini mungkin penuh tantangan, tapi besok kamu akan siap menghadapi semuanya!",
+                    //     "Setiap langkah yang kamu ambil hari ini, mendekatkanmu pada kesuksesan besok. Terus semangat!",
+                    //     "Besok akan menjadi hari yang luar biasa, tetap percaya pada dirimu!",
+                    //     "Besok adalah hari baru yang penuh dengan peluang, jangan berhenti berjuang!",
+                    //     "Semangatmu hari ini akan membuahkan hasil yang luar biasa besok. Teruskan usaha terbaikmu!",
+                    //     "Jangan pernah ragu, besok adalah kesempatan emas untuk meraih yang terbaik!",
+                    //     "Setiap hari baru adalah peluang untuk menjadi lebih baik. Besok akan lebih gemilang!",
+                    //     "Besok adalah babak baru yang lebih menarik. Terus beri yang terbaik!",
+                    //     "Kalau perjalanan yang hati-hati ya!"
+                    // ];
+                    // $keterangan = ($time > $pulawal && $time < $end) ? "Pulang Awal" : "Pulang";
+                    // // Send WhatsApp Notification
+                    // $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-out berhasil: $keterangan pada $time. \n\nSantri atas Nama : ".auth()->user()->name. ", \nKantor penempatan : ".auth()->user()->office->name.", \n\n". $semangat_besok[array_rand($semangat_besok)] ."\nHati Hati di jalan ya!");
                     
                     return response()->json(
                         [
