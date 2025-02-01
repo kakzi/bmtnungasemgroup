@@ -135,7 +135,7 @@ class AttendanceController extends Controller
                         ]
                     );
 
-                    Send WhatsApp Notification
+                    //Send WhatsApp Notification
                     $afirmasi = [
                         "Selamat pagi! Kamu luar biasa, dan hari ini adalah kesempatan baru untuk bersinar!✨",
                         "Aku yakin kamu bisa menghadapi hari ini dengan penuh semangat dan percaya diri! 💪🔥",
