@@ -45,8 +45,9 @@ class AttendanceController extends Controller
         $attendanceType = $request->type;
         $userAttendanceToday = $request->user()
             ->attendances()
-            ->whereDate('date_absensi', Carbon::today())
+            ->whereDate('date_absensi', Carbon::now("Asia/Jakarta")->format('Y-m-d H:i:s'))
             ->first();
+        dd($userAttendanceToday); 
 
         if ($attendanceType == 'in') {
             if (! $userAttendanceToday) {
