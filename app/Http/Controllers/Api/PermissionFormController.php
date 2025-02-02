@@ -30,13 +30,14 @@ class PermissionFormController extends Controller
             $cuti = Cuti::create([
                 'start_date' => $request->start_date,
                 'end_date' => $request->end_date,
+                'date' => Carbon::now('Asia/Jakarta')->format('Y-m-d H:i:s'),
                 'reason' => $request->reason,
                 'user_id' => auth()->user()->id
             ]);
             $cuti->save();
             $cutiCount = Cuti::where('status', 'approved')->where('user_id', auth()->user()->id)->count();
 
-            $this->sendWhatsAppMessage( "Assalamualaikum. \nBerikut data Pengajuan Data Izin Santri, Tanggal *$cuti->date* \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."\nPengajuan :  *Cuti*\nAlasan : *$cuti->reason*\nJumlah Cuti dalam 1 Tahun : *$cutiCount*\n_Yang sakit semoga cepat sembuh, yang lagi acara semoga berjalan dengan lancar, Amiin_\nTerimakasih\n\n*HR KSPPS BMT NU Ngasem*");
+            $this->sendWhatsAppMessage( "Assalamualaikum. \nBerikut data Pengajuan Data Cuti Santri, Tanggal *$cuti->date* \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."\nPengajuan :  *Cuti*\nAlasan : *$cuti->reason*\nJumlah Cuti dalam 1 Tahun : *$cutiCount*\n_Yang sakit semoga cepat sembuh, yang lagi acara semoga berjalan dengan lancar, Amiin_\n\nTerimakasih\n*HR KSPPS BMT NU Ngasem*");
 
             return response()->json([
                 'success' => true,
@@ -58,6 +59,7 @@ class PermissionFormController extends Controller
             $cuti = Cuti::create([
                     'start_date' => $request->start_date,
                     'end_date' => $request->end_date,
+                    'date' => Carbon::now('Asia/Jakarta')->format('Y-m-d H:i:s'),
                     'reason' => $request->reason,
                     'user_id' => auth()->user()->id,
                     'foto' => $name
@@ -68,7 +70,7 @@ class PermissionFormController extends Controller
 
             $cutiCount = Cuti::where('status', 'approved')->where('user_id', auth()->user()->id)->count();
 
-            $this->sendWhatsAppMessage( "Assalamualaikum. \nBerikut data Pengajuan Data Izin Santri, Tanggal *$cuti->date* \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."\nPengajuan :  *Cuti*\nAlasan : *$cuti->reason*\nJumlah Cuti dalam 1 Tahun : *$cutiCount*\n_Yang sakit semoga cepat sembuh, yang lagi acara semoga berjalan dengan lancar, Amiin_\nTerimakasih\n\n*HR KSPPS BMT NU Ngasem*");
+            $this->sendWhatsAppMessage( "Assalamualaikum. \nBerikut data Pengajuan Data Izin Santri, Tanggal *$cuti->date* \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."\nPengajuan :  *Cuti*\nAlasan : *$cuti->reason*\nJumlah Cuti dalam 1 Tahun : *$cutiCount*\n_Yang sakit semoga cepat sembuh, yang lagi acara semoga berjalan dengan lancar, Amiin_\n\nTerimakasih\n*HR KSPPS BMT NU Ngasem*");
             return response()->json([
                 'success' => true,
                 'message' => 'Cuti berhasil di kirim!',
@@ -110,7 +112,7 @@ class PermissionFormController extends Controller
 
         $izinCount = Izin::where('status', 'approved')->where('user_id', auth()->user()->id)->count();
 
-        $this->sendWhatsAppMessage( "Assalamualaikum. \nBerikut data Pengajuan Data Izin Santri, Tanggal *$izin->date* \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."\nPengajuan :  *Izin*\n\n *Alasan* : *$izin->reason*\nJumlah Izin dalam 1 Tahun : *$izinCount*\n_Yang sakit semoga cepat sembuh, yang lagi acara semoga berjalan dengan lancar, Amiin_\nTerimakasih\n\n*HR KSPPS BMT NU Ngasem*");
+        $this->sendWhatsAppMessage( "Assalamualaikum. \nBerikut data Pengajuan Data Izin Santri, Tanggal *$izin->date* \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."\nPengajuan :  *Izin*\n\n *Alasan* : *$izin->reason*\nJumlah Izin dalam 1 Tahun : *$izinCount*\n_Yang sakit semoga cepat sembuh, yang lagi acara semoga berjalan dengan lancar, Amiin_\n\nTerimakasih\n*HR KSPPS BMT NU Ngasem*");
 
         return response()->json([
             'success' => true,

@@ -13,6 +13,7 @@ class Cuti extends Model
         'user_id',
         'start_date',
         'end_date',
+        'date',
         'reason',
         'status',
         'foto',

@@ -145,7 +145,7 @@ class KarakterController extends Controller
             $tilawah->save();
             $this->response['id'] = $tilawah->id;
 
-            $this->sendWhatsAppMessage( "Assalamualaikum\nBerikut data Laporan Tilawah Tanggal *$date* pukul $time. \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."\nLaporan : *$tilawah->laporan*\n\n_Semoga selalu di berikan keberkahan nggih!_\n\nTerimakasih\n\n*HR KSPPS BMT NU Ngasem*");
+            $this->sendWhatsAppMessage( "Assalamualaikum\nBerikut data Laporan Tilawah Tanggal *$date* pukul $time. \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."\nLaporan : *$tilawah->laporan*\n\n_Semoga selalu di berikan keberkahan nggih!_\n\nTerimakasih\n*HR KSPPS BMT NU Ngasem*");
 
             return response()->json([
                 'success' => true,
@@ -188,7 +188,7 @@ class KarakterController extends Controller
                 $tilawah->save();
                 $this->response['id'] = $tilawah->id;
 
-                $this->sendWhatsAppMessage( "Assalamualaikum\nBerikut data Laporan Tahajud Tanggal *$date* pukul $time. \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."\nLaporan : *$tilawah->laporan*\n\n_Semoga selalu di berikan keberkahan nggih!_\n\nTerimakasih\n\n*HR KSPPS BMT NU Ngasem*");
+                $this->sendWhatsAppMessage( "Assalamualaikum\nBerikut data Laporan Tahajud Tanggal *$date* pukul $time. \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."\nLaporan : *$tilawah->laporan*\n\n_Semoga selalu di berikan keberkahan nggih!_\n\nTerimakasih\n*HR KSPPS BMT NU Ngasem*");
 
 
                 return response()->json([
