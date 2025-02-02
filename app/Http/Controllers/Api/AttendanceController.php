@@ -45,7 +45,7 @@ class AttendanceController extends Controller
         $attendanceType = $request->type;
         $userAttendanceToday = $request->user()
             ->attendances()
-            ->whereDate('date_absensi', Carbon::now("Asia/Jakarta")->format('Y-m-d H:i:s'))
+            ->whereDate('date_absensi', Carbon::now("Asia/Jakarta")->format('Y-m-d'))
             ->first();
         // dd($userAttendanceToday); 
 
@@ -174,6 +174,7 @@ class AttendanceController extends Controller
         }
 
         if ($attendanceType == 'out') {
+            // dd($userAttendanceToday);
             if ($userAttendanceToday) {
                 if ($userAttendanceToday->status) {
                     return response()->json(
