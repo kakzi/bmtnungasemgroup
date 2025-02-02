@@ -96,11 +96,13 @@ class AttendanceController extends Controller
                         ]
                     );
                     // //Send WhatsApp Notification
+                    // Send WhatsApp Notification
                     // // Send WhatsApp Notification
-                    // $keterangan = ($time > $start) ? "Telat" : "Datang";
-                    // // Send WhatsApp Notification
-                    // $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-in berhasil $keterangan pada $time. \n\nSantri atas Nama : ".auth()->user()->name. ", \nKantor penempatan : ".auth()->user()->office->name."\n\n\nSelamat Berjuang ya!");
+                    $keterangan = ($time > $start) ? "Telat" : "Datang";
+                    // Send WhatsApp Notification
+                    $this->sendWhatsAppMessage( "Assalamualaikum. \n\nBerikut data Kehadiran Santri  Tanggal *$date* pukul $time. \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."Status Absensi : *$keterangan*\n\nSelamat Berjuang ya, semangat Kamu pasti bisa!\n\n\nTerimakasih\n\nHR KSPPS BMT NU Ngasem");
 
+                    
                     return response()->json(
                         [
                             'message' => 'Absensi Check in berhasil di kirim!',
@@ -127,9 +129,11 @@ class AttendanceController extends Controller
                     //Send WhatsApp Notification
                     
                     // Send WhatsApp Notification
+                    // // Send WhatsApp Notification
                     $keterangan = ($time > $start) ? "Telat" : "Datang";
                     // Send WhatsApp Notification
-                    $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-in berhasil $keterangan pada $time. \n\nSantri atas Nama : ".auth()->user()->name. ", \nKantor penempatan : ".auth()->user()->office->name."\n\n\nSelamat Berjuang ya!");
+                    $this->sendWhatsAppMessage( "Assalamualaikum. \n\nBerikut data Kehadiran Santri  Tanggal *$date* pukul $time. \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."Status Absensi : *$keterangan*\n\nSelamat Berjuang ya, semangat Kamu pasti bisa!\n\n\nTerimakasih\n\nHR KSPPS BMT NU Ngasem");
+
 
                     return response()->json(
                         [
@@ -200,8 +204,11 @@ class AttendanceController extends Controller
                     
                     $keterangan = ($time > $pulawal && $time < $end) ? "Pulang Awal" : "Pulang";
                     // Send WhatsApp Notification
-                    $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-out berhasil: $keterangan pada $time. \n\nSantri atas Nama : ".auth()->user()->name. ", \nKantor penempatan : ".auth()->user()->office->name.", \n\n\nHati Hati di jalan ya!");
-                    
+                    // // Send WhatsApp Notification
+                    // $keterangan = ($time > $start) ? "Telat" : "Datang";
+                    // Send WhatsApp Notification
+                    $this->sendWhatsAppMessage( "Assalamualaikum. \n\nBerikut data Kehadiran Santri  Tanggal *$date* pukul $time. \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."Status Absensi : *$keterangan*\n\nHati Hati di jalan dan selalu jaga kesehatan ya, semangat!\n\n\nTerimakasih\n\nHR KSPPS BMT NU Ngasem");
+
                     return response()->json(
                         [
                             'message' => 'Absensi Check out berhasil di kirim!',
@@ -227,8 +234,11 @@ class AttendanceController extends Controller
                     
                     $keterangan = ($time > $pulawal && $time < $end) ? "Pulang Awal" : "Pulang";
                     // Send WhatsApp Notification
-                    $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-out berhasil: $keterangan pada $time. \n\nSantri atas Nama : ".auth()->user()->name. ", \nKantor penempatan : ".auth()->user()->office->name.", \n\n\nHati Hati di jalan ya!");
-                    
+                    // // Send WhatsApp Notification
+                    // $keterangan = ($time > $start) ? "Telat" : "Datang";
+                    // Send WhatsApp Notification
+                    $this->sendWhatsAppMessage( "Assalamualaikum. \n\nBerikut data Kehadiran Santri  Tanggal *$date* pukul $time. \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."Status Absensi : *$keterangan*\n\nHati Hati di jalan dan selalu jaga kesehatan ya, semangat!\n\n\nTerimakasih\n\nHR KSPPS BMT NU Ngasem");
+
                     return response()->json(
                         [
                             'message' => 'Absensi Check out berhasil di kirim!',
@@ -254,7 +264,10 @@ class AttendanceController extends Controller
                     
                     $keterangan = ($time > $pulawal && $time < $end) ? "Pulang Awal" : "Pulang";
                     // Send WhatsApp Notification
-                    $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-out berhasil: $keterangan pada $time. \n\nSantri atas Nama : ".auth()->user()->name. ", \nKantor penempatan : ".auth()->user()->office->name.", \n\n\nHati Hati di jalan ya!");
+                    // // Send WhatsApp Notification
+                    // $keterangan = ($time > $start) ? "Telat" : "Datang";
+                    // Send WhatsApp Notification
+                    $this->sendWhatsAppMessage( "Assalamualaikum. \n\nBerikut data Kehadiran Santri  Tanggal *$date* pukul $time. \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."Status Absensi : *$keterangan*\n\nHati Hati di jalan dan selalu jaga kesehatan ya, semangat!\n\n\nTerimakasih\n\nHR KSPPS BMT NU Ngasem");
                     
                     return response()->json(
                         [
@@ -367,8 +380,8 @@ class AttendanceController extends Controller
 
         $response = Http::asForm()->post('https://app.ruangwa.id/api/send_message', [
             'token' => $token,
-            'number' => '085731581567-1501489476',
-            // 'number' => '085155105056',
+            // 'number' => '085731581567-1501489476',
+            'number' => '085155105056',
             'message' => $message,
         ]);
 
