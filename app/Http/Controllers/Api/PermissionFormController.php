@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers\Api;
 
+use Carbon\Carbon;
 use App\Models\Cuti;
 use App\Models\Izin;
 use App\Models\SyncDate;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
-use Carbon\Carbon;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Validator;
 use Intervention\Image\Facades\Image as ResizeImage;
 
@@ -33,6 +34,9 @@ class PermissionFormController extends Controller
                 'user_id' => auth()->user()->id
             ]);
             $cuti->save();
+            $cutiCount = Cuti::where('status', 'approved')->where('user_id', auth()->user()->id)->count();
+
+            $this->sendWhatsAppMessage( "Assalamualaikum. \nBerikut data Pengajuan Data Izin Santri, Tanggal *$cuti->date* \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."\nPengajuan :  *Cuti*\nAlasan : *$cuti->reason*\nJumlah Cuti dalam 1 Tahun : *$cutiCount*\n_Yang sakit semoga cepat sembuh, yang lagi acara semoga berjalan dengan lancar, Amiin_\nTerimakasih\n\n*HR KSPPS BMT NU Ngasem*");
 
             return response()->json([
                 'success' => true,
@@ -60,6 +64,11 @@ class PermissionFormController extends Controller
             ]);
             $cuti->save();
 
+            //count cuti where user_id == auth()->user()->id
+
+            $cutiCount = Cuti::where('status', 'approved')->where('user_id', auth()->user()->id)->count();
+
+            $this->sendWhatsAppMessage( "Assalamualaikum. \nBerikut data Pengajuan Data Izin Santri, Tanggal *$cuti->date* \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."\nPengajuan :  *Cuti*\nAlasan : *$cuti->reason*\nJumlah Cuti dalam 1 Tahun : *$cutiCount*\n_Yang sakit semoga cepat sembuh, yang lagi acara semoga berjalan dengan lancar, Amiin_\nTerimakasih\n\n*HR KSPPS BMT NU Ngasem*");
             return response()->json([
                 'success' => true,
                 'message' => 'Cuti berhasil di kirim!',
@@ -92,12 +101,16 @@ class PermissionFormController extends Controller
             ->save($path . $name);
 
         $izin = Izin::create([
-                'date' => Carbon::now(),
+                'date' => Carbon::now('Asia/Jakarta')->format('Y-m-d H:i:s'),
                 'reason' => $request->reason,
                 'user_id' => auth()->user()->id,
                 'foto' => $name
         ]);
         $izin->save();
+
+        $izinCount = Izin::where('status', 'approved')->where('user_id', auth()->user()->id)->count();
+
+        $this->sendWhatsAppMessage( "Assalamualaikum. \nBerikut data Pengajuan Data Izin Santri, Tanggal *$izin->date* \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."\nPengajuan :  *Izin*\n\n *Alasan* : *$izin->reason*\nJumlah Izin dalam 1 Tahun : *$izinCount*\n_Yang sakit semoga cepat sembuh, yang lagi acara semoga berjalan dengan lancar, Amiin_\nTerimakasih\n\n*HR KSPPS BMT NU Ngasem*");
 
         return response()->json([
             'success' => true,
@@ -161,5 +174,19 @@ class PermissionFormController extends Controller
             'data' => $this->response
         ]);
 
+    }
+
+    private function sendWhatsAppMessage($message)
+    {
+        $token = "PFfgXmrsu2eodrArGx4yrL7kMRWPdKPrk1ttZAXTn8Y72o2iaQ";
+
+        $response = Http::asForm()->post('https://app.ruangwa.id/api/send_message', [
+            'token' => $token,
+            'number' => '120363376885641437',
+            // 'number' => '085155105056',
+            'message' => $message,
+        ]);
+
+        return $response->json();
     }
 }

@@ -8,6 +8,7 @@ use App\Models\SyncDate;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Validator;
 
 class KarakterController extends Controller
@@ -143,7 +144,9 @@ class KarakterController extends Controller
     
             $tilawah->save();
             $this->response['id'] = $tilawah->id;
-    
+
+            $this->sendWhatsAppMessage( "Assalamualaikum\nBerikut data Laporan Tilawah Tanggal *$date* pukul $time. \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."\nLaporan : *$tilawah->laporan*\n\n_Semoga selalu di berikan keberkahan nggih!_\n\nTerimakasih\n\n*HR KSPPS BMT NU Ngasem*");
+
             return response()->json([
                 'success' => true,
                 'message' => 'Tilawah berhasil di kirim!',
@@ -181,8 +184,13 @@ class KarakterController extends Controller
                         'message' => "Maaf hari ini kamu sudah laporan!",
                     ], 403);
                 }
+
                 $tilawah->save();
                 $this->response['id'] = $tilawah->id;
+
+                $this->sendWhatsAppMessage( "Assalamualaikum\nBerikut data Laporan Tahajud Tanggal *$date* pukul $time. \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."\nLaporan : *$tilawah->laporan*\n\n_Semoga selalu di berikan keberkahan nggih!_\n\nTerimakasih\n\n*HR KSPPS BMT NU Ngasem*");
+
+
                 return response()->json([
                         'success' => true,
                         'message' => 'Tahajud berhasil di kirim!',
@@ -197,5 +205,19 @@ class KarakterController extends Controller
             }
         }
     
+    }
+
+    private function sendWhatsAppMessage($message)
+    {
+        $token = "PFfgXmrsu2eodrArGx4yrL7kMRWPdKPrk1ttZAXTn8Y72o2iaQ";
+
+        $response = Http::asForm()->post('https://app.ruangwa.id/api/send_message', [
+            'token' => $token,
+            'number' => '120363394633285712',
+            // 'number' => '085155105056',
+            'message' => $message,
+        ]);
+
+        return $response->json();
     }
 }
