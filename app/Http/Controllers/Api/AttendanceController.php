@@ -95,23 +95,11 @@ class AttendanceController extends Controller
                             'address' => $request->address
                         ]
                     );
-                    //Send WhatsApp Notification
-                    $afirmasi = [
-                        "Selamat pagi! Kamu luar biasa, dan hari ini adalah kesempatan baru untuk bersinar!✨",
-                        "Aku yakin kamu bisa menghadapi hari ini dengan penuh semangat dan percaya diri! 💪🔥",
-                        "Setiap langkah kecil yang kamu ambil hari ini membawa kamu lebih dekat ke impianmu! 🚀💡",
-                        "Jangan ragu, kamu punya kemampuan hebat untuk mengatasi setiap tantangan! 🌟👏",
-                        "Hari ini adalah milikmu! Hadapi dengan senyuman dan keyakinan! 😊🌈",
-                        "Ingat, kerja kerasmu tidak sia-sia. Kamu semakin berkembang setiap hari! 🌟👏",
-                        "Apapun yang terjadi hari ini, kamu tetap berharga dan luar biasa! ✨🤗",
-                        "Kamu tidak sendirian! Aku mendukungmu dan percaya kamu bisa melakukannya! 🤝",
-                        "Hari ini penuh peluang baru! Jangan takut untuk mencoba dan belajar! 🚀📚",
-                        "Tetap semangat! Satu langkah maju hari ini adalah kemenangan besar untuk masa depanmu! 🎉🏆"
-                    ];
-                    // Send WhatsApp Notification
-                    $keterangan = ($time > $start) ? "Telat" : "Datang";
-                    // Send WhatsApp Notification
-                    $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-in berhasil $keterangan pada $time. \n\nSantri atas Nama : ".auth()->user()->name. ", \nKantor penempatan : ".auth()->user()->office->name."\n\n".$afirmasi[array_rand($afirmasi)]."\nSelamat Berjuang ya!");
+                    // //Send WhatsApp Notification
+                    // // Send WhatsApp Notification
+                    // $keterangan = ($time > $start) ? "Telat" : "Datang";
+                    // // Send WhatsApp Notification
+                    // $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-in berhasil $keterangan pada $time. \n\nSantri atas Nama : ".auth()->user()->name. ", \nKantor penempatan : ".auth()->user()->office->name."\n\n\nSelamat Berjuang ya!");
 
                     return response()->json(
                         [
@@ -137,22 +125,11 @@ class AttendanceController extends Controller
                     );
 
                     //Send WhatsApp Notification
-                    $afirmasi = [
-                        "Selamat pagi! Kamu luar biasa, dan hari ini adalah kesempatan baru untuk bersinar!✨",
-                        "Aku yakin kamu bisa menghadapi hari ini dengan penuh semangat dan percaya diri! 💪🔥",
-                        "Setiap langkah kecil yang kamu ambil hari ini membawa kamu lebih dekat ke impianmu! 🚀💡",
-                        "Jangan ragu, kamu punya kemampuan hebat untuk mengatasi setiap tantangan! 🌟👏",
-                        "Hari ini adalah milikmu! Hadapi dengan senyuman dan keyakinan! 😊🌈",
-                        "Ingat, kerja kerasmu tidak sia-sia. Kamu semakin berkembang setiap hari! 🌟👏",
-                        "Apapun yang terjadi hari ini, kamu tetap berharga dan luar biasa! ✨🤗",
-                        "Kamu tidak sendirian! Aku mendukungmu dan percaya kamu bisa melakukannya! 🤝",
-                        "Hari ini penuh peluang baru! Jangan takut untuk mencoba dan belajar! 🚀📚",
-                        "Tetap semangat! Satu langkah maju hari ini adalah kemenangan besar untuk masa depanmu! 🎉🏆"
-                    ];
+                    
                     // Send WhatsApp Notification
                     $keterangan = ($time > $start) ? "Telat" : "Datang";
                     // Send WhatsApp Notification
-                    $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-in berhasil $keterangan pada $time. \n\nSantri atas Nama : ".auth()->user()->name. ", \nKantor penempatan : ".auth()->user()->office->name."\n\n".$afirmasi[array_rand($afirmasi)]."\nSelamat Berjuang ya!");
+                    $this->sendWhatsAppMessage( "Alhamdulillah.... \nAbsensi Check-in berhasil $keterangan pada $time. \n\nSantri atas Nama : ".auth()->user()->name. ", \nKantor penempatan : ".auth()->user()->office->name."\n\n\nSelamat Berjuang ya!");
 
                     return response()->json(
                         [

@@ -35,7 +35,7 @@ class AttendanceDataExport implements FromQuery, WithMapping, WithHeadings, With
     public function query()
     {
         $date = SyncDate::first();
-        return Attendance::query()->with('user.roles', 'detail', 'office')->whereBetween('created_at', [$date->date_start, $date->date_end]);
+        return Attendance::query()->with('user.roles', 'detail', 'office')->whereBetween('date_absensi', [$date->date_start, $date->date_end]);
     }
 
     /**
@@ -49,7 +49,7 @@ class AttendanceDataExport implements FromQuery, WithMapping, WithHeadings, With
             $attendance->user->name,
             $roles,
             $attendance->office->name,
-            Carbon::parse($attendance->created_at)->format('d-m-Y'),
+            Carbon::parse($attendance->date_absensi)->format('d-m-Y'),
             "Absensi Harian",
             "06:02",
             "15:00",

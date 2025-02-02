@@ -20,8 +20,8 @@ class AttendanceExport implements FromCollection, WithHeadings
             ->leftJoin('attendances', 'users.id', '=', 'attendances.user_id')
             ->leftJoin('attendance_details as detail', 'attendances.id', '=', 'detail.attendance_id')
             ->where(function ($query) use ($date) {
-                $query->whereBetween('attendances.created_at', [$date->date_start, $date->date_end])
-                    ->orWhereNull('attendances.created_at'); // Include users without attendance records
+                $query->whereBetween('attendances.date_absensi', [$date->date_start, $date->date_end])
+                    ->orWhereNull('attendances.date_absensi'); // Include users without attendance records
             })
             ->groupBy('users.id', 'users.name')
             ->orderBy('users.name', 'asc') // Sort by 'Nama Santri' in ascending order
