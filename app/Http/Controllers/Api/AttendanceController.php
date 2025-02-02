@@ -100,7 +100,7 @@ class AttendanceController extends Controller
                     // // Send WhatsApp Notification
                     $keterangan = ($time > $start) ? "Telat" : "Datang";
                     // Send WhatsApp Notification
-                    $this->sendWhatsAppMessage( "Assalamualaikum. \n\nBerikut data Kehadiran Santri  Tanggal *$date* pukul $time. \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."Status Absensi : *$keterangan*\n\nSelamat Berjuang ya, semangat Kamu pasti bisa!\n\n\nTerimakasih\n\nHR KSPPS BMT NU Ngasem");
+                    $this->sendWhatsAppMessage( "Assalamualaikum. \n\nBerikut data Kehadiran Santri  Tanggal *$date* pukul $time. \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."\nStatus Absensi : *$keterangan*\n\nSelamat Berjuang ya, semangat Kamu pasti bisa!\n\nTerimakasih\n\nHR KSPPS BMT NU Ngasem");
 
                     
                     return response()->json(
@@ -132,7 +132,9 @@ class AttendanceController extends Controller
                     // // Send WhatsApp Notification
                     $keterangan = ($time > $start) ? "Telat" : "Datang";
                     // Send WhatsApp Notification
-                    $this->sendWhatsAppMessage( "Assalamualaikum. \n\nBerikut data Kehadiran Santri  Tanggal *$date* pukul $time. \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."Status Absensi : *$keterangan*\n\nSelamat Berjuang ya, semangat Kamu pasti bisa!\n\n\nTerimakasih\n\nHR KSPPS BMT NU Ngasem");
+                    $this->sendWhatsAppMessage( "Assalamualaikum. \n\nBerikut data Kehadiran Santri  Tanggal *$date* pukul $time. \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."\nStatus Absensi : *$keterangan*\n\nSelamat Berjuang ya, semangat Kamu pasti bisa!\n\nTerimakasih\n\nHR KSPPS BMT NU Ngasem");
+
+                    
 
 
                     return response()->json(
@@ -207,7 +209,7 @@ class AttendanceController extends Controller
                     // // Send WhatsApp Notification
                     // $keterangan = ($time > $start) ? "Telat" : "Datang";
                     // Send WhatsApp Notification
-                    $this->sendWhatsAppMessage( "Assalamualaikum. \n\nBerikut data Kehadiran Santri  Tanggal *$date* pukul $time. \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."Status Absensi : *$keterangan*\n\nHati Hati di jalan dan selalu jaga kesehatan ya, semangat!\n\n\nTerimakasih\n\nHR KSPPS BMT NU Ngasem");
+                    $this->sendWhatsAppMessage( "Assalamualaikum. \nBerikut data Kehadiran Santri  Tanggal *$date* pukul $time. \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."\nStatus Absensi : *$keterangan*\n\nHati Hati di jalan dan selalu jaga kesehatan ya, semangat!\n\nTerimakasih\n\nHR KSPPS BMT NU Ngasem");
 
                     return response()->json(
                         [
@@ -237,7 +239,7 @@ class AttendanceController extends Controller
                     // // Send WhatsApp Notification
                     // $keterangan = ($time > $start) ? "Telat" : "Datang";
                     // Send WhatsApp Notification
-                    $this->sendWhatsAppMessage( "Assalamualaikum. \n\nBerikut data Kehadiran Santri  Tanggal *$date* pukul $time. \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."Status Absensi : *$keterangan*\n\nHati Hati di jalan dan selalu jaga kesehatan ya, semangat!\n\n\nTerimakasih\n\nHR KSPPS BMT NU Ngasem");
+                    $this->sendWhatsAppMessage( "Assalamualaikum. \nBerikut data Kehadiran Santri  Tanggal *$date* pukul $time. \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."\nStatus Absensi : *$keterangan*\n\nHati Hati di jalan dan selalu jaga kesehatan ya, semangat!\n\nTerimakasih\n\nHR KSPPS BMT NU Ngasem");
 
                     return response()->json(
                         [
@@ -267,7 +269,7 @@ class AttendanceController extends Controller
                     // // Send WhatsApp Notification
                     // $keterangan = ($time > $start) ? "Telat" : "Datang";
                     // Send WhatsApp Notification
-                    $this->sendWhatsAppMessage( "Assalamualaikum. \n\nBerikut data Kehadiran Santri  Tanggal *$date* pukul $time. \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."Status Absensi : *$keterangan*\n\nHati Hati di jalan dan selalu jaga kesehatan ya, semangat!\n\n\nTerimakasih\n\nHR KSPPS BMT NU Ngasem");
+                    $this->sendWhatsAppMessage( "Assalamualaikum. \nBerikut data Kehadiran Santri  Tanggal *$date* pukul $time. \n\nNama : *".auth()->user()->name."* \nKantor : ".auth()->user()->office->name."\nStatus Absensi : *$keterangan*\n\nHati Hati di jalan dan selalu jaga kesehatan ya, semangat!\n\nTerimakasih\n\nHR KSPPS BMT NU Ngasem");
                     
                     return response()->json(
                         [
