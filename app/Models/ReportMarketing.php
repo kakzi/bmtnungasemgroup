@@ -13,8 +13,6 @@ class ReportMarketing extends Model
     protected $fillable = [
         'user_id',
         'office_id',
-        'speedawal',
-        'speedakhir',
         'modal',
         'anggota',
         'funding',
@@ -47,6 +45,10 @@ class ReportMarketing extends Model
         'aplikasiwa',
         'jumlah_slip',
         'update_media',
+        'km_harian',
+        'wilayah',
+        'kejujuran',
+        'foto_tarikan',
 
         'file_slip_penarikan',
         'file_kas_opname',
@@ -55,8 +57,6 @@ class ReportMarketing extends Model
         'file_foto_penagihan',
         'file_form_modal',
         'file_medsos',
-        'file_speedawal',
-        'file_speedakhir',
         'make_by'
     ];
 

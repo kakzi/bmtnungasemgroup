@@ -18,6 +18,7 @@ use Filament\Forms\Components\Hidden;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Components\Section;
+use Filament\Forms\Components\Checkbox;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
@@ -90,7 +91,7 @@ class ReportBranchManagerResource extends Resource
                                 '2xl' => 4,
                             ]),
                         TextInput::make('penempatan_kantor')
-                            ->label('Penempatan Kantor')
+                            ->label('Penempatan Kantor Lain')
                             ->required()
                             ->numeric()
                             ->mask(RawJs::make('$money($input)'))
@@ -144,6 +145,39 @@ class ReportBranchManagerResource extends Resource
                                 'xl' => 3,
                                 '2xl' => 3,
                             ]),
+                        TextInput::make('rahn')
+                            ->label('Rahn')
+                            ->required()
+                            ->numeric()
+                            ->mask(RawJs::make('$money($input)'))
+                            ->stripCharacters(',')
+                            ->columnSpan([
+                                'sm' => 2,
+                                'xl' => 3,
+                                '2xl' => 3,
+                            ]),
+                        TextInput::make('ijarah')
+                            ->label('Ijarah')
+                            ->required()
+                            ->numeric()
+                            ->mask(RawJs::make('$money($input)'))
+                            ->stripCharacters(',')
+                            ->columnSpan([
+                                'sm' => 2,
+                                'xl' => 3,
+                                '2xl' => 3,
+                            ]),
+                        TextInput::make('murabahah')
+                            ->label('Murabahah')
+                            ->required()
+                            ->numeric()
+                            ->mask(RawJs::make('$money($input)'))
+                            ->stripCharacters(',')
+                            ->columnSpan([
+                                'sm' => 2,
+                                'xl' => 3,
+                                '2xl' => 3,
+                            ]),
                         TextInput::make('kafalah')
                             ->label('Kafalah')
                             ->required()
@@ -174,8 +208,8 @@ class ReportBranchManagerResource extends Resource
                             ->stripCharacters(',')
                             ->columnSpan([
                                 'sm' => 2,
-                                'xl' => 3,
-                                '2xl' => 3,
+                                'xl' => 4,
+                                '2xl' => 4,
                             ]),
                         TextInput::make('omset')
                             ->label('Omset')
@@ -185,8 +219,8 @@ class ReportBranchManagerResource extends Resource
                             ->stripCharacters(',')
                             ->columnSpan([
                                 'sm' => 2,
-                                'xl' => 3,
-                                '2xl' => 3,
+                                'xl' => 4,
+                                '2xl' => 4,
                             ]),
                         TextInput::make('shu')
                             ->label('SHU')
@@ -196,8 +230,8 @@ class ReportBranchManagerResource extends Resource
                             ->stripCharacters(',')
                             ->columnSpan([
                                 'sm' => 2,
-                                'xl' => 3,
-                                '2xl' => 3,
+                                'xl' => 4,
+                                '2xl' => 4,
                             ]),
                         ]),
                     Section::make('Checklist')
@@ -247,6 +281,7 @@ class ReportBranchManagerResource extends Resource
                                     'xl' => 6,
                                     '2xl' => 6,
                                 ])
+                                ->required()
                                 ->multiple()
                                 ->live()
                                 ->options(
@@ -265,6 +300,7 @@ class ReportBranchManagerResource extends Resource
                                     'xl' => 6,
                                     '2xl' => 6,
                                 ])
+                                ->required()
                                 ->multiple()
                                 ->live()
                                 ->options(
@@ -422,7 +458,7 @@ class ReportBranchManagerResource extends Resource
                                 ]),
                             
                             FileUpload::make('file_tabarru_nota')
-                                ->label('Upload Foto Tabarru')
+                                ->label('Upload Foto Nota Penggunanaan Tabarru')
                                 ->directory('report-bm')
                                 ->required()
                                 ->columnSpan([
@@ -457,6 +493,57 @@ class ReportBranchManagerResource extends Resource
                                 ])
                             
                         ]),     
+
+                        Section::make('Data Transport Jarak')
+                        ->columns([
+                            'sm' => 2,
+                            'xl' => 12,
+                            '2xl' => 12,
+                        ])->schema([
+                            TextInput::make('km_harian')
+                                ->label('KM Harian')
+                                ->required()
+                                ->numeric()
+                                ->columnSpan([
+                                    'sm' => 2,
+                                    'xl' => 4,
+                                    '2xl' => 4,
+                                ]),
+                            TextInput::make('wilayah')
+                                ->label('Wilayah')
+                                ->required()
+                                ->numeric()
+                                ->columnSpan([
+                                    'sm' => 2,
+                                    'xl' => 4,
+                                    '2xl' => 4,
+                                ]),
+                            
+                            FileUpload::make('foto_tarikan')
+                                ->label('Upload Bukti Foto Pendampingan Terjauh')
+                                ->directory('report-marketing')
+                                ->required()
+                                ->columnSpan([
+                                    'sm' => 2,
+                                    'xl' => 4,
+                                    '2xl' => 4,
+                                ]),
+                            
+                    ]),
+                    Section::make('Pernyataan Kejujuran santri')
+                        ->columns([
+                            'sm' => 2,
+                            'xl' => 12,
+                            '2xl' => 12,
+                        ])->schema([
+                            Checkbox::make('kejujuran')->label('Saya mengirimkan data ini dengan sadar dan sejujur - jujurnya')->default(false)
+                                ->columnSpan([
+                                    'sm' => 2,
+                                    'xl' => 12,
+                                    '2xl' => 12,
+                                ]),
+                            
+                    ]),
             ]);
     }
 

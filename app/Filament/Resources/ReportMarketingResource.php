@@ -14,6 +14,7 @@ use Filament\Resources\Resource;
 use Filament\Forms\Components\Hidden;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Components\Section;
+use Filament\Forms\Components\Checkbox;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
@@ -517,42 +518,49 @@ class ReportMarketingResource extends Resource
                             'xl' => 12,
                             '2xl' => 12,
                         ])->schema([
-                            TextInput::make('speedawal')
-                                ->label('Spedo Awal')
+                            TextInput::make('km_harian')
+                                ->label('KM Harian')
                                 ->required()
                                 ->numeric()
                                 ->columnSpan([
                                     'sm' => 2,
-                                    'xl' => 6,
-                                    '2xl' => 6,
+                                    'xl' => 4,
+                                    '2xl' => 4,
                                 ]),
-                            TextInput::make('speedakhir')
-                                ->label('Spedo Akhir')
+                            TextInput::make('wilayah')
+                                ->label('Wilayah')
                                 ->required()
                                 ->numeric()
                                 ->columnSpan([
                                     'sm' => 2,
-                                    'xl' => 6,
-                                    '2xl' => 6,
+                                    'xl' => 4,
+                                    '2xl' => 4,
                                 ]),
-                            FileUpload::make('file_speedawal')
-                                ->label('Upload Bukti Foto Speed Awal')
+                            
+                            FileUpload::make('foto_tarikan')
+                                ->label('Upload Bukti Foto Tarikan Terjauh')
                                 ->directory('report-marketing')
                                 ->required()
                                 ->columnSpan([
                                     'sm' => 2,
-                                    'xl' => 6,
-                                    '2xl' => 6,
+                                    'xl' => 4,
+                                    '2xl' => 4,
                                 ]),
-                            FileUpload::make('file_speedakhir')
-                                ->label('Upload Bukti Foto Speed Akhir')
-                                ->directory('report-marketing')
-                                ->required()
+                            
+                    ]),
+                    Section::make('Pernyataan Kejujuran santri')
+                        ->columns([
+                            'sm' => 2,
+                            'xl' => 12,
+                            '2xl' => 12,
+                        ])->schema([
+                            Checkbox::make('kejujuran')->label('Saya mengirimkan data ini dengan sadar dan sejujur - jujurnya')->default(false)
                                 ->columnSpan([
                                     'sm' => 2,
-                                    'xl' => 6,
-                                    '2xl' => 6,
+                                    'xl' => 12,
+                                    '2xl' => 12,
                                 ]),
+                            
                     ]),
             ]);
     }

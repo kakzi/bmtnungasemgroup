@@ -14,7 +14,10 @@ use Filament\Forms\Components\Hidden;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Components\Section;
+use Filament\Forms\Components\Checkbox;
 use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
@@ -84,6 +87,7 @@ class ReportRegionalResource extends Resource
                                 'xl' => 12,
                                 '2xl' => 12,
                             ])
+                            ->required()
                             ->multiple()
                             ->live()
                             ->options(
@@ -130,7 +134,58 @@ class ReportRegionalResource extends Resource
                                     '2xl' => 12,
                                 ])
 
-                    ])
+                                ]),
+
+                                Section::make('Data Transport Jarak')
+                                ->columns([
+                                    'sm' => 2,
+                                    'xl' => 12,
+                                    '2xl' => 12,
+                                ])->schema([
+                                    TextInput::make('km_harian')
+                                        ->label('KM Harian')
+                                        ->required()
+                                        ->numeric()
+                                        ->columnSpan([
+                                            'sm' => 2,
+                                            'xl' => 4,
+                                            '2xl' => 4,
+                                        ]),
+                                    TextInput::make('wilayah')
+                                        ->label('Wilayah')
+                                        ->required()
+                                        ->numeric()
+                                        ->columnSpan([
+                                            'sm' => 2,
+                                            'xl' => 4,
+                                            '2xl' => 4,
+                                        ]),
+                                    
+                                    FileUpload::make('foto_tarikan')
+                                        ->label('Upload Bukti Foto Tarikan Terjauh')
+                                        ->directory('report-marketing')
+                                        ->required()
+                                        ->columnSpan([
+                                            'sm' => 2,
+                                            'xl' => 4,
+                                            '2xl' => 4,
+                                        ]),
+                                    
+                            ]),
+                            Section::make('Pernyataan Kejujuran santri')
+                                ->columns([
+                                    'sm' => 2,
+                                    'xl' => 12,
+                                    '2xl' => 12,
+                                ])->schema([
+                                    Checkbox::make('kejujuran')->label('Saya mengirimkan data ini dengan sadar dan sejujur - jujurnya')->default(false)
+                                        ->columnSpan([
+                                            'sm' => 2,
+                                            'xl' => 12,
+                                            '2xl' => 12,
+                                        ]),
+                                    
+                            ]),
             ]);
     }
 

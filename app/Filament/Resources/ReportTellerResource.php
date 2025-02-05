@@ -115,90 +115,93 @@ class ReportTellerResource extends Resource
                 ]),
 
                 Section::make('Pemasukan')
-                    ->columns([
-                        'sm' => 2,
-                        'xl' => 12,
-                        '2xl' => 12,
-                    ])
-                    ->schema([
-                        TextInput::make('simpanan')
-                        ->label('Simpanan')
-                        ->required()
-                        ->mask(RawJs::make('$money($input)'))
-                        ->stripCharacters(',')
-                        ->numeric()
-                        ->columnSpan([
+                        ->columns([
                             'sm' => 2,
-                            'xl' => 4,
-                            '2xl' => 4,
-                        ]),
-                        TextInput::make('deposit')
-                        ->label('Deposit')
-                        ->required()
-                        ->mask(RawJs::make('$money($input)'))
-                        ->stripCharacters(',')
-                        ->numeric()
-                        ->columnSpan([
-                            'sm' => 2,
-                            'xl' => 4,
-                            '2xl' => 4,
-                        ]),
-                        TextInput::make('angsuran')
-                        ->label('Angsuran')
-                        ->required()
-                        ->mask(RawJs::make('$money($input)'))
-                        ->stripCharacters(',')
-                        ->numeric()
-                        ->columnSpan([
-                            'sm' => 2,
-                            'xl' => 4,
-                            '2xl' => 4,
-                        ]),
-                        TextInput::make('atk')
-                        ->label('ATK')
-                        ->required()
-                        ->mask(RawJs::make('$money($input)'))
-                        ->stripCharacters(',')
-                        ->numeric()
-                        ->columnSpan([
-                            'sm' => 2,
-                            'xl' => 4,
-                            '2xl' => 4,
-                        ]),
-                        TextInput::make('materai')
-                        ->label('Materai')
-                        ->required()
-                        ->mask(RawJs::make('$money($input)'))
-                        ->stripCharacters(',')
-                        ->numeric()
-                        ->columnSpan([
-                            'sm' => 2,
-                            'xl' => 4,
-                            '2xl' => 4,
-                        ]),
-                        TextInput::make('kas_masuk')
-                            ->label('Kas Masuk')
-                            ->required()
-                            ->mask(RawJs::make('$money($input)'))
-                            ->stripCharacters(',')
-                            ->numeric()
-                            ->columnSpan([
-                                'sm' => 2,
-                                'xl' => 4,
-                                '2xl' => 4,
+                            'xl' => 12,
+                            '2xl' => 12,
+                        ])
+                        ->schema([
+                            TextInput::make('simpanan')
+                                ->label('Simpanan')
+                                ->required()
+                                ->mask(RawJs::make('$money($input)'))
+                                ->stripCharacters(',')
+                                ->numeric()
+                                ->columnSpan([
+                                    'sm' => 2,
+                                    'xl' => 4,
+                                    '2xl' => 4,
+                                ])
+                                ->live(),
+
+                            TextInput::make('deposit')
+                                ->label('Deposit')
+                                ->required()
+                                ->mask(RawJs::make('$money($input)'))
+                                ->stripCharacters(',')
+                                ->numeric()
+                                ->columnSpan([
+                                    'sm' => 2,
+                                    'xl' => 4,
+                                    '2xl' => 4,
+                                ])
+                                ->live(),
+
+                            TextInput::make('angsuran')
+                                ->label('Angsuran')
+                                ->required()
+                                ->mask(RawJs::make('$money($input)'))
+                                ->stripCharacters(',')
+                                ->numeric()
+                                ->columnSpan([
+                                    'sm' => 2,
+                                    'xl' => 4,
+                                    '2xl' => 4,
+                                ])
+                                ->live(),
+
+                            TextInput::make('atk')
+                                ->label('ATK')
+                                ->required()
+                                ->mask(RawJs::make('$money($input)'))
+                                ->stripCharacters(',')
+                                ->numeric()
+                                ->columnSpan([
+                                    'sm' => 2,
+                                    'xl' => 4,
+                                    '2xl' => 4,
+                                ])
+                                ->live(),
+
+                            TextInput::make('materai')
+                                ->label('Materai')
+                                ->required()
+                                ->mask(RawJs::make('$money($input)'))
+                                ->stripCharacters(',')
+                                ->numeric()
+                                ->columnSpan([
+                                    'sm' => 2,
+                                    'xl' => 4,
+                                    '2xl' => 4,
+                                ])
+                                ->live(),
+
+                            TextInput::make('kas_masuk')
+                                ->label('Kas Masuk')
+                                ->required()
+                                ->mask(RawJs::make('$money($input)'))
+                                ->stripCharacters(',')
+                                ->numeric()
+                                ->columnSpan([
+                                    'sm' => 2,
+                                    'xl' => 4,
+                                    '2xl' => 4,
+                                ])
+                                ->live(),
+
+                            
                             ]),
-                        TextInput::make('total_masuk')
-                            ->label('Total Masuk')
-                            ->required()
-                            ->mask(RawJs::make('$money($input)'))
-                            ->stripCharacters(',')
-                            ->numeric()
-                            ->columnSpan([
-                                'sm' => 2,
-                                'xl' => 12,
-                                '2xl' => 12,
-                            ]),
-                    ]),
+
 
                 Section::make('Pengeluaran')
                     ->columns([
@@ -251,37 +254,9 @@ class ReportTellerResource extends Resource
                                 'xl' => 3,
                                 '2xl' => 3,
                             ]),
-                        TextInput::make('total_keluar')
-                            ->label('Total Keluar')
-                            ->required()
-                            ->mask(RawJs::make('$money($input)'))
-                            ->stripCharacters(',')
-                            ->numeric()
-                            ->columnSpan([
-                                'sm' => 2,
-                                'xl' => 12,
-                                '2xl' => 12,
-                            ]),
+                        
                     ]),
-                Section::make('Total Jumlah')
-                    ->columns([
-                        'sm' => 2,
-                        'xl' => 12,
-                        '2xl' => 12,
-                    ])
-                    ->schema([
-                        TextInput::make('total')
-                            ->label('Total Pemasukan - Pengeluaran')
-                            ->required()
-                            ->mask(RawJs::make('$money($input)'))
-                            ->stripCharacters(',')
-                            ->numeric()
-                            ->columnSpan([
-                                'sm' => 2,
-                                'xl' => 12,
-                                '2xl' => 12,
-                            ]),
-                    ]),
+                
 
                 Section::make('Prospek dan Penawaran')
                     ->columns([
@@ -490,7 +465,6 @@ class ReportTellerResource extends Resource
                         FileUpload::make('file_kas_keluar')
                             ->label('Upload Kas Keluar')
                             ->directory('report-teller')
-                            ->required()
                             ->columnSpan([
                                 'sm' => 2,
                                 'xl' => 4,
@@ -514,17 +488,8 @@ class ReportTellerResource extends Resource
                                 'xl' => 4,
                                 '2xl' => 4,
                             ]),
-                        FileUpload::make('file_foto_promo')
-                            ->label('Upload Foto Promo')
-                            ->directory('report-teller')
-                            ->required()
-                            ->columnSpan([
-                                'sm' => 2,
-                                'xl' => 4,
-                                '2xl' => 4,
-                            ]),
                         FileUpload::make('file_bp_st_agunan')
-                            ->label('Upload Buku Pencaia & Serah Terima Agunan')
+                            ->label('Upload Buku Pencairan & Serah Terima Agunan')
                             ->directory('report-teller')
                             ->required()
                             ->columnSpan([
@@ -571,7 +536,6 @@ class ReportTellerResource extends Resource
                         FileUpload::make('file_buku_serah_terima')
                             ->label('Upload Buku Serah Terima')
                             ->directory('report-teller')
-                            ->required()
                             ->columnSpan([
                                 'sm' => 2,
                                 'xl' => 4,
