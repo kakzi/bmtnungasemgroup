@@ -19,6 +19,9 @@ class RecapitulationHRExport implements FromCollection, WithHeadings, WithStyles
     {
         $date = SyncDate::first();
 
+        $date_awal = Carbon::parse($date->date_start)->format('Y-m-d H:i:s');
+        $date_akhir = $date->date_start.' 23:59:59';
+
         // Users without attendance, karakter, or LKH should be included with zeros
         $allUsers = User::select('users.id', 'users.name', 'offices.name as office_name', 'roles.name as role_name')
             ->leftJoin('model_has_roles', 'users.id', '=', 'model_has_roles.model_id')
@@ -26,12 +29,12 @@ class RecapitulationHRExport implements FromCollection, WithHeadings, WithStyles
             ->leftJoin('offices', 'users.office_id', '=', 'offices.id')
             ->leftJoin('attendances', function ($join) use ($date) {
                 $join->on('users.id', '=', 'attendances.user_id')
-                    ->whereBetween('attendances.created_at', [$date->date_start, $date->date_end]);
+                    ->whereBetween('attendances.created_at', [Carbon::parse($date->date_start)->format('Y-m-d H:i:s'), $date->date_start.' 23:59:59']);
             })
             ->leftJoin('attendance_details as detail', 'attendances.id', '=', 'detail.attendance_id')
             ->leftJoin('karakters as karakter', function ($join) use ($date) {
                 $join->on('users.id', '=', 'karakter.user_id')
-                    ->whereBetween('karakter.created_at', [$date->date_start, $date->date_end]);
+                    ->whereBetween('karakter.created_at', [Carbon::parse($date->date_start)->format('Y-m-d H:i:s'), $date->date_start.' 23:59:59']);
             })
             ->leftJoin('cutis', function ($join) {
                 $join->on('users.id', '=', 'cutis.user_id')
@@ -43,7 +46,7 @@ class RecapitulationHRExport implements FromCollection, WithHeadings, WithStyles
             })
             ->leftJoin('point_lkh_santris', function ($join) use ($date) {
                 $join->on('users.id', '=', 'point_lkh_santris.user_id')
-                    ->whereBetween('point_lkh_santris.created_at', [$date->date_start, $date->date_end]);
+                    ->whereBetween('point_lkh_santris.created_at', [Carbon::parse($date->date_start)->format('Y-m-d H:i:s'), $date->date_start.' 23:59:59']);
             })
             ->groupBy('users.id', 'users.name', 'offices.name', 'roles.name')
             ->selectRaw('COUNT(DISTINCT cutis.id) AS total_accepted_cuti') // Use DISTINCT to count only unique cuti records

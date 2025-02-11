@@ -11,9 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('audits', function (Blueprint $table) {
-            $table->double('total_point')->nullable();
-            $table->string('grade')->nullable();
+        Schema::create('pendampingan_marketings', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('question_marketing_id');
+            $table->timestamps();
         });
     }
 
@@ -22,8 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('audits', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('pendampingan_marketings');
     }
 };
