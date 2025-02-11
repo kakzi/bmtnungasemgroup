@@ -115,6 +115,9 @@ class AttendanceResource extends Resource
             ->filters([
 
             ])
+            ->modifyQueryUsing(function (Builder $query) { 
+                return $query->orderByDesc('created_at');
+            })
             ->actions([
                 // Tables\Actions\EditAction::make(),
                 // Tables\Actions\DeleteAction::make(),
