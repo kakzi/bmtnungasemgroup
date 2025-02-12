@@ -103,6 +103,8 @@ class ReportRegionalResource extends Resource
                                 ->label('Upload Bukti Foto Pendampingan')
                                 ->directory('report-regional')
                                 ->required()
+                                ->image()
+                                ->optimize('webp')
                                 ->columnSpan([
                                     'sm' => 2,
                                     'xl' => 4,
@@ -112,6 +114,8 @@ class ReportRegionalResource extends Resource
                                 ->label('Upload Bukti Foto Briefing/Evaluasi')
                                 ->directory('report-regional')
                                 ->required()
+                                ->image()
+                                ->optimize('webp')
                                 ->columnSpan([
                                     'sm' => 2,
                                     'xl' => 4,
@@ -121,6 +125,8 @@ class ReportRegionalResource extends Resource
                                 ->label('Upload Bukti Foto File SWOT')
                                 ->directory('report-regional')
                                 ->required()
+                                ->image()
+                                ->optimize('webp')
                                 ->columnSpan([
                                     'sm' => 2,
                                     'xl' => 4,
@@ -154,7 +160,6 @@ class ReportRegionalResource extends Resource
                                     TextInput::make('wilayah')
                                         ->label('Wilayah')
                                         ->required()
-                                        ->numeric()
                                         ->columnSpan([
                                             'sm' => 2,
                                             'xl' => 4,
@@ -165,6 +170,8 @@ class ReportRegionalResource extends Resource
                                         ->label('Upload Bukti Foto Tarikan Terjauh')
                                         ->directory('report-marketing')
                                         ->required()
+                                        ->image()
+                                        ->optimize('webp')
                                         ->columnSpan([
                                             'sm' => 2,
                                             'xl' => 4,

@@ -385,6 +385,8 @@ class ReportBranchManagerResource extends Resource
                             FileUpload::make('file_foto_penagihan')
                                 ->label('Upload Bukti Foto Penagihan')
                                 ->required()
+                                ->image()
+                                ->optimize('webp')
                                 ->columnSpan([
                                     'sm' => 2,
                                     'xl' => 4,
@@ -402,6 +404,8 @@ class ReportBranchManagerResource extends Resource
                                 ->label('Upload Bukti Foto Pendampingan')
                                 ->directory('report-bm')
                                 ->required()
+                                ->image()
+                                ->optimize('webp')
                                 ->columnSpan([
                                     'sm' => 2,
                                     'xl' => 4,
@@ -412,6 +416,8 @@ class ReportBranchManagerResource extends Resource
                                 ->directory('report-bm')
                                 ->required()
                                 ->multiple()
+                                ->image()
+                                ->optimize('webp')
                                 ->columnSpan([
                                     'sm' => 2,
                                     'xl' => 4,
@@ -422,6 +428,8 @@ class ReportBranchManagerResource extends Resource
                                 ->directory('report-bm')
                                 ->required()
                                 ->multiple()
+                                ->image()
+                                ->optimize('webp')
                                 ->columnSpan([
                                     'sm' => 2,
                                     'xl' => 4,
@@ -432,6 +440,8 @@ class ReportBranchManagerResource extends Resource
                                 ->directory('report-bm')
                                 ->required()
                                 ->multiple()
+                                ->image()
+                                ->optimize('webp')
                                 ->columnSpan([
                                     'sm' => 2,
                                     'xl' => 4,
@@ -442,6 +452,8 @@ class ReportBranchManagerResource extends Resource
                                 ->label('Upload Foto Briefing/Evaluasi')
                                 ->directory('report-bm')
                                 ->required()
+                                ->image()
+                                ->optimize('webp')
                                 ->columnSpan([
                                     'sm' => 2,
                                     'xl' => 4,
@@ -451,6 +463,8 @@ class ReportBranchManagerResource extends Resource
                                 ->label('Upload Foto Notulen')
                                 ->directory('report-bm')
                                 ->required()
+                                ->image()
+                                ->optimize('webp')
                                 ->columnSpan([
                                     'sm' => 2,
                                     'xl' => 4,
@@ -461,6 +475,8 @@ class ReportBranchManagerResource extends Resource
                                 ->label('Upload Foto Nota Penggunanaan Tabarru')
                                 ->directory('report-bm')
                                 ->required()
+                                ->image()
+                                ->optimize('webp')
                                 ->columnSpan([
                                     'sm' => 2,
                                     'xl' => 4,
@@ -470,6 +486,8 @@ class ReportBranchManagerResource extends Resource
                                 ->label('Upload Foto Kebersihan')
                                 ->directory('report-bm')
                                 ->required()
+                                ->image()
+                                ->optimize('webp')
                                 ->columnSpan([
                                     'sm' => 2,
                                     'xl' => 4,
@@ -479,6 +497,8 @@ class ReportBranchManagerResource extends Resource
                                 ->label('Upload Foto Update Medsos')
                                 ->directory('report-bm')
                                 ->required()
+                                ->image()
+                                ->optimize('webp')
                                 ->columnSpan([
                                     'sm' => 2,
                                     'xl' => 4,
@@ -512,7 +532,6 @@ class ReportBranchManagerResource extends Resource
                             TextInput::make('wilayah')
                                 ->label('Wilayah')
                                 ->required()
-                                ->numeric()
                                 ->columnSpan([
                                     'sm' => 2,
                                     'xl' => 4,
@@ -523,6 +542,8 @@ class ReportBranchManagerResource extends Resource
                                 ->label('Upload Bukti Foto Pendampingan Terjauh')
                                 ->directory('report-marketing')
                                 ->required()
+                                ->image()
+                                ->optimize('webp')
                                 ->columnSpan([
                                     'sm' => 2,
                                     'xl' => 4,

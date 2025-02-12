@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b8e27a4254644caa8a880e07b2d60139",
+    "content-hash": "d47355084a46960c1524516da8c15c2b",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -3039,6 +3039,82 @@
                 }
             ],
             "time": "2024-09-26T08:14:26+00:00"
+        },
+        {
+            "name": "joshembling/image-optimizer",
+            "version": "v1.4.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/joshembling/image-optimizer.git",
+                "reference": "56f74bb5afdaabe87189b3cc49e04023b7973730"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/joshembling/image-optimizer/zipball/56f74bb5afdaabe87189b3cc49e04023b7973730",
+                "reference": "56f74bb5afdaabe87189b3cc49e04023b7973730",
+                "shasum": ""
+            },
+            "require": {
+                "filament/forms": "^3.0",
+                "illuminate/contracts": "^10.0|^11.0",
+                "intervention/image": "^2.7",
+                "php": "^8.2",
+                "spatie/laravel-package-tools": "^1.15.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.9",
+                "orchestra/testbench": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "ImageOptimizer": "Joshembling\\ImageOptimizer\\Facades\\ImageOptimizer"
+                    },
+                    "providers": [
+                        "Joshembling\\ImageOptimizer\\ImageOptimizerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Joshembling\\ImageOptimizer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Josh Embling",
+                    "email": "joshembling@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Optimize your Filament images before they reach your database.",
+            "homepage": "https://github.com/joshembling/image-optimizer",
+            "keywords": [
+                "filament",
+                "filamentphp",
+                "image",
+                "image-optimizer",
+                "joshembling",
+                "laravel",
+                "optimization"
+            ],
+            "support": {
+                "issues": "https://github.com/joshembling/image-optimizer/issues",
+                "source": "https://github.com/joshembling/image-optimizer"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/joshembling",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-01-17T12:28:28+00:00"
         },
         {
             "name": "kirschbaum-development/eloquent-power-joins",

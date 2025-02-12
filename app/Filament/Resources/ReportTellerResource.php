@@ -411,9 +411,11 @@ class ReportTellerResource extends Resource
                             '2xl' => 6,
                         ]),
 
-                        FileUpload::make('file_update_medsos')
+                    FileUpload::make('file_update_medsos')
                         ->label('Upload Bukti Promo Medsos')
                         ->directory('report-teller')
+                        ->image()
+                        ->optimize('webp')
                         ->required()
                         ->columnSpan([
                             'sm' => 2,
@@ -438,6 +440,8 @@ class ReportTellerResource extends Resource
                         ->label('Upload Bukti Update Jaminan')
                         ->directory('report-teller')
                         ->required()
+                        ->image()
+                        ->optimize('webp')
                         ->columnSpan([
                             'sm' => 2,
                             'xl' => 6,
@@ -456,7 +460,8 @@ class ReportTellerResource extends Resource
                             ->directory('report-teller')
                             ->required()
                             ->multiple()
-                            ->openable()
+                            ->image()
+                            ->optimize('webp')
                             ->columnSpan([
                                 'sm' => 2,
                                 'xl' => 4,
@@ -465,6 +470,8 @@ class ReportTellerResource extends Resource
                         FileUpload::make('file_kas_keluar')
                             ->label('Upload Kas Keluar')
                             ->directory('report-teller')
+                            ->image()
+                            ->optimize('webp')
                             ->columnSpan([
                                 'sm' => 2,
                                 'xl' => 4,
@@ -474,6 +481,8 @@ class ReportTellerResource extends Resource
                             ->label('Upload Kas Opname')
                             ->directory('report-teller')
                             ->required()
+                            ->image()
+                            ->optimize('webp')
                             ->columnSpan([
                                 'sm' => 2,
                                 'xl' => 4,
@@ -483,6 +492,8 @@ class ReportTellerResource extends Resource
                             ->label('Upload Portofolio')
                             ->directory('report-teller')
                             ->required()
+                            ->image()
+                            ->optimize('webp')
                             ->columnSpan([
                                 'sm' => 2,
                                 'xl' => 4,
@@ -492,6 +503,8 @@ class ReportTellerResource extends Resource
                             ->label('Upload Buku Pencairan & Serah Terima Agunan')
                             ->directory('report-teller')
                             ->required()
+                            ->image()
+                            ->optimize('webp')
                             ->columnSpan([
                                 'sm' => 2,
                                 'xl' => 4,
@@ -501,6 +514,8 @@ class ReportTellerResource extends Resource
                             ->label('Upload Sirkulasi Brankas')
                             ->directory('report-teller')
                             ->required()
+                            ->image()
+                            ->optimize('webp')
                             ->columnSpan([
                                 'sm' => 2,
                                 'xl' => 4,
@@ -510,6 +525,8 @@ class ReportTellerResource extends Resource
                             ->label('Upload Simpanan Pokok')
                             ->directory('report-teller')
                             ->required()
+                            ->image()
+                            ->optimize('webp')
                             ->columnSpan([
                                 'sm' => 2,
                                 'xl' => 4,
@@ -519,6 +536,8 @@ class ReportTellerResource extends Resource
                             ->label('Upload Buku Daftar Anggota')
                             ->directory('report-teller')
                             ->required()
+                            ->image()
+                            ->optimize('webp')
                             ->columnSpan([
                                 'sm' => 2,
                                 'xl' => 4,
@@ -528,6 +547,8 @@ class ReportTellerResource extends Resource
                             ->label('Upload Mutasi Transaksi Harian')
                             ->directory('report-teller')
                             ->required()
+                            ->image()
+                            ->optimize('webp')
                             ->columnSpan([
                                 'sm' => 2,
                                 'xl' => 4,
@@ -536,6 +557,8 @@ class ReportTellerResource extends Resource
                         FileUpload::make('file_buku_serah_terima')
                             ->label('Upload Buku Serah Terima')
                             ->directory('report-teller')
+                            ->image()
+                            ->optimize('webp')
                             ->columnSpan([
                                 'sm' => 2,
                                 'xl' => 4,
@@ -544,6 +567,8 @@ class ReportTellerResource extends Resource
                         FileUpload::make('file_data_simjakasya')
                             ->label('Upload Data Simjakasya')
                             ->directory('report-teller')
+                            ->image()
+                            ->optimize('webp')
                             ->columnSpan([
                                 'sm' => 2,
                                 'xl' => 4,

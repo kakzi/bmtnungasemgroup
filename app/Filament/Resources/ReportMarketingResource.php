@@ -246,6 +246,8 @@ class ReportMarketingResource extends Resource
                             ->label('Upload Bukti Slip Penarikan')
                             ->directory('report-marketing')
                             ->required()
+                            ->image()
+                            ->optimize('webp')
                             ->columnSpan([
                                 'sm' => 2,
                                 'xl' => 6,
@@ -255,6 +257,8 @@ class ReportMarketingResource extends Resource
                             ->label('Upload Bukti Kas Opname')
                             ->directory('report-marketing')
                             ->required()
+                            ->image()
+                            ->optimize('webp')
                             ->columnSpan([
                                 'sm' => 2,
                                 'xl' => 6,
@@ -264,6 +268,8 @@ class ReportMarketingResource extends Resource
                             ->label('Upload Bukti Mutasi Transaksi')
                             ->directory('report-marketing')
                             ->required()
+                            ->image()
+                            ->optimize('webp')
                             ->columnSpan([
                                 'sm' => 2,
                                 'xl' => 6,
@@ -273,6 +279,8 @@ class ReportMarketingResource extends Resource
                             ->label('Upload Bukti Form Modal')
                             ->directory('report-marketing')
                             ->required()
+                            ->image()
+                            ->optimize('webp')
                             ->columnSpan([
                                 'sm' => 2,
                                 'xl' => 6,
@@ -353,6 +361,8 @@ class ReportMarketingResource extends Resource
                             ->label('Upload Bukti Foto Penagihan')
                             ->directory('report-marketing')
                             ->required()
+                            ->image()
+                            ->optimize('webp')
                             ->columnSpan([
                                 'sm' => 2,
                                 'xl' => 4,
@@ -482,6 +492,8 @@ class ReportMarketingResource extends Resource
                                 ->label('Upload Bukti Foto Penawaran')
                                 ->directory('report-marketing')
                                 ->required()
+                                ->image()
+                                ->optimize('webp')
                                 ->columnSpan([
                                     'sm' => 2,
                                     'xl' => 4,
@@ -506,6 +518,8 @@ class ReportMarketingResource extends Resource
                                 ->label('Upload Bukti Promo Medsos')
                                 ->directory('report-marketing')
                                 ->required()
+                                ->image()
+                                ->optimize('webp')
                                 ->columnSpan([
                                     'sm' => 2,
                                     'xl' => 6,
@@ -530,7 +544,6 @@ class ReportMarketingResource extends Resource
                             TextInput::make('wilayah')
                                 ->label('Wilayah')
                                 ->required()
-                                ->numeric()
                                 ->columnSpan([
                                     'sm' => 2,
                                     'xl' => 4,
@@ -541,6 +554,8 @@ class ReportMarketingResource extends Resource
                                 ->label('Upload Bukti Foto Tarikan Terjauh')
                                 ->directory('report-marketing')
                                 ->required()
+                                ->image()
+                                ->optimize('webp')
                                 ->columnSpan([
                                     'sm' => 2,
                                     'xl' => 4,
