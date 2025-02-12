@@ -428,7 +428,7 @@ class ReportBranchManagerResource extends Resource
                                     '2xl' => 4,
                                 ]),
                             FileUpload::make('file_cek_fisik_brankas')
-                                ->label('Upload Cek Fisik Brankas')
+                                ->label('Upload Foto Selfie Brankas')
                                 ->directory('report-bm')
                                 ->required()
                                 ->multiple()

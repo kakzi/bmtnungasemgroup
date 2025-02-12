@@ -47,8 +47,8 @@ class OfficeOverview extends BaseWidget
 
 
         return [
-            Stat::make('Kolektabilitas', "{$kolektabilitas}%")
-                ->description('Kolektabilitas hari ini')
+            Stat::make('Likuiditas', "{$kolektabilitas}%")
+                ->description('Likuiditas hari ini')
                 ->color('success'),
 
             Stat::make('Kas', 'Rp ' . number_format($totals->total_kas, 0, ',', '.'))
