@@ -29,12 +29,12 @@ class RecapitulationHRExport implements FromCollection, WithHeadings, WithStyles
             ->leftJoin('offices', 'users.office_id', '=', 'offices.id')
             ->leftJoin('attendances', function ($join) use ($date) {
                 $join->on('users.id', '=', 'attendances.user_id')
-                    ->whereBetween('attendances.created_at', [Carbon::parse($date->date_start)->format('Y-m-d H:i:s'), $date->date_start.' 23:59:59']);
+                    ->whereBetween('attendances.date_absensi', [Carbon::parse($date->date_start)->format('Y-m-d H:i:s'), $date->date_start.' 23:59:59']);
             })
             ->leftJoin('attendance_details as detail', 'attendances.id', '=', 'detail.attendance_id')
             ->leftJoin('karakters as karakter', function ($join) use ($date) {
                 $join->on('users.id', '=', 'karakter.user_id')
-                    ->whereBetween('karakter.created_at', [Carbon::parse($date->date_start)->format('Y-m-d H:i:s'), $date->date_start.' 23:59:59']);
+                    ->whereBetween('karakter.date', [Carbon::parse($date->date_start)->format('Y-m-d'), $date->date_start]);
             })
             ->leftJoin('cutis', function ($join) {
                 $join->on('users.id', '=', 'cutis.user_id')

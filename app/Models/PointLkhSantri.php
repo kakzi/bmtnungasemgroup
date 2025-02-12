@@ -9,7 +9,8 @@ class PointLkhSantri extends Model
     protected $fillable = [
         'user_id',
         'point_lkh',
-        'point_kehadiran'
+        'point_kehadiran',
+        'date_lkh'
     ];
 
     public function user()
